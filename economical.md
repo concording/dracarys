@@ -26,18 +26,6 @@
 
     out of proper balance
 
-17.  [specifically](https://www.vocabulary.com/dictionary/specifically)
-
-    in distinction from others
-
-19.  [restricted](https://www.vocabulary.com/dictionary/restricted)
-
-    subject to an act of limitation
-
-20.  [recommend](https://www.vocabulary.com/dictionary/recommend)
-
-    express a good opinion of
-
 21.  [awful](https://www.vocabulary.com/dictionary/awful)
 
     exceptionally bad or displeasing
@@ -50,17 +38,9 @@
 
     in a state of sulky dissatisfaction
 
-24.  [representation](https://www.vocabulary.com/dictionary/representation)
-
-    standing in for someone and speaking on their behalf
-
 27.  [plunge](https://www.vocabulary.com/dictionary/plunge)
 
     dash violently or with great speed or impetuosity
-
-28.  [stimulate](https://www.vocabulary.com/dictionary/stimulate)
-
-    cause to act in a specified manner
 
 29.  [cooling](https://www.vocabulary.com/dictionary/cooling)
 
@@ -74,17 +54,9 @@
 
     the edge of a steep place
 
-35.  [displace](https://www.vocabulary.com/dictionary/displace)
-
-    cause to move, usually with force or pressure
-
 37.  [spite](https://www.vocabulary.com/dictionary/spite)
 
     meanness or nastiness
-
-39.  [fire](https://www.vocabulary.com/dictionary/fire)
-
-    the process of combustion of inflammable materials
 
 40.  [prestigious](https://www.vocabulary.com/dictionary/prestigious)
 
@@ -134,10 +106,6 @@
 
     cause to regain consciousness
 
-57.  [step](https://www.vocabulary.com/dictionary/step)
-
-    the act of changing location by raising the foot and setting it down
-
 58.  [solidarity](https://www.vocabulary.com/dictionary/solidarity)
 
     a union of interests or purposes among members of a group
@@ -162,17 +130,9 @@
 
     the act of overcoming or outdoing
 
-69.  [persuade](https://www.vocabulary.com/dictionary/persuade)
-
-    cause somebody to adopt a certain position or belief
-
 70.  [pipeline](https://www.vocabulary.com/dictionary/pipeline)
 
     a pipe used to transport liquids or gases
-
-73.  [fleet](https://www.vocabulary.com/dictionary/fleet)
-
-    group of aircraft operating under the same ownership
 
 74.  [successive](https://www.vocabulary.com/dictionary/successive)
 
@@ -206,10 +166,6 @@
 
     subject to doubtful speculation
 
-84.  [describe](https://www.vocabulary.com/dictionary/describe)
-
-    give a statement representing something
-
 85.  [bureaucratic](https://www.vocabulary.com/dictionary/bureaucratic)
 
     of or relating to unnecessary procedures and red tape
@@ -221,10 +177,6 @@
 87.  [furious](https://www.vocabulary.com/dictionary/furious)
 
     marked by extreme anger
-
-89.  [time](https://www.vocabulary.com/dictionary/time)
-
-    the continuum of experience in which events pass to the past
 
 90.  [marine](https://www.vocabulary.com/dictionary/marine)
 
@@ -286,14 +238,6 @@
 
     cause to feel confident
 
-114.  [acknowledge](https://www.vocabulary.com/dictionary/acknowledge)
-
-    declare to be true or admit the existence or reality of
-
-115.  [stressed](https://www.vocabulary.com/dictionary/stressed)
-
-    suffering severe physical strain
-
 117.  [patronage](https://www.vocabulary.com/dictionary/patronage)
 
     the business given to an establishment by its customers
@@ -306,10 +250,6 @@
 
     payment made to corrupt a person in a position of trust
 
-122.  [attempt](https://www.vocabulary.com/dictionary/attempt)
-
-    make an effort
-
 123.  [effective](https://www.vocabulary.com/dictionary/effective)
 
     producing or capable of producing an intended result
@@ -321,14 +261,6 @@
 125.  [switch](https://www.vocabulary.com/dictionary/switch)
 
     device for making or breaking the connections in a circuit
-
-126.  [publisher](https://www.vocabulary.com/dictionary/publisher)
-
-    a person engaged in issuing periodicals or books or music
-
-127.  [property](https://www.vocabulary.com/dictionary/property)
-
-    something owned
 
 128.  [foster](https://www.vocabulary.com/dictionary/foster)
 
@@ -354,17 +286,9 @@
 
     blame for; make a claim of wrongdoing or misbehavior against
 
-138.  [translation](https://www.vocabulary.com/dictionary/translation)
-
-    rendering in another language with the same meaning
-
 139.  [taxation](https://www.vocabulary.com/dictionary/taxation)
 
     imposition of charges against a citizen's person or property
-
-140.  [Seoul](https://www.vocabulary.com/dictionary/Seoul)
-
-    the capital of South Korea and the largest city of Asia
 
 141.  [refer](https://www.vocabulary.com/dictionary/refer)
 
@@ -377,10 +301,6 @@
 143.  [duly](https://www.vocabulary.com/dictionary/duly)
 
     at the proper time
-
-144.  [oppose](https://www.vocabulary.com/dictionary/oppose)
-
-    be against
 
 145.  [confront](https://www.vocabulary.com/dictionary/confront)
 
@@ -414,10 +334,6 @@
 
     a cooperative association among institutions or companies
 
-153.  [pocket](https://www.vocabulary.com/dictionary/pocket)
-
-    a small pouch inside a garment for carrying small articles
-
 154.  [opt](https://www.vocabulary.com/dictionary/opt)
 
     select as an alternative over another
@@ -425,30 +341,6 @@
 155.  [distinction](https://www.vocabulary.com/dictionary/distinction)
 
     a discrimination between things as different
-
-156.  [nightmare](https://www.vocabulary.com/dictionary/nightmare)
-
-    a terrifying or deeply upsetting dream
-
-157.  [criminal](https://www.vocabulary.com/dictionary/criminal)
-
-    someone who has committed a punishable act
-
-158.  [employee](https://www.vocabulary.com/dictionary/employee)
-
-    a worker who is hired to perform a job
-
-159.  [Italia](https://www.vocabulary.com/dictionary/Italia)
-
-    a republic in southern Europe on the Italian Peninsula
-
-160.  [lesser](https://www.vocabulary.com/dictionary/lesser)
-
-    of smaller size or importance
-
-161.  [pursuing](https://www.vocabulary.com/dictionary/pursuing)
-
-    following in order to overtake or capture
 
 162.  [mayoral](https://www.vocabulary.com/dictionary/mayoral)
 
@@ -458,22 +350,6 @@
 
     a monotheistic system of beliefs and practices based on the Old Testament and the teachings of Jesus as embodied in the New Testament and emphasizing the role of Jesus as savior
 
-164.  [cop](https://www.vocabulary.com/dictionary/cop)
-
-    uncomplimentary terms for a policeman
-
-165.  [curious](https://www.vocabulary.com/dictionary/curious)
-
-    eager to investigate and learn or learn more
-
-166.  [writer](https://www.vocabulary.com/dictionary/writer)
-
-    a person who is able to write and has written something
-
-167.  [weakness](https://www.vocabulary.com/dictionary/weakness)
-
-    a flaw
-
 168.  [crown](https://www.vocabulary.com/dictionary/crown)
 
     an ornamental jeweled headdress signifying sovereignty
@@ -481,14 +357,6 @@
 169.  [raid](https://www.vocabulary.com/dictionary/raid)
 
     a sudden short attack
-
-170.  [humanitarian](https://www.vocabulary.com/dictionary/humanitarian)
-
-    marked by devotion to popular welfare
-
-171.  [wholly](https://www.vocabulary.com/dictionary/wholly)
-
-    to the full or entire extent
 
 172.  [disruptive](https://www.vocabulary.com/dictionary/disruptive)
 
@@ -505,14 +373,6 @@
 175.  [curb](https://www.vocabulary.com/dictionary/curb)
 
     the act of restraining power or action or limiting excess
-
-176.  [institution](https://www.vocabulary.com/dictionary/institution)
-
-    a custom that has been an important feature of some group
-
-177.  [exception](https://www.vocabulary.com/dictionary/exception)
-
-    an instance that does not conform to a rule
 
 178.  [charismatic](https://www.vocabulary.com/dictionary/charismatic)
 
@@ -533,10 +393,6 @@
 182.  [Mecca](https://www.vocabulary.com/dictionary/Mecca)
 
     joint capital of Saudi Arabia
-
-183.  [internal](https://www.vocabulary.com/dictionary/internal)
-
-    located inward
 
 184.  [fibre](https://www.vocabulary.com/dictionary/fibre)
 
@@ -574,17 +430,9 @@
 
     someone who promotes or exchanges goods or services for money
 
-193.  [responsibility](https://www.vocabulary.com/dictionary/responsibility)
-
-    the social force that binds you to a course of action
-
 194.  [hack](https://www.vocabulary.com/dictionary/hack)
 
     chop or cut away
-
-195.  [male](https://www.vocabulary.com/dictionary/male)
-
-    being the sex that performs the fertilizing function
 
 196.  [pervasive](https://www.vocabulary.com/dictionary/pervasive)
 
@@ -594,18 +442,6 @@
 
     artifact made by weaving or felting or knitting fibers
 
-198.  [non](https://www.vocabulary.com/dictionary/non)
-
-    negation of a word or group of words
-
-199.  [financial](https://www.vocabulary.com/dictionary/financial)
-
-    involving fiscal matters
-
-200.  [trigger](https://www.vocabulary.com/dictionary/trigger)
-
-    lever that activates the firing mechanism of a gun
-
 201.  [cult](https://www.vocabulary.com/dictionary/cult)
 
     a system of religious beliefs and rituals
@@ -613,10 +449,6 @@
 202.  [liable](https://www.vocabulary.com/dictionary/liable)
 
     subject to legal action
-
-203.  [assign](https://www.vocabulary.com/dictionary/assign)
-
-    select something or someone for a specific purpose
 
 204.  [superior](https://www.vocabulary.com/dictionary/superior)
 
@@ -641,14 +473,6 @@
 209.  [structured](https://www.vocabulary.com/dictionary/structured)
 
     having a definite and highly organized system
-
-210.  [upgrade](https://www.vocabulary.com/dictionary/upgrade)
-
-    rate higher; raise in value or esteem
-
-211.  [state](https://www.vocabulary.com/dictionary/state)
-
-    the way something is with respect to its main attributes
 
 212.  [owned](https://www.vocabulary.com/dictionary/owned)
 
@@ -698,21 +522,9 @@
 
     fall or descend to a lower place or level
 
-224.  [edge](https://www.vocabulary.com/dictionary/edge)
-
-    a line determining the limits of an area
-
-225.  [servant](https://www.vocabulary.com/dictionary/servant)
-
-    a person working in the service of another
-
 226.  [coherent](https://www.vocabulary.com/dictionary/coherent)
 
     marked by an orderly and consistent relation of parts
-
-227.  [ignore](https://www.vocabulary.com/dictionary/ignore)
-
-    refuse to acknowledge
 
 228.  [destined](https://www.vocabulary.com/dictionary/destined)
 
@@ -726,21 +538,9 @@
 
     showing self-interest and shrewdness in dealing with others
 
-231.  [maximise](https://www.vocabulary.com/dictionary/maximise)
-
-    make as big or large as possible
-
 232.  [disrupt](https://www.vocabulary.com/dictionary/disrupt)
 
     make a break in
-
-233.  [contact](https://www.vocabulary.com/dictionary/contact)
-
-    the act of touching physically
-
-234.  [exceptional](https://www.vocabulary.com/dictionary/exceptional)
-
-    surpassing what is common or usual or expected
 
 235.  [bumper](https://www.vocabulary.com/dictionary/bumper)
 
@@ -749,50 +549,6 @@
 236.  [creep](https://www.vocabulary.com/dictionary/creep)
 
     move slowly
-
-237.  [Walter](https://www.vocabulary.com/dictionary/Walter)
-
-    German conductor (1876-1962)
-
-238.  [frank](https://www.vocabulary.com/dictionary/frank)
-
-    characterized by directness in manner or speech
-
-239.  [ethnicity](https://www.vocabulary.com/dictionary/ethnicity)
-
-    an affiliation resulting from racial or cultural ties
-
-240.  [bail](https://www.vocabulary.com/dictionary/bail)
-
-    money forfeited if the accused fails to appear in court
-
-241.  [trimming](https://www.vocabulary.com/dictionary/trimming)
-
-    a decoration or adornment on a garment
-
-242.  [arise](https://www.vocabulary.com/dictionary/arise)
-
-    move upward
-
-243.  [rover](https://www.vocabulary.com/dictionary/rover)
-
-    someone who leads a wandering unsettled life
-
-244.  [wear](https://www.vocabulary.com/dictionary/wear)
-
-    put clothing on one's body
-
-245.  [mantra](https://www.vocabulary.com/dictionary/mantra)
-
-    literally a `sacred utterance' in Vedism
-
-246.  [middle](https://www.vocabulary.com/dictionary/middle)
-
-    an area that is approximately central within some larger region
-
-247.  [income](https://www.vocabulary.com/dictionary/income)
-
-    the financial gain accruing over a given period of time
 
 248.  [admission](https://www.vocabulary.com/dictionary/admission)
 
@@ -810,21 +566,9 @@
 
     showing self-interest and shrewdness in dealing with others
 
-2.  [maximise](https://www.vocabulary.com/dictionary/maximise)
-
-    make as big or large as possible
-
 3.  [disrupt](https://www.vocabulary.com/dictionary/disrupt)
 
     make a break in
-
-4.  [contact](https://www.vocabulary.com/dictionary/contact)
-
-    the act of touching physically
-
-5.  [exceptional](https://www.vocabulary.com/dictionary/exceptional)
-
-    surpassing what is common or usual or expected
 
 6.  [bumper](https://www.vocabulary.com/dictionary/bumper)
 
@@ -833,10 +577,6 @@
 7.  [creep](https://www.vocabulary.com/dictionary/creep)
 
     move slowly
-
-8.  [Walter](https://www.vocabulary.com/dictionary/Walter)
-
-    German conductor (1876-1962)
 
 9.  [frank](https://www.vocabulary.com/dictionary/frank)
 
@@ -862,29 +602,13 @@
 
     someone who leads a wandering unsettled life
 
-15.  [wear](https://www.vocabulary.com/dictionary/wear)
-
-    put clothing on one's body
-
 16.  [mantra](https://www.vocabulary.com/dictionary/mantra)
 
     literally a `sacred utterance' in Vedism
 
-17.  [middle](https://www.vocabulary.com/dictionary/middle)
-
-    an area that is approximately central within some larger region
-
-18.  [income](https://www.vocabulary.com/dictionary/income)
-
-    the financial gain accruing over a given period of time
-
 19.  [admission](https://www.vocabulary.com/dictionary/admission)
 
     the act of letting someone enter
-
-20.  [injury](https://www.vocabulary.com/dictionary/injury)
-
-    physical damage to the body caused by violence or accident
 
 21.  [havoc](https://www.vocabulary.com/dictionary/havoc)
 
@@ -902,10 +626,6 @@
 
     capital and largest city of Hungary
 
-25.  [loud](https://www.vocabulary.com/dictionary/loud)
-
-    characterized by sound of great volume or intensity
-
 26.  [bloat](https://www.vocabulary.com/dictionary/bloat)
 
     swelling of the intestinal tract of animals caused by gas
@@ -913,14 +633,6 @@
 27.  [dogged](https://www.vocabulary.com/dictionary/dogged)
 
     stubbornly unyielding
-
-28.  [pretend](https://www.vocabulary.com/dictionary/pretend)
-
-    make believe with the intent to deceive
-
-29.  [comfortable](https://www.vocabulary.com/dictionary/comfortable)
-
-    providing or experiencing physical well-being or relief
 
 30.  [dismantle](https://www.vocabulary.com/dictionary/dismantle)
 
@@ -962,10 +674,6 @@
 
     a challenge to do something dangerous or foolhardy
 
-40.  [translate](https://www.vocabulary.com/dictionary/translate)
-
-    restate from one language into another language
-
 41.  [onerous](https://www.vocabulary.com/dictionary/onerous)
 
     not easily borne; wearing
@@ -974,14 +682,6 @@
 
     of or relating to a group of civilians organized to function like or to assist a military unit
 
-43.  [well](https://www.vocabulary.com/dictionary/well)
-
-    in a good or satisfactory manner or to a high standard
-
-44.  [connect](https://www.vocabulary.com/dictionary/connect)
-
-    fasten or put together two or more pieces
-
 45.  [Ibrahim](https://www.vocabulary.com/dictionary/Ibrahim)
 
     the first of the Old Testament patriarchs and the father of Isaac; according to Genesis, God promised to give Abraham's family (the Hebrews) the land of Canaan (the Promised Land); God tested Abraham by asking him to sacrifice his son
@@ -989,14 +689,6 @@
 46.  [deride](https://www.vocabulary.com/dictionary/deride)
 
     treat or speak of with contempt
-
-47.  [free](https://www.vocabulary.com/dictionary/free)
-
-    able to act at will
-
-48.  [market](https://www.vocabulary.com/dictionary/market)
-
-    a marketplace where groceries are sold
 
 49.  [dispatch](https://www.vocabulary.com/dictionary/dispatch)
 
@@ -1009,10 +701,6 @@
 51.  [insider](https://www.vocabulary.com/dictionary/insider)
 
     an officer of a corporation or others who have access to private information about the corporation's operations
-
-52.  [protect](https://www.vocabulary.com/dictionary/protect)
-
-    shield from danger, injury, destruction, or damage
 
 53.  [loathe](https://www.vocabulary.com/dictionary/loathe)
 
@@ -1034,37 +722,13 @@
 
     demanding strict attention to rules and procedures
 
-58.  [home](https://www.vocabulary.com/dictionary/home)
-
-    where you live at a particular time
-
-59.  [grown](https://www.vocabulary.com/dictionary/grown)
-
-    (of animals) fully developed
-
-60.  [weekend](https://www.vocabulary.com/dictionary/weekend)
-
-    a time period usually extending from Friday night through Sunday; more loosely defined as any period of successive days including one and only one Sunday
-
 61.  [Connecticut](https://www.vocabulary.com/dictionary/Connecticut)
 
     a New England state; one of the original 13 colonies
 
-62.  [grab](https://www.vocabulary.com/dictionary/grab)
-
-    take or seize suddenly
-
-63.  [unreliable](https://www.vocabulary.com/dictionary/unreliable)
-
-    not worthy of trust
-
 64.  [upshot](https://www.vocabulary.com/dictionary/upshot)
 
     a phenomenon that is caused by some previous phenomenon
-
-65.  [Hawking](https://www.vocabulary.com/dictionary/Hawking)
-
-    English theoretical physicist (born in 1942)
 
 66.  [blast](https://www.vocabulary.com/dictionary/blast)
 
@@ -1086,10 +750,6 @@
 
     a craft capable of traveling in outer space
 
-71.  [long](https://www.vocabulary.com/dictionary/long)
-
-    primarily spatial sense
-
 72.  [await](https://www.vocabulary.com/dictionary/await)
 
     look forward to the probable occurrence of
@@ -1102,17 +762,9 @@
 
     unjust exaction, as by the misuse of authority
 
-75.  [kidnapping](https://www.vocabulary.com/dictionary/kidnapping)
-
-    (law) the unlawful act of capturing and carrying away a person against their will and holding them in false imprisonment
-
 76.  [bypass](https://www.vocabulary.com/dictionary/bypass)
 
     avoid something unpleasant or laborious
-
-77.  [Uganda](https://www.vocabulary.com/dictionary/Uganda)
-
-    a landlocked republic in eastern Africa
 
 78.  [trap](https://www.vocabulary.com/dictionary/trap)
 
@@ -1121,14 +773,6 @@
 79.  [racism](https://www.vocabulary.com/dictionary/racism)
 
     the prejudice that one people are superior to another
-
-80.  [suspend](https://www.vocabulary.com/dictionary/suspend)
-
-    bar temporarily
-
-81.  [disagreement](https://www.vocabulary.com/dictionary/disagreement)
-
-    a conflict of people's opinions or actions or characters
 
 82.  [Rhodes](https://www.vocabulary.com/dictionary/Rhodes)
 
@@ -1162,17 +806,9 @@
 
     carefully thought out in advance
 
-90.  [intimidation](https://www.vocabulary.com/dictionary/intimidation)
-
-    the act of scaring a weaker person to make them do something
-
 91.  [blown](https://www.vocabulary.com/dictionary/blown)
 
     being moved or acted upon by moving air or vapor
-
-92.  [quicker](https://www.vocabulary.com/dictionary/quicker)
-
-    more quickly
 
 93.  [longtime](https://www.vocabulary.com/dictionary/longtime)
 
@@ -1182,10 +818,6 @@
 
     the act of working out the form of something
 
-95.  [deliver](https://www.vocabulary.com/dictionary/deliver)
-
-    bring to a destination
-
 96.  [commissioner](https://www.vocabulary.com/dictionary/commissioner)
 
     a member of a special group considering some matter
@@ -1193,10 +825,6 @@
 97.  [centralised](https://www.vocabulary.com/dictionary/centralised)
 
     drawn toward a center or brought under the control of a central authority
-
-98.  [rewarding](https://www.vocabulary.com/dictionary/rewarding)
-
-    providing personal satisfaction
 
 99.  [meritocracy](https://www.vocabulary.com/dictionary/meritocracy)
 
