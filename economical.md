@@ -1026,129 +1026,49 @@
 
     failure to reach a minimum required performance
 
-194.  [invest](https://www.vocabulary.com/dictionary/invest)
-
-    lay out money or resources in an enterprise
-
-195.  [Suisse](https://www.vocabulary.com/dictionary/Suisse)
-
-    a landlocked federal republic in central Europe
-
-196.  [civilisation](https://www.vocabulary.com/dictionary/civilisation)
-
-    a society in an advanced state of social development
-
-197.  [unpredictable](https://www.vocabulary.com/dictionary/unpredictable)
-
-    unknown in advance
-
 198.  [Kachin](https://www.vocabulary.com/dictionary/Kachin)
 
     Tibeto-Burman languages spoken in northernmost Burma and adjacent China and India
-
-199.  [creativity](https://www.vocabulary.com/dictionary/creativity)
-
-    the ability to bring something into existence
 
 200.  [forth](https://www.vocabulary.com/dictionary/forth)
 
     forward in time, order, or degree
 
-201.  [catch](https://www.vocabulary.com/dictionary/catch)
-
-    take hold of so as to seize or stop the motion of
-
-202.  [up](https://www.vocabulary.com/dictionary/up)
-
-    spatially or metaphorically from a lower to a higher position
-
-203.  [photograph](https://www.vocabulary.com/dictionary/photograph)
-
-    a representation of a person or scene in the form of a print
-
-204.  [advertisement](https://www.vocabulary.com/dictionary/advertisement)
-
-    a public promotion of some product or service
-
 205.  [Nigerian](https://www.vocabulary.com/dictionary/Nigerian)
 
     of or relating to Nigeria
-
-206.  [client](https://www.vocabulary.com/dictionary/client)
-
-    someone who pays for goods or services
 
 207.  [Benjamin](https://www.vocabulary.com/dictionary/Benjamin)
 
     (Old Testament) the youngest and best-loved son of Jacob and Rachel and one of the twelve forebears of the tribes of Israel
 
-208.  [Lego](https://www.vocabulary.com/dictionary/Lego)
-
-    (trademark) a child's plastic construction set for making mechanical models
-
 209.  [bloodshed](https://www.vocabulary.com/dictionary/bloodshed)
 
     the shedding of blood resulting in murder
-
-210.  [textbook](https://www.vocabulary.com/dictionary/textbook)
-
-    a book prepared for use in schools or colleges
 
 211.  [Siemens](https://www.vocabulary.com/dictionary/Siemens)
 
     German electrical engineer (1816-1892)
 
-212.  [documented](https://www.vocabulary.com/dictionary/documented)
-
-    furnished with or supported by written information
-
-213.  [unmarried](https://www.vocabulary.com/dictionary/unmarried)
-
-    not married or related to the unmarried state
-
 214.  [Lewis](https://www.vocabulary.com/dictionary/Lewis)
 
     English critic and novelist
-
-215.  [s](https://www.vocabulary.com/dictionary/s)
-
-    1/60 of a minute
 
 216.  [Somali](https://www.vocabulary.com/dictionary/Somali)
 
     a member of a tall dark people inhabiting Somalia
 
-217.  [Windows](https://www.vocabulary.com/dictionary/Windows)
-
-    an operating system with a graphical user interface
-
-218.  [pacifist](https://www.vocabulary.com/dictionary/pacifist)
-
-    someone opposed to violence as a means of settling disputes
-
 219.  [Bangkok](https://www.vocabulary.com/dictionary/Bangkok)
 
     the capital and largest city and chief port of Thailand
-
-220.  [migration](https://www.vocabulary.com/dictionary/migration)
-
-    the movement of persons from one locality to another
 
 221.  [influx](https://www.vocabulary.com/dictionary/influx)
 
     the process of flowing in
 
-222.  [international](https://www.vocabulary.com/dictionary/international)
-
-    concerning or belonging to two or more countries
-
 223.  [intensified](https://www.vocabulary.com/dictionary/intensified)
 
     made more sharp
-
-224.  [reform](https://www.vocabulary.com/dictionary/reform)
-
-    make changes for improvement to remove abuse and injustices
 
 225.  [ordination](https://www.vocabulary.com/dictionary/ordination)
 
@@ -1174,21 +1094,9 @@
 
     a sudden violent change in the earth's surface
 
-231.  [triple](https://www.vocabulary.com/dictionary/triple)
-
-    having three units or components or elements
-
 232.  [Munich](https://www.vocabulary.com/dictionary/Munich)
 
     the capital and largest city of Bavaria in southwestern Germany
-
-233.  [suppress](https://www.vocabulary.com/dictionary/suppress)
-
-    put down by force or authority
-
-234.  [liberty](https://www.vocabulary.com/dictionary/liberty)
-
-    freedom of choice
 
 235.  [fever](https://www.vocabulary.com/dictionary/fever)
 
@@ -1213,14 +1121,6 @@
 240.  [sheer](https://www.vocabulary.com/dictionary/sheer)
 
     so thin as to transmit light
-
-241.  [abolish](https://www.vocabulary.com/dictionary/abolish)
-
-    do away with
-
-242.  [uniform](https://www.vocabulary.com/dictionary/uniform)
-
-    clothing of distinctive design worn by members of a group
 
 243.  [pact](https://www.vocabulary.com/dictionary/pact)
 
@@ -1251,110 +1151,6 @@
     things coming and going in a particular locality
 
 250.  [bare](https://www.vocabulary.com/dictionary/bare)
-
-    lacking its natural or customary covering
-
-1.  [ordination](https://www.vocabulary.com/dictionary/ordination)
-
-    the act of conferring holy orders
-
-2.  [featured](https://www.vocabulary.com/dictionary/featured)
-
-    made a highlight; given prominence
-
-3.  [plague](https://www.vocabulary.com/dictionary/plague)
-
-    any large-scale calamity
-
-4.  [resilient](https://www.vocabulary.com/dictionary/resilient)
-
-    recovering readily from adversity, depression, or the like
-
-5.  [qualify](https://www.vocabulary.com/dictionary/qualify)
-
-    prove capable or fit; meet requirements
-
-6.  [catastrophe](https://www.vocabulary.com/dictionary/catastrophe)
-
-    a sudden violent change in the earth's surface
-
-7.  [triple](https://www.vocabulary.com/dictionary/triple)
-
-    having three units or components or elements
-
-8.  [Munich](https://www.vocabulary.com/dictionary/Munich)
-
-    the capital and largest city of Bavaria in southwestern Germany
-
-9.  [suppress](https://www.vocabulary.com/dictionary/suppress)
-
-    put down by force or authority
-
-10.  [liberty](https://www.vocabulary.com/dictionary/liberty)
-
-    freedom of choice
-
-11.  [fever](https://www.vocabulary.com/dictionary/fever)
-
-    an abnormal rise in the temperature of the body
-
-12.  [portion](https://www.vocabulary.com/dictionary/portion)
-
-    something determined in relation to a thing that includes it
-
-13.  [bones](https://www.vocabulary.com/dictionary/bones)
-
-    a percussion instrument consisting of a pair of hollow pieces of wood or bone (usually held between the thumb and fingers) that are made to click together (as by Spanish dancers) in rhythm with the dance
-
-14.  [contender](https://www.vocabulary.com/dictionary/contender)
-
-    the contestant you hope to defeat
-
-15.  [imagine](https://www.vocabulary.com/dictionary/imagine)
-
-    expect, believe, or suppose
-
-16.  [sheer](https://www.vocabulary.com/dictionary/sheer)
-
-    so thin as to transmit light
-
-17.  [abolish](https://www.vocabulary.com/dictionary/abolish)
-
-    do away with
-
-18.  [uniform](https://www.vocabulary.com/dictionary/uniform)
-
-    clothing of distinctive design worn by members of a group
-
-19.  [pact](https://www.vocabulary.com/dictionary/pact)
-
-    a written agreement between two states or sovereigns
-
-20.  [hardline](https://www.vocabulary.com/dictionary/hardline)
-
-    firm and uncompromising
-
-21.  [ban](https://www.vocabulary.com/dictionary/ban)
-
-    prohibit especially by law or social pressure
-
-22.  [retort](https://www.vocabulary.com/dictionary/retort)
-
-    a quick reply to a question or remark
-
-23.  [scramble](https://www.vocabulary.com/dictionary/scramble)
-
-    move hurriedly
-
-24.  [mismanagement](https://www.vocabulary.com/dictionary/mismanagement)
-
-    management that is careless or inefficient
-
-25.  [traffic](https://www.vocabulary.com/dictionary/traffic)
-
-    things coming and going in a particular locality
-
-26.  [bare](https://www.vocabulary.com/dictionary/bare)
 
     lacking its natural or customary covering
 
