@@ -3048,14 +3048,6 @@
 
     not plain; decorative or ornamented
 
-143.  [designer](https://www.vocabulary.com/dictionary/designer)
-
-    someone who creates plans to be used in making something
-
-144.  [trace](https://www.vocabulary.com/dictionary/trace)
-
-    an indication that something has been present
-
 145.  [landed](https://www.vocabulary.com/dictionary/landed)
 
     owning or consisting of land or real estate
@@ -3068,49 +3060,17 @@
 
     dirty and disorderly
 
-148.  [industrial](https://www.vocabulary.com/dictionary/industrial)
-
-    of or relating to commercial enterprise
-
-149.  [deciding](https://www.vocabulary.com/dictionary/deciding)
-
-    the cognitive process of reaching a decision
-
-150.  [ignore](https://www.vocabulary.com/dictionary/ignore)
-
-    refuse to acknowledge
-
-151.  [protection](https://www.vocabulary.com/dictionary/protection)
-
-    the activity of shielding someone or something
-
 152.  [amnesty](https://www.vocabulary.com/dictionary/amnesty)
 
     a warrant granting release from punishment for an offense
-
-153.  [non](https://www.vocabulary.com/dictionary/non)
-
-    negation of a word or group of words
-
-154.  [profit](https://www.vocabulary.com/dictionary/profit)
-
-    the advantageous quality of being beneficial
 
 155.  [mall](https://www.vocabulary.com/dictionary/mall)
 
     mercantile establishment consisting of a carefully landscaped complex of shops representing leading merchandisers; usually includes restaurants and a convenient parking area; a modern version of the traditional marketplace
 
-156.  [disrupt](https://www.vocabulary.com/dictionary/disrupt)
-
-    make a break in
-
 157.  [accountability](https://www.vocabulary.com/dictionary/accountability)
 
     responsibility to someone or for some activity
-
-158.  [Hugo](https://www.vocabulary.com/dictionary/Hugo)
-
-    French poet and novelist and dramatist
 
 159.  [windfall](https://www.vocabulary.com/dictionary/windfall)
 
@@ -3120,73 +3080,25 @@
 
     action taken in return for an injury or offense
 
-161.  [declaration](https://www.vocabulary.com/dictionary/declaration)
-
-    a statement that is emphatic and explicit
-
 162.  [collaboration](https://www.vocabulary.com/dictionary/collaboration)
 
     act of working jointly
-
-163.  [tight](https://www.vocabulary.com/dictionary/tight)
-
-    closely constrained or constricted or constricting
-
-164.  [convenient](https://www.vocabulary.com/dictionary/convenient)
-
-    suited to your comfort or purpose or needs
-
-165.  [strict](https://www.vocabulary.com/dictionary/strict)
-
-    rigidly accurate; allowing no deviation from a standard
-
-166.  [Zimbabwe](https://www.vocabulary.com/dictionary/Zimbabwe)
-
-    a landlocked republic in south central Africa formerly called Rhodesia; achieved independence from the United Kingdom in 1980
-
-167.  [Okinawa](https://www.vocabulary.com/dictionary/Okinawa)
-
-    the largest island of the central Ryukyu Islands
-
-168.  [Edinburgh](https://www.vocabulary.com/dictionary/Edinburgh)
-
-    the capital of Scotland
 
 169.  [leap](https://www.vocabulary.com/dictionary/leap)
 
     move forward by bounds
 
-170.  [Carnegie](https://www.vocabulary.com/dictionary/Carnegie)
-
-    United States industrialist and philanthropist who endowed education and public libraries and research trusts (1835-1919)
-
 171.  [recruit](https://www.vocabulary.com/dictionary/recruit)
 
     cause to assemble or enlist in the military
-
-172.  [classic](https://www.vocabulary.com/dictionary/classic)
-
-    of recognized authority or excellence
 
 173.  [scratch](https://www.vocabulary.com/dictionary/scratch)
 
     cut, scrape, or wear away the surface of
 
-174.  [gap](https://www.vocabulary.com/dictionary/gap)
-
-    an open or empty space in or between things
-
 175.  [offence](https://www.vocabulary.com/dictionary/offence)
 
     a lack of politeness
-
-176.  [homeless](https://www.vocabulary.com/dictionary/homeless)
-
-    without nationality or citizenship
-
-177.  [Churchill](https://www.vocabulary.com/dictionary/Churchill)
-
-    English general considered one of the greatest generals in history (1650-1722)
 
 178.  [belonging](https://www.vocabulary.com/dictionary/belonging)
 
@@ -3200,37 +3112,9 @@
 
     the material that forms the hard outer covering of many animals
 
-181.  [architect](https://www.vocabulary.com/dictionary/architect)
-
-    someone who creates plans to be used in making something
-
-182.  [wheel](https://www.vocabulary.com/dictionary/wheel)
-
-    a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)
-
-183.  [translate](https://www.vocabulary.com/dictionary/translate)
-
-    restate from one language into another language
-
-184.  [actor](https://www.vocabulary.com/dictionary/actor)
-
-    a performer in theater, television, or film
-
-185.  [robot](https://www.vocabulary.com/dictionary/robot)
-
-    a mechanism that can move automatically
-
-186.  [unwilling](https://www.vocabulary.com/dictionary/unwilling)
-
-    not disposed or inclined toward
-
 187.  [raid](https://www.vocabulary.com/dictionary/raid)
 
     a sudden short attack
-
-188.  [traveller](https://www.vocabulary.com/dictionary/traveller)
-
-    a person who changes location
 
 189.  [turbine](https://www.vocabulary.com/dictionary/turbine)
 
@@ -3252,21 +3136,9 @@
 
     a person who has served in the armed forces
 
-194.  [exist](https://www.vocabulary.com/dictionary/exist)
-
-    have a presence
-
 195.  [overturned](https://www.vocabulary.com/dictionary/overturned)
 
     having been turned so that the bottom is no longer the bottom
-
-196.  [alter](https://www.vocabulary.com/dictionary/alter)
-
-    cause to change; make different
-
-197.  [Houston](https://www.vocabulary.com/dictionary/Houston)
-
-    United States politician and military leader who fought to gain independence for Texas from Mexico and to make it a part of the United States (1793-1863)
 
 198.  [cosy](https://www.vocabulary.com/dictionary/cosy)
 
@@ -3280,21 +3152,9 @@
 
     secretly importing prohibited goods or goods on which duty is due
 
-201.  [row](https://www.vocabulary.com/dictionary/row)
-
-    an arrangement of objects or people side by side in a line
-
 202.  [hence](https://www.vocabulary.com/dictionary/hence)
 
     from that fact or reason or as a result
-
-203.  [earliest](https://www.vocabulary.com/dictionary/earliest)
-
-    more early than; most early
-
-204.  [Laos](https://www.vocabulary.com/dictionary/Laos)
-
-    a mountainous landlocked communist state in southeastern Asia; achieved independence from France in 1949
 
 205.  [strategic](https://www.vocabulary.com/dictionary/strategic)
 
@@ -3304,17 +3164,9 @@
 
     a structure taller than its diameter
 
-207.  [extensive](https://www.vocabulary.com/dictionary/extensive)
-
-    large in spatial extent or range or scope or quantity
-
 208.  [revealing](https://www.vocabulary.com/dictionary/revealing)
 
     showing or making known
-
-209.  [third](https://www.vocabulary.com/dictionary/third)
-
-    one of three equal parts of a divisible whole
 
 210.  [envoy](https://www.vocabulary.com/dictionary/envoy)
 
@@ -3332,61 +3184,21 @@
 
     give, especially as an honor
 
-214.  [filling](https://www.vocabulary.com/dictionary/filling)
-
-    any material that fills a space or container
-
 215.  [decree](https://www.vocabulary.com/dictionary/decree)
 
     a legally binding command or decision
-
-216.  [blame](https://www.vocabulary.com/dictionary/blame)
-
-    an accusation that one is responsible for some misdeed
-
-217.  [acquisition](https://www.vocabulary.com/dictionary/acquisition)
-
-    something gained
-
-218.  [Syrian](https://www.vocabulary.com/dictionary/Syrian)
-
-    a native or inhabitant of Syria
-
-219.  [Clark](https://www.vocabulary.com/dictionary/Clark)
-
-    United States explorer who (with Meriwether Lewis) led an expedition from St. Louis to the mouth of the Columbia River; Clark was responsible for making maps of the area (1770-1838)
 
 220.  [dealings](https://www.vocabulary.com/dictionary/dealings)
 
     social or verbal interchange (usually followed by `with')
 
-221.  [remove](https://www.vocabulary.com/dictionary/remove)
-
-    take something away as by lifting, pushing, or taking off
-
 222.  [levy](https://www.vocabulary.com/dictionary/levy)
 
     impose and collect
 
-223.  [Austria](https://www.vocabulary.com/dictionary/Austria)
-
-    a mountainous republic in central Europe
-
-224.  [privileged](https://www.vocabulary.com/dictionary/privileged)
-
-    blessed with special advantages
-
 225.  [panel](https://www.vocabulary.com/dictionary/panel)
 
     sheet that forms a distinct section of something
-
-226.  [innovation](https://www.vocabulary.com/dictionary/innovation)
-
-    the act of starting something for the first time
-
-227.  [convert](https://www.vocabulary.com/dictionary/convert)
-
-    change the nature, purpose, or function of something
 
 228.  [dioxide](https://www.vocabulary.com/dictionary/dioxide)
 
@@ -3400,25 +3212,9 @@
 
     a formal event performed on a special occasion
 
-231.  [American](https://www.vocabulary.com/dictionary/American)
-
-    of or relating to the United States of America or its people or language or culture
-
-232.  [lead](https://www.vocabulary.com/dictionary/lead)
-
-    take somebody somewhere
-
-233.  [error](https://www.vocabulary.com/dictionary/error)
-
-    a wrong action attributable to bad judgment or ignorance
-
 234.  [populism](https://www.vocabulary.com/dictionary/populism)
 
     political doctrine that supports the rights of common people
-
-235.  [civil](https://www.vocabulary.com/dictionary/civil)
-
-    of or occurring between or among citizens of the state
 
 236.  [steam](https://www.vocabulary.com/dictionary/steam)
 
@@ -3428,138 +3224,22 @@
 
     properly or sufficiently qualified, capable, or efficient
 
-238.  [Tennessee](https://www.vocabulary.com/dictionary/Tennessee)
-
-    a state in east central United States
-
-239.  [Ted](https://www.vocabulary.com/dictionary/Ted)
-
-    a tough youth of 1950's and 1960's wearing Edwardian style clothes
-
-240.  [taste](https://www.vocabulary.com/dictionary/taste)
-
-    the faculty of distinguishing sweet, sour, bitter, and salty properties in the mouth
-
-241.  [sound](https://www.vocabulary.com/dictionary/sound)
-
-    mechanical vibrations transmitted by an elastic medium
-
-242.  [assure](https://www.vocabulary.com/dictionary/assure)
-
-    inform positively and with certainty and confidence
-
-243.  [Gujarat](https://www.vocabulary.com/dictionary/Gujarat)
-
-    a region of western India to the north of Bombay (bordering the Arabian Sea) where Gujarati is spoken
-
 244.  [rotten](https://www.vocabulary.com/dictionary/rotten)
 
     having decayed or disintegrated
-
-245.  [campaign](https://www.vocabulary.com/dictionary/campaign)
-
-    related operations aimed at achieving a particular goal
 
 246.  [readily](https://www.vocabulary.com/dictionary/readily)
 
     without much difficulty
 
-247.  [finger](https://www.vocabulary.com/dictionary/finger)
-
-    any of the terminal members of the hand
-
 248.  [confined](https://www.vocabulary.com/dictionary/confined)
 
     being in captivity
 
-249.  [musical](https://www.vocabulary.com/dictionary/musical)
-
-    characterized by or capable of producing music
-
-250.  [accusation](https://www.vocabulary.com/dictionary/accusation)
-
-    an assertion that someone is guilty of a fault or offence
-
-
-1.  [populism](https://www.vocabulary.com/dictionary/populism)
-
-    political doctrine that supports the rights of common people
-
-2.  [civil](https://www.vocabulary.com/dictionary/civil)
-
-    of or occurring between or among citizens of the state
-
-3.  [steam](https://www.vocabulary.com/dictionary/steam)
-
-    water at boiling temperature diffused in the atmosphere
-
-4.  [competent](https://www.vocabulary.com/dictionary/competent)
-
-    properly or sufficiently qualified, capable, or efficient
-
-5.  [Tennessee](https://www.vocabulary.com/dictionary/Tennessee)
-
-    a state in east central United States
-
-6.  [Ted](https://www.vocabulary.com/dictionary/Ted)
-
-    a tough youth of 1950's and 1960's wearing Edwardian style clothes
-
-7.  [taste](https://www.vocabulary.com/dictionary/taste)
-
-    the faculty of distinguishing sweet, sour, bitter, and salty properties in the mouth
-
-8.  [boast](https://www.vocabulary.com/dictionary/boast)
-
-    talk about oneself with excessive pride or self-regard
-
-9.  [sound](https://www.vocabulary.com/dictionary/sound)
-
-    mechanical vibrations transmitted by an elastic medium
-
-10.  [assure](https://www.vocabulary.com/dictionary/assure)
-
-    inform positively and with certainty and confidence
-
-11.  [Gujarat](https://www.vocabulary.com/dictionary/Gujarat)
-
-    a region of western India to the north of Bombay (bordering the Arabian Sea) where Gujarati is spoken
-
-12.  [rotten](https://www.vocabulary.com/dictionary/rotten)
-
-    having decayed or disintegrated
-
-13.  [campaign](https://www.vocabulary.com/dictionary/campaign)
-
-    related operations aimed at achieving a particular goal
-
-14.  [readily](https://www.vocabulary.com/dictionary/readily)
-
-    without much difficulty
-
-15.  [mount](https://www.vocabulary.com/dictionary/mount)
-
-    go up, advance, or increase
-
-16.  [finger](https://www.vocabulary.com/dictionary/finger)
-
-    any of the terminal members of the hand
-
-17.  [confined](https://www.vocabulary.com/dictionary/confined)
-
-    being in captivity
-
-18.  [musical](https://www.vocabulary.com/dictionary/musical)
-
-    characterized by or capable of producing music
 
 19.  [accusation](https://www.vocabulary.com/dictionary/accusation)
 
     an assertion that someone is guilty of a fault or offence
-
-20.  [endure](https://www.vocabulary.com/dictionary/endure)
-
-    undergo or be subjected to
 
 21.  [patch](https://www.vocabulary.com/dictionary/patch)
 
