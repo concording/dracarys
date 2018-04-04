@@ -722,10 +722,6 @@
 
     demanding strict attention to rules and procedures
 
-61.  [Connecticut](https://www.vocabulary.com/dictionary/Connecticut)
-
-    a New England state; one of the original 13 colonies
-
 64.  [upshot](https://www.vocabulary.com/dictionary/upshot)
 
     a phenomenon that is caused by some previous phenomenon
@@ -745,10 +741,6 @@
 69.  [reassure](https://www.vocabulary.com/dictionary/reassure)
 
     cause to feel confident
-
-70.  [spacecraft](https://www.vocabulary.com/dictionary/spacecraft)
-
-    a craft capable of traveling in outer space
 
 72.  [await](https://www.vocabulary.com/dictionary/await)
 
@@ -770,14 +762,6 @@
 
     a device in which something can be caught and penned
 
-79.  [racism](https://www.vocabulary.com/dictionary/racism)
-
-    the prejudice that one people are superior to another
-
-82.  [Rhodes](https://www.vocabulary.com/dictionary/Rhodes)
-
-    a Greek island in the southeast Aegean Sea 10 miles off the Turkish coast; the largest of the Dodecanese; it was colonized before 1000 BC by Dorians from Argos; site of the Colossus of Rhodes
-
 83.  [charity](https://www.vocabulary.com/dictionary/charity)
 
     an institution set up to provide help to the needy
@@ -785,10 +769,6 @@
 84.  [owe](https://www.vocabulary.com/dictionary/owe)
 
     be obliged to pay or repay
-
-85.  [probability](https://www.vocabulary.com/dictionary/probability)
-
-    a measure of how likely it is that some event will occur
 
 86.  [incoming](https://www.vocabulary.com/dictionary/incoming)
 
@@ -810,14 +790,6 @@
 
     being moved or acted upon by moving air or vapor
 
-93.  [longtime](https://www.vocabulary.com/dictionary/longtime)
-
-    of long duration
-
-94.  [designing](https://www.vocabulary.com/dictionary/designing)
-
-    the act of working out the form of something
-
 96.  [commissioner](https://www.vocabulary.com/dictionary/commissioner)
 
     a member of a special group considering some matter
@@ -829,10 +801,6 @@
 99.  [meritocracy](https://www.vocabulary.com/dictionary/meritocracy)
 
     a social system in which power goes to superior intellects
-
-100.  [bitter](https://www.vocabulary.com/dictionary/bitter)
-
-    causing a sharp and acrid taste experience
 
 101.  [peanuts](https://www.vocabulary.com/dictionary/peanuts)
 
@@ -846,17 +814,9 @@
 
     relating to preparing and dispensing drugs and medicines
 
-104.  [enrich](https://www.vocabulary.com/dictionary/enrich)
-
-    make better or improve in quality
-
 105.  [titan](https://www.vocabulary.com/dictionary/titan)
 
     a person of exceptional importance and reputation
-
-106.  [assassination](https://www.vocabulary.com/dictionary/assassination)
-
-    murder of a public figure by surprise attack
 
 107.  [venue](https://www.vocabulary.com/dictionary/venue)
 
@@ -874,10 +834,6 @@
 
     a sequence of steps by which legal judgments are invoked
 
-111.  [diagnosis](https://www.vocabulary.com/dictionary/diagnosis)
-
-    identifying the nature or cause of some phenomenon
-
 112.  [Bristol](https://www.vocabulary.com/dictionary/Bristol)
 
     an industrial city and port in southwestern England near the mouth of the River Avon
@@ -885,14 +841,6 @@
 113.  [cubicle](https://www.vocabulary.com/dictionary/cubicle)
 
     small area set off by walls for special use
-
-114.  [sunlight](https://www.vocabulary.com/dictionary/sunlight)
-
-    the rays of the sun
-
-115.  [identify](https://www.vocabulary.com/dictionary/identify)
-
-    recognize as being
 
 116.  [aluminium](https://www.vocabulary.com/dictionary/aluminium)
 
@@ -906,10 +854,6 @@
 
     a hard smooth dentine of the tusks of elephants and walruses
 
-119.  [Albert](https://www.vocabulary.com/dictionary/Albert)
-
-    prince consort of Queen Victoria of England (1819-1861)
-
 120.  [miniature](https://www.vocabulary.com/dictionary/miniature)
 
     being on a very small scale
@@ -917,14 +861,6 @@
 121.  [depression](https://www.vocabulary.com/dictionary/depression)
 
     a sunken or lowered geological formation
-
-122.  [reside](https://www.vocabulary.com/dictionary/reside)
-
-    live in
-
-123.  [pioneer](https://www.vocabulary.com/dictionary/pioneer)
-
-    one the first colonists or settlers in a new territory
 
 124.  [unconstitutional](https://www.vocabulary.com/dictionary/unconstitutional)
 
@@ -934,14 +870,6 @@
 
     a native or inhabitant of Venezuela
 
-126.  [varied](https://www.vocabulary.com/dictionary/varied)
-
-    characterized by diversity
-
-127.  [influence](https://www.vocabulary.com/dictionary/influence)
-
-    a power to affect persons or events
-
 128.  [barrier](https://www.vocabulary.com/dictionary/barrier)
 
     a structure or object that impedes free movement
@@ -949,10 +877,6 @@
 129.  [pretext](https://www.vocabulary.com/dictionary/pretext)
 
     something serving to conceal plans
-
-130.  [pregnancy](https://www.vocabulary.com/dictionary/pregnancy)
-
-    the state of being pregnant
 
 131.  [insect](https://www.vocabulary.com/dictionary/insect)
 
@@ -974,29 +898,9 @@
 
     an alcoholic beverage that is distilled rather than fermented
 
-136.  [stay](https://www.vocabulary.com/dictionary/stay)
-
-    continue in a place, position, or situation
-
-137.  [at](https://www.vocabulary.com/dictionary/at)
-
-    100 at equal 1 kip in Laos
-
-138.  [coalition](https://www.vocabulary.com/dictionary/coalition)
-
-    the union of diverse things into one body or form or group
-
 139.  [Kabul](https://www.vocabulary.com/dictionary/Kabul)
 
     the capital and largest city of Afghanistan
-
-140.  [arrange](https://www.vocabulary.com/dictionary/arrange)
-
-    put into a proper or systematic order
-
-141.  [shirt](https://www.vocabulary.com/dictionary/shirt)
-
-    a garment worn on the upper half of the body
 
 142.  [glacier](https://www.vocabulary.com/dictionary/glacier)
 
@@ -1006,25 +910,13 @@
 
     markedly new or introducing radical change
 
-144.  [Congress](https://www.vocabulary.com/dictionary/Congress)
-
-    the legislature of the United States government
-
 145.  [communist](https://www.vocabulary.com/dictionary/communist)
 
     relating to or marked by communism
 
-146.  [measure](https://www.vocabulary.com/dictionary/measure)
-
-    determine the dimensions of something or somebody
-
 147.  [cram](https://www.vocabulary.com/dictionary/cram)
 
     crowd or pack to capacity
-
-148.  [compare](https://www.vocabulary.com/dictionary/compare)
-
-    examine and note the similarities or differences of
 
 149.  [treaty](https://www.vocabulary.com/dictionary/treaty)
 
@@ -1033,10 +925,6 @@
 150.  [bull](https://www.vocabulary.com/dictionary/bull)
 
     uncastrated adult male of domestic cattle
-
-151.  [retain](https://www.vocabulary.com/dictionary/retain)
-
-    secure and keep for possible future use or application
 
 152.  [tilt](https://www.vocabulary.com/dictionary/tilt)
 
@@ -1066,10 +954,6 @@
 
     a current of air
 
-159.  [classify](https://www.vocabulary.com/dictionary/classify)
-
-    arrange or order by categories
-
 160.  [stronghold](https://www.vocabulary.com/dictionary/stronghold)
 
     a strongly fortified defensive structure
@@ -1078,57 +962,21 @@
 
     reverent petition to a deity
 
-162.  [umbrella](https://www.vocabulary.com/dictionary/umbrella)
-
-    a lightweight handheld collapsible canopy
-
-163.  [majority](https://www.vocabulary.com/dictionary/majority)
-
-    the main part
-
-164.  [benefit](https://www.vocabulary.com/dictionary/benefit)
-
-    something that aids or promotes well-being
-
-165.  [accommodate](https://www.vocabulary.com/dictionary/accommodate)
-
-    have room for; hold without crowding
-
-166.  [worryingly](https://www.vocabulary.com/dictionary/worryingly)
-
-    in a manner to cause worry
-
 167.  [affluent](https://www.vocabulary.com/dictionary/affluent)
 
     having an abundant supply of money or possessions of value
-
-168.  [understand](https://www.vocabulary.com/dictionary/understand)
-
-    know and comprehend the nature or meaning of
 
 169.  [Luxembourg](https://www.vocabulary.com/dictionary/Luxembourg)
 
     a grand duchy (a constitutional monarchy) landlocked in northwestern Europe between France and Belgium and Germany; an international financial center
 
-170.  [quantity](https://www.vocabulary.com/dictionary/quantity)
-
-    how much there is or how many there are of something
-
 171.  [rational](https://www.vocabulary.com/dictionary/rational)
 
     consistent with or based on or using reason
 
-172.  [founder](https://www.vocabulary.com/dictionary/founder)
-
-    a person who establishes some institution
-
 173.  [cotton](https://www.vocabulary.com/dictionary/cotton)
 
     erect bushy mallow plant or small tree bearing bolls containing seeds with many long hairy fibers
-
-174.  [shape](https://www.vocabulary.com/dictionary/shape)
-
-    a perceptual structure
 
 175.  [anonymous](https://www.vocabulary.com/dictionary/anonymous)
 
@@ -1146,14 +994,6 @@
 
     of or relating to or characteristic of Kenya or its people
 
-179.  [adoption](https://www.vocabulary.com/dictionary/adoption)
-
-    proceeding creating a parent-child relation between persons
-
-180.  [election](https://www.vocabulary.com/dictionary/election)
-
-    vote to select the winner of a position or political office
-
 181.  [Belarus](https://www.vocabulary.com/dictionary/Belarus)
 
     a landlocked republic in eastern Europe
@@ -1166,18 +1006,6 @@
 
     any likeness of a person, in any medium
 
-184.  [champion](https://www.vocabulary.com/dictionary/champion)
-
-    someone who has won first place in a competition
-
-185.  [exceed](https://www.vocabulary.com/dictionary/exceed)
-
-    be or do something to a greater degree
-
-186.  [acceptance](https://www.vocabulary.com/dictionary/acceptance)
-
-    the state of being satisfactory
-
 187.  [NAFTA](https://www.vocabulary.com/dictionary/NAFTA)
 
     an agreement for free trade between the United States and Canada and Mexico; became effective in 1994 for ten years
@@ -1186,17 +1014,9 @@
 
     having concealed difficulty
 
-189.  [consume](https://www.vocabulary.com/dictionary/consume)
-
-    take in as food
-
 190.  [neutrality](https://www.vocabulary.com/dictionary/neutrality)
 
     nonparticipation in a dispute or war
-
-191.  [pipe](https://www.vocabulary.com/dictionary/pipe)
-
-    a hollow cylindrical shape
 
 192.  [enabling](https://www.vocabulary.com/dictionary/enabling)
 
