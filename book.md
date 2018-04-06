@@ -4519,65 +4519,17 @@
 
     spreading out in different directions
 
-131.  [frustrated](https://www.vocabulary.com/dictionary/frustrated)
-
-    disappointingly unsuccessful
-
-132.  [facility](https://www.vocabulary.com/dictionary/facility)
-
-    a building or place that provides a particular service
-
-133.  [tendency](https://www.vocabulary.com/dictionary/tendency)
-
-    an inclination to do something
-
-134.  [administration](https://www.vocabulary.com/dictionary/administration)
-
-    the act of governing or exercising authority
-
-135.  [eliminate](https://www.vocabulary.com/dictionary/eliminate)
-
-    end, take out, or do away with
-
 136.  [phenomenon](https://www.vocabulary.com/dictionary/phenomenon)
 
     any state or process known through the senses
-
-137.  [boundary](https://www.vocabulary.com/dictionary/boundary)
-
-    the line indicating the limit or extent of something
 
 138.  [spark](https://www.vocabulary.com/dictionary/spark)
 
     a small fragment of a burning substance
 
-139.  [commonly](https://www.vocabulary.com/dictionary/commonly)
-
-    under normal conditions
-
-140.  [constraint](https://www.vocabulary.com/dictionary/constraint)
-
-    the state of being physically limited
-
 141.  [resignation](https://www.vocabulary.com/dictionary/resignation)
 
     the act of giving up, as a claim or office or possession
-
-142.  [Latino](https://www.vocabulary.com/dictionary/Latino)
-
-    a native of Latin America
-
-143.  [demonstration](https://www.vocabulary.com/dictionary/demonstration)
-
-    a show or display
-
-144.  [aggressive](https://www.vocabulary.com/dictionary/aggressive)
-
-    characteristic of an enemy or one eager to fight
-
-145.  [convincing](https://www.vocabulary.com/dictionary/convincing)
-
-    causing one to believe the truth of something
 
 146.  [harp](https://www.vocabulary.com/dictionary/harp)
 
@@ -4591,65 +4543,17 @@
 
     any ideology favoring immoderate, uncompromising policies
 
-149.  [teenage](https://www.vocabulary.com/dictionary/teenage)
-
-    being of the age 13 through 19
-
-150.  [manage](https://www.vocabulary.com/dictionary/manage)
-
-    be in charge of, act on, or dispose of
-
-151.  [reverse](https://www.vocabulary.com/dictionary/reverse)
-
-    change to the contrary
-
 152.  [caliphate](https://www.vocabulary.com/dictionary/caliphate)
 
     the office of a Muslim civil and religious leader
-
-153.  [development](https://www.vocabulary.com/dictionary/development)
-
-    a process in which something passes to a different stage
-
-154.  [contain](https://www.vocabulary.com/dictionary/contain)
-
-    hold or have within
-
-155.  [PSA](https://www.vocabulary.com/dictionary/PSA)
-
-    a protein manufactured exclusively by the prostate gland
-
-156.  [cross](https://www.vocabulary.com/dictionary/cross)
-
-    a marking that consists of lines that intersect each other
-
-157.  [eventual](https://www.vocabulary.com/dictionary/eventual)
-
-    expected to follow in the indefinite future
 
 158.  [neutral](https://www.vocabulary.com/dictionary/neutral)
 
     having no personal preference
 
-159.  [enjoy](https://www.vocabulary.com/dictionary/enjoy)
-
-    derive or receive pleasure from
-
-160.  [staged](https://www.vocabulary.com/dictionary/staged)
-
-    deliberately arranged for effect
-
 161.  [embargo](https://www.vocabulary.com/dictionary/embargo)
 
     a government order imposing a trade barrier
-
-162.  [right](https://www.vocabulary.com/dictionary/right)
-
-    free from error; especially conforming to fact or truth
-
-163.  [automatically](https://www.vocabulary.com/dictionary/automatically)
-
-    in a mechanical manner; by a mechanism
 
 164.  [breach](https://www.vocabulary.com/dictionary/breach)
 
@@ -4659,10 +4563,6 @@
 
     make a pillaging or destructive raid on, as in wartimes
 
-166.  [Louisiana](https://www.vocabulary.com/dictionary/Louisiana)
-
-    a state in southern United States on the Gulf of Mexico
-
 167.  [liberalisation](https://www.vocabulary.com/dictionary/liberalisation)
 
     the act of making less strict
@@ -4670,10 +4570,6 @@
 168.  [hitherto](https://www.vocabulary.com/dictionary/hitherto)
 
     up to this point; until the present time
-
-169.  [strengthened](https://www.vocabulary.com/dictionary/strengthened)
-
-    given added strength or support
 
 170.  [dubious](https://www.vocabulary.com/dictionary/dubious)
 
@@ -4683,17 +4579,9 @@
 
     extremely impressive in strength or excellence
 
-172.  [stage](https://www.vocabulary.com/dictionary/stage)
-
-    any distinct time period in a sequence of events
-
 173.  [stagnation](https://www.vocabulary.com/dictionary/stagnation)
 
     a state of inactivity
-
-174.  [reactor](https://www.vocabulary.com/dictionary/reactor)
-
-    apparatus to maintain and control a nuclear reaction
 
 175.  [hint](https://www.vocabulary.com/dictionary/hint)
 
@@ -4706,22 +4594,6 @@
 177.  [defence](https://www.vocabulary.com/dictionary/defence)
 
     the act of shielding someone or something against attack
-
-178.  [ranking](https://www.vocabulary.com/dictionary/ranking)
-
-    position on a scale in relation to others
-
-179.  [provoke](https://www.vocabulary.com/dictionary/provoke)
-
-    provide the needed stimulus for
-
-180.  [impressed](https://www.vocabulary.com/dictionary/impressed)
-
-    deeply or markedly affected or influenced
-
-181.  [Columbia](https://www.vocabulary.com/dictionary/Columbia)
-
-    a North American river
 
 182.  [backer](https://www.vocabulary.com/dictionary/backer)
 
@@ -4739,45 +4611,17 @@
 
     careful attention
 
-186.  [commit](https://www.vocabulary.com/dictionary/commit)
-
-    engage in or perform
-
 187.  [unionist](https://www.vocabulary.com/dictionary/unionist)
 
     a worker who belongs to a trade union
-
-188.  [NGO](https://www.vocabulary.com/dictionary/NGO)
-
-    an organization that is not part of the local or state or federal government
-
-189.  [accompany](https://www.vocabulary.com/dictionary/accompany)
-
-    go or travel along with
 
 190.  [offence](https://www.vocabulary.com/dictionary/offence)
 
     a lack of politeness
 
-191.  [bear](https://www.vocabulary.com/dictionary/bear)
-
-    be pregnant with
-
 192.  [deposit](https://www.vocabulary.com/dictionary/deposit)
 
     the act of putting something somewhere
-
-193.  [Kentucky](https://www.vocabulary.com/dictionary/Kentucky)
-
-    a state in east central United States
-
-194.  [sweet](https://www.vocabulary.com/dictionary/sweet)
-
-    having or denoting the characteristic taste of sugar
-
-195.  [recall](https://www.vocabulary.com/dictionary/recall)
-
-    bring to mind
 
 196.  [canal](https://www.vocabulary.com/dictionary/canal)
 
@@ -4787,61 +4631,17 @@
 
     done under pressure
 
-198.  [researcher](https://www.vocabulary.com/dictionary/researcher)
-
-    a scientist devoted to systematic investigation
-
-199.  [grave](https://www.vocabulary.com/dictionary/grave)
-
-    a place for the burial of a corpse
-
 200.  [discontent](https://www.vocabulary.com/dictionary/discontent)
 
     a longing for something better than the present situation
-
-201.  [tired](https://www.vocabulary.com/dictionary/tired)
-
-    depleted of strength or energy
 
 202.  [sacked](https://www.vocabulary.com/dictionary/sacked)
 
     having been robbed and destroyed by force and violence
 
-203.  [attract](https://www.vocabulary.com/dictionary/attract)
-
-    exert a force on
-
-204.  [sufficient](https://www.vocabulary.com/dictionary/sufficient)
-
-    of a quantity that can fulfill a need or requirement
-
 205.  [memoir](https://www.vocabulary.com/dictionary/memoir)
 
     an account of the author's personal experiences
-
-206.  [diversity](https://www.vocabulary.com/dictionary/diversity)
-
-    noticeable variety
-
-207.  [Wayne](https://www.vocabulary.com/dictionary/Wayne)
-
-    United States film actor who played tough heroes (1907-1979)
-
-208.  [immigration](https://www.vocabulary.com/dictionary/immigration)
-
-    movement of persons into a place
-
-209.  [arrangement](https://www.vocabulary.com/dictionary/arrangement)
-
-    an orderly grouping considered as a unit
-
-210.  [destination](https://www.vocabulary.com/dictionary/destination)
-
-    the place designated as the end, as of a race or journey
-
-211.  [demographic](https://www.vocabulary.com/dictionary/demographic)
-
-    a statistic characterizing human populations
 
 212.  [crew](https://www.vocabulary.com/dictionary/crew)
 
@@ -4855,45 +4655,13 @@
 
     the selling of goods to merchants
 
-215.  [limit](https://www.vocabulary.com/dictionary/limit)
-
-    as far as something can go
-
-216.  [success](https://www.vocabulary.com/dictionary/success)
-
-    an event that accomplishes its intended purpose
-
-217.  [gender](https://www.vocabulary.com/dictionary/gender)
-
-    the biological or cultural traits associated with one sex
-
-218.  [ensure](https://www.vocabulary.com/dictionary/ensure)
-
-    make certain of
-
 219.  [commerce](https://www.vocabulary.com/dictionary/commerce)
 
     transactions supplying goods and services
 
-220.  [Daniel](https://www.vocabulary.com/dictionary/Daniel)
-
-    an Old Testament book that tells of the apocalyptic visions and the experiences of Daniel in the court of Nebuchadnezzar
-
 221.  [equity](https://www.vocabulary.com/dictionary/equity)
 
     conformity with rules or standards
-
-222.  [advocate](https://www.vocabulary.com/dictionary/advocate)
-
-    a person who pleads for a person, cause, or idea
-
-223.  [discourage](https://www.vocabulary.com/dictionary/discourage)
-
-    try to prevent; show opposition to
-
-224.  [trust](https://www.vocabulary.com/dictionary/trust)
-
-    belief in the honesty and reliability of others
 
 225.  [supreme](https://www.vocabulary.com/dictionary/supreme)
 
@@ -4903,10 +4671,6 @@
 
     rise and move, as in waves or billows
 
-227.  [intention](https://www.vocabulary.com/dictionary/intention)
-
-    an anticipated outcome that guides your planned actions
-
 228.  [orbit](https://www.vocabulary.com/dictionary/orbit)
 
     the path of a celestial body in its revolution about another
@@ -4915,41 +4679,9 @@
 
     pathetically lacking in force or effectiveness
 
-230.  [obscure](https://www.vocabulary.com/dictionary/obscure)
-
-    not clearly understood or expressed
-
-231.  [reference](https://www.vocabulary.com/dictionary/reference)
-
-    the act of consulting
-
-232.  [subsequently](https://www.vocabulary.com/dictionary/subsequently)
-
-    happening at a time later than another time
-
-233.  [educational](https://www.vocabulary.com/dictionary/educational)
-
-    relating to the process of instruction
-
 234.  [sprawl](https://www.vocabulary.com/dictionary/sprawl)
 
     sit or lie with one's limbs spread out
-
-235.  [pass](https://www.vocabulary.com/dictionary/pass)
-
-    go across or through
-
-236.  [element](https://www.vocabulary.com/dictionary/element)
-
-    a substance that cannot be separated into simpler substances
-
-237.  [regulate](https://www.vocabulary.com/dictionary/regulate)
-
-    bring into conformity with rules or principles or usage
-
-238.  [technique](https://www.vocabulary.com/dictionary/technique)
-
-    a practical method or art applied to some particular task
 
 239.  [embassy](https://www.vocabulary.com/dictionary/embassy)
 
@@ -4958,10 +4690,6 @@
 240.  [stick](https://www.vocabulary.com/dictionary/stick)
 
     a long thin implement resembling a length of wood
-
-241.  [mystery](https://www.vocabulary.com/dictionary/mystery)
-
-    something that baffles understanding and cannot be explained
 
 242.  [lorry](https://www.vocabulary.com/dictionary/lorry)
 
@@ -4975,110 +4703,18 @@
 
     make a sharp explosive noise
 
-245.  [occur](https://www.vocabulary.com/dictionary/occur)
-
-    come to pass
-
 246.  [pack](https://www.vocabulary.com/dictionary/pack)
 
     a convenient package or parcel (as of cigarettes or film)
-
-247.  [heritage](https://www.vocabulary.com/dictionary/heritage)
-
-    that which is inherited
 
 248.  [militia](https://www.vocabulary.com/dictionary/militia)
 
     civilians trained as soldiers, not part of the regular army
 
-249.  [acknowledge](https://www.vocabulary.com/dictionary/acknowledge)
-
-    declare to be true or admit the existence or reality of
-
 250.  [malaria](https://www.vocabulary.com/dictionary/malaria)
 
     a disease caused by parasites transmitted by mosquito bite
 
-
-1.  [subsequently](https://www.vocabulary.com/dictionary/subsequently)
-
-    happening at a time later than another time
-
-2.  [educational](https://www.vocabulary.com/dictionary/educational)
-
-    relating to the process of instruction
-
-3.  [sprawl](https://www.vocabulary.com/dictionary/sprawl)
-
-    sit or lie with one's limbs spread out
-
-4.  [pass](https://www.vocabulary.com/dictionary/pass)
-
-    go across or through
-
-5.  [element](https://www.vocabulary.com/dictionary/element)
-
-    a substance that cannot be separated into simpler substances
-
-6.  [regulate](https://www.vocabulary.com/dictionary/regulate)
-
-    bring into conformity with rules or principles or usage
-
-7.  [technique](https://www.vocabulary.com/dictionary/technique)
-
-    a practical method or art applied to some particular task
-
-8.  [embassy](https://www.vocabulary.com/dictionary/embassy)
-
-    a building where diplomats live or work
-
-9.  [stick](https://www.vocabulary.com/dictionary/stick)
-
-    a long thin implement resembling a length of wood
-
-10.  [mystery](https://www.vocabulary.com/dictionary/mystery)
-
-    something that baffles understanding and cannot be explained
-
-11.  [lorry](https://www.vocabulary.com/dictionary/lorry)
-
-    a large low horse-drawn wagon without sides
-
-12.  [boast](https://www.vocabulary.com/dictionary/boast)
-
-    talk about oneself with excessive pride or self-regard
-
-13.  [pop](https://www.vocabulary.com/dictionary/pop)
-
-    make a sharp explosive noise
-
-14.  [occur](https://www.vocabulary.com/dictionary/occur)
-
-    come to pass
-
-15.  [pack](https://www.vocabulary.com/dictionary/pack)
-
-    a convenient package or parcel (as of cigarettes or film)
-
-16.  [heritage](https://www.vocabulary.com/dictionary/heritage)
-
-    that which is inherited
-
-17.  [militia](https://www.vocabulary.com/dictionary/militia)
-
-    civilians trained as soldiers, not part of the regular army
-
-18.  [acknowledge](https://www.vocabulary.com/dictionary/acknowledge)
-
-    declare to be true or admit the existence or reality of
-
-19.  [malaria](https://www.vocabulary.com/dictionary/malaria)
-
-    a disease caused by parasites transmitted by mosquito bite
-
-20.  [guarantee](https://www.vocabulary.com/dictionary/guarantee)
-
-    an unconditional commitment that something will happen
 
 21.  [compliance](https://www.vocabulary.com/dictionary/compliance)
 
@@ -5096,105 +4732,37 @@
 
     relating to preparing and dispensing drugs and medicines
 
-25.  [Nobel](https://www.vocabulary.com/dictionary/Nobel)
-
-    Swedish chemist remembered for his invention of dynamite and for the bequest that created the Nobel prizes (1833-1896)
-
-26.  [exhibition](https://www.vocabulary.com/dictionary/exhibition)
-
-    the act of displaying or demonstrating
-
 27.  [tolerance](https://www.vocabulary.com/dictionary/tolerance)
 
     willingness to respect the beliefs or practices of others
-
-28.  [provoke](https://www.vocabulary.com/dictionary/provoke)
-
-    provide the needed stimulus for
-
-29.  [obligation](https://www.vocabulary.com/dictionary/obligation)
-
-    the state of being bound to do or pay something
 
 30.  [bureau](https://www.vocabulary.com/dictionary/bureau)
 
     an administrative unit of government
 
-31.  [high](https://www.vocabulary.com/dictionary/high)
-
-    being at or having a relatively great or specific elevation
-
-32.  [tech](https://www.vocabulary.com/dictionary/tech)
-
-    a school teaching mechanical and industrial arts and the applied sciences
-
 33.  [bonus](https://www.vocabulary.com/dictionary/bonus)
 
     an additional payment (or other remuneration) to employees as a means of increasing output
-
-34.  [Santa](https://www.vocabulary.com/dictionary/Santa)
-
-    the legendary patron saint of children
 
 35.  [broadband](https://www.vocabulary.com/dictionary/broadband)
 
     responding to or operating at a wide band of frequencies
 
-36.  [Liverpool](https://www.vocabulary.com/dictionary/Liverpool)
-
-    a large city in northwestern England
-
-37.  [Carlos](https://www.vocabulary.com/dictionary/Carlos)
-
-    Venezuelan master terrorist raised by a Marxist-Leninist father; trained and worked with many terrorist groups (born in 1949)
-
-38.  [second](https://www.vocabulary.com/dictionary/second)
-
-    coming next after the first in position in space or time
-
-39.  [large](https://www.vocabulary.com/dictionary/large)
-
-    above average in size or number or quantity or magnitude
-
 40.  [asylum](https://www.vocabulary.com/dictionary/asylum)
 
     a shelter from danger or hardship
-
-41.  [seeker](https://www.vocabulary.com/dictionary/seeker)
-
-    someone making a search or inquiry
 
 42.  [owe](https://www.vocabulary.com/dictionary/owe)
 
     be obliged to pay or repay
 
-43.  [appointment](https://www.vocabulary.com/dictionary/appointment)
-
-    a meeting arranged in advance
-
-44.  [volatile](https://www.vocabulary.com/dictionary/volatile)
-
-    liable to lead to sudden change or violence
-
-45.  [Nelson](https://www.vocabulary.com/dictionary/Nelson)
-
-    English admiral who defeated the French fleets of Napoleon but was mortally wounded at Trafalgar (1758-1805)
-
 46.  [lobby](https://www.vocabulary.com/dictionary/lobby)
 
     a large entrance or reception room or area
 
-47.  [convention](https://www.vocabulary.com/dictionary/convention)
-
-    the act of meeting formally
-
 48.  [condemn](https://www.vocabulary.com/dictionary/condemn)
 
     express strong disapproval of
-
-49.  [calculation](https://www.vocabulary.com/dictionary/calculation)
-
-    determination by mathematical or logical methods
 
 50.  [warren](https://www.vocabulary.com/dictionary/warren)
 
@@ -5212,10 +4780,6 @@
 
     occurring or increasing in an unrestrained way
 
-54.  [troubling](https://www.vocabulary.com/dictionary/troubling)
-
-    causing distress, worry, or anxiety
-
 55.  [rocket](https://www.vocabulary.com/dictionary/rocket)
 
     a jet engine containing its own propellant and driven by reaction propulsion
@@ -5224,117 +4788,37 @@
 
     of or relating to a subdivision of a larger religious group
 
-57.  [fixing](https://www.vocabulary.com/dictionary/fixing)
-
-    the act of putting something in working order again
-
-58.  [concentrate](https://www.vocabulary.com/dictionary/concentrate)
-
-    make denser, stronger, or purer
-
-59.  [tend](https://www.vocabulary.com/dictionary/tend)
-
-    have a disposition to do or be something; be inclined
-
 60.  [insurgent](https://www.vocabulary.com/dictionary/insurgent)
 
     in opposition to a civil authority or government
-
-61.  [Stanford](https://www.vocabulary.com/dictionary/Stanford)
-
-    a university in California
-
-62.  [announce](https://www.vocabulary.com/dictionary/announce)
-
-    make known
-
-63.  [reflect](https://www.vocabulary.com/dictionary/reflect)
-
-    throw or bend back from a surface
-
-64.  [encourage](https://www.vocabulary.com/dictionary/encourage)
-
-    inspire with confidence
 
 65.  [statistical](https://www.vocabulary.com/dictionary/statistical)
 
     of or relating to the interpretation of quantitative data
 
-66.  [refer](https://www.vocabulary.com/dictionary/refer)
-
-    make a remark that calls attention to
-
-67.  [radiation](https://www.vocabulary.com/dictionary/radiation)
-
-    the act of spreading outward from a central source
-
-68.  [economic](https://www.vocabulary.com/dictionary/economic)
-
-    of or relating to production and management of wealth
-
-69.  [biological](https://www.vocabulary.com/dictionary/biological)
-
-    pertaining to life and living things
-
-70.  [profile](https://www.vocabulary.com/dictionary/profile)
-
-    an outline of something, especially a face from the side
-
 71.  [pilot](https://www.vocabulary.com/dictionary/pilot)
 
     someone who is licensed to operate an aircraft in flight
-
-72.  [horror](https://www.vocabulary.com/dictionary/horror)
-
-    intense and profound fear
-
-73.  [Kurdistan](https://www.vocabulary.com/dictionary/Kurdistan)
-
-    an extensive geographical region in the Middle East to the south of the Caucasus
 
 74.  [erupt](https://www.vocabulary.com/dictionary/erupt)
 
     start suddenly
 
-75.  [conversation](https://www.vocabulary.com/dictionary/conversation)
-
-    the use of speech for informal exchange of views or ideas
-
-76.  [Hampshire](https://www.vocabulary.com/dictionary/Hampshire)
-
-    a county of southern England on the English Channel
-
 77.  [oust](https://www.vocabulary.com/dictionary/oust)
 
     remove from a position or office
-
-78.  [clinic](https://www.vocabulary.com/dictionary/clinic)
-
-    a medical establishment run by a group of specialists
 
 79.  [canal](https://www.vocabulary.com/dictionary/canal)
 
     long and narrow strip of water for boats or for irrigation
 
-80.  [ferry](https://www.vocabulary.com/dictionary/ferry)
-
-    a boat transporting people or vehicles over a body of water
-
 81.  [enduring](https://www.vocabulary.com/dictionary/enduring)
 
     unceasing
 
-82.  [Uighur](https://www.vocabulary.com/dictionary/Uighur)
-
-    a member of a people who speak Uighur and live in Xinjiang and adjacent areas
-
 83.  [pricey](https://www.vocabulary.com/dictionary/pricey)
 
     having a high price
-
-84.  [Catalan](https://www.vocabulary.com/dictionary/Catalan)
-
-    the Romance language spoken in Catalonia in eastern Spain
 
 85.  [siege](https://www.vocabulary.com/dictionary/siege)
 
@@ -5348,10 +4832,6 @@
 
     a group of symbols that make a mathematical statement
 
-88.  [compare](https://www.vocabulary.com/dictionary/compare)
-
-    examine and note the similarities or differences of
-
 89.  [holocaust](https://www.vocabulary.com/dictionary/holocaust)
 
     an act of mass destruction and loss of life
@@ -5360,33 +4840,13 @@
 
     injection of weakened or dead microbes to create antibodies
 
-91.  [protein](https://www.vocabulary.com/dictionary/protein)
-
-    an organic compound essential to living cells
-
 92.  [spectacular](https://www.vocabulary.com/dictionary/spectacular)
 
     sensational in appearance or thrilling in effect
 
-93.  [chapter](https://www.vocabulary.com/dictionary/chapter)
-
-    a subdivision of a written work; usually numbered and titled
-
-94.  [strategy](https://www.vocabulary.com/dictionary/strategy)
-
-    an elaborate and systematic plan of action
-
 95.  [inflation](https://www.vocabulary.com/dictionary/inflation)
 
     the act of filling something with air
-
-96.  [ranging](https://www.vocabulary.com/dictionary/ranging)
-
-    wandering freely
-
-97.  [category](https://www.vocabulary.com/dictionary/category)
-
-    a general concept that marks divisions or coordinations
 
 98.  [interim](https://www.vocabulary.com/dictionary/interim)
 
@@ -5396,33 +4856,13 @@
 
     a prisoner held to insure that another party will meet terms
 
-100.  [borrow](https://www.vocabulary.com/dictionary/borrow)
-
-    get temporarily
-
-101.  [working](https://www.vocabulary.com/dictionary/working)
-
-    a mine or quarry that is being or has been worked
-
-102.  [age](https://www.vocabulary.com/dictionary/age)
-
-    how long something has existed
-
 103.  [faction](https://www.vocabulary.com/dictionary/faction)
 
     a dissenting clique
 
-104.  [Algeria](https://www.vocabulary.com/dictionary/Algeria)
-
-    a republic in northwestern Africa on the Mediterranean Sea with a population that is predominantly Sunni Muslim; colonized by France in the 19th century but gained autonomy in the early 1960s
-
 105.  [cheer](https://www.vocabulary.com/dictionary/cheer)
 
     a cry or shout of approval
-
-106.  [quarterly](https://www.vocabulary.com/dictionary/quarterly)
-
-    of or relating to or consisting of a quarter
 
 107.  [overwhelming](https://www.vocabulary.com/dictionary/overwhelming)
 
@@ -5432,29 +4872,13 @@
 
     run away quickly
 
-109.  [grant](https://www.vocabulary.com/dictionary/grant)
-
-    let have
-
 110.  [refugee](https://www.vocabulary.com/dictionary/refugee)
 
     an exile who flees for safety
 
-111.  [legally](https://www.vocabulary.com/dictionary/legally)
-
-    by law; conforming to the law
-
 112.  [imposing](https://www.vocabulary.com/dictionary/imposing)
 
     befitting an eminent person
-
-113.  [enjoy](https://www.vocabulary.com/dictionary/enjoy)
-
-    derive or receive pleasure from
-
-114.  [serve](https://www.vocabulary.com/dictionary/serve)
-
-    devote one's life or efforts to, as of countries or ideas
 
 115.  [closest](https://www.vocabulary.com/dictionary/closest)
 
@@ -5464,73 +4888,25 @@
 
     make amends for
 
-117.  [temporarily](https://www.vocabulary.com/dictionary/temporarily)
-
-    for a limited time only; not permanently
-
-118.  [Elizabeth](https://www.vocabulary.com/dictionary/Elizabeth)
-
-    daughter of George VI who became the Queen of England and Northern Ireland in 1952 on the death of her father (1926-)
-
-119.  [Wisconsin](https://www.vocabulary.com/dictionary/Wisconsin)
-
-    a midwestern state in north central United States
-
-120.  [excuse](https://www.vocabulary.com/dictionary/excuse)
-
-    a defense of some offensive behavior
-
 121.  [reveal](https://www.vocabulary.com/dictionary/reveal)
 
     make visible
-
-122.  [operate](https://www.vocabulary.com/dictionary/operate)
-
-    perform as expected when applied
 
 123.  [fraction](https://www.vocabulary.com/dictionary/fraction)
 
     a small part or item forming a piece of a whole
 
-124.  [enthusiastic](https://www.vocabulary.com/dictionary/enthusiastic)
-
-    having or showing great excitement and interest
-
 125.  [dire](https://www.vocabulary.com/dictionary/dire)
 
     fraught with extreme danger; nearly hopeless
-
-126.  [Nazi](https://www.vocabulary.com/dictionary/Nazi)
-
-    a German member of Adolf Hitler's political party
 
 127.  [implication](https://www.vocabulary.com/dictionary/implication)
 
     something that is inferred
 
-128.  [insist](https://www.vocabulary.com/dictionary/insist)
-
-    be emphatic or resolute and refuse to budge
-
-129.  [throw](https://www.vocabulary.com/dictionary/throw)
-
-    propel through the air
-
 130.  [devolve](https://www.vocabulary.com/dictionary/devolve)
 
     pass on or delegate to another
-
-131.  [culture](https://www.vocabulary.com/dictionary/culture)
-
-    all the knowledge and values shared by a society
-
-132.  [unexpectedly](https://www.vocabulary.com/dictionary/unexpectedly)
-
-    in a way that was not expected
-
-133.  [regain](https://www.vocabulary.com/dictionary/regain)
-
-    get or find back; recover the use of
 
 134.  [shortfall](https://www.vocabulary.com/dictionary/shortfall)
 
@@ -5539,10 +4915,6 @@
 135.  [viable](https://www.vocabulary.com/dictionary/viable)
 
     capable of life or normal growth and development
-
-136.  [tighten](https://www.vocabulary.com/dictionary/tighten)
-
-    make tight or tighter
 
 137.  [undermine](https://www.vocabulary.com/dictionary/undermine)
 
@@ -5556,65 +4928,13 @@
 
     the probability of a specified outcome
 
-140.  [fancy](https://www.vocabulary.com/dictionary/fancy)
-
-    not plain; decorative or ornamented
-
-141.  [permit](https://www.vocabulary.com/dictionary/permit)
-
-    allow the presence of or allow without opposing
-
-142.  [observation](https://www.vocabulary.com/dictionary/observation)
-
-    the act of taking a patient look
-
-143.  [designer](https://www.vocabulary.com/dictionary/designer)
-
-    someone who creates plans to be used in making something
-
-144.  [trace](https://www.vocabulary.com/dictionary/trace)
-
-    an indication that something has been present
-
-145.  [landed](https://www.vocabulary.com/dictionary/landed)
-
-    owning or consisting of land or real estate
-
 146.  [mount](https://www.vocabulary.com/dictionary/mount)
 
     go up, advance, or increase
 
-147.  [messy](https://www.vocabulary.com/dictionary/messy)
-
-    dirty and disorderly
-
-148.  [industrial](https://www.vocabulary.com/dictionary/industrial)
-
-    of or relating to commercial enterprise
-
-149.  [deciding](https://www.vocabulary.com/dictionary/deciding)
-
-    the cognitive process of reaching a decision
-
-150.  [ignore](https://www.vocabulary.com/dictionary/ignore)
-
-    refuse to acknowledge
-
-151.  [protection](https://www.vocabulary.com/dictionary/protection)
-
-    the activity of shielding someone or something
-
 152.  [amnesty](https://www.vocabulary.com/dictionary/amnesty)
 
     a warrant granting release from punishment for an offense
-
-153.  [non](https://www.vocabulary.com/dictionary/non)
-
-    negation of a word or group of words
-
-154.  [profit](https://www.vocabulary.com/dictionary/profit)
-
-    the advantageous quality of being beneficial
 
 155.  [mall](https://www.vocabulary.com/dictionary/mall)
 
@@ -5628,10 +4948,6 @@
 
     responsibility to someone or for some activity
 
-158.  [Hugo](https://www.vocabulary.com/dictionary/Hugo)
-
-    French poet and novelist and dramatist
-
 159.  [windfall](https://www.vocabulary.com/dictionary/windfall)
 
     a sudden happening that brings good fortune
@@ -5640,73 +4956,25 @@
 
     action taken in return for an injury or offense
 
-161.  [declaration](https://www.vocabulary.com/dictionary/declaration)
-
-    a statement that is emphatic and explicit
-
 162.  [collaboration](https://www.vocabulary.com/dictionary/collaboration)
 
     act of working jointly
-
-163.  [tight](https://www.vocabulary.com/dictionary/tight)
-
-    closely constrained or constricted or constricting
-
-164.  [convenient](https://www.vocabulary.com/dictionary/convenient)
-
-    suited to your comfort or purpose or needs
-
-165.  [strict](https://www.vocabulary.com/dictionary/strict)
-
-    rigidly accurate; allowing no deviation from a standard
-
-166.  [Zimbabwe](https://www.vocabulary.com/dictionary/Zimbabwe)
-
-    a landlocked republic in south central Africa formerly called Rhodesia; achieved independence from the United Kingdom in 1980
-
-167.  [Okinawa](https://www.vocabulary.com/dictionary/Okinawa)
-
-    the largest island of the central Ryukyu Islands
-
-168.  [Edinburgh](https://www.vocabulary.com/dictionary/Edinburgh)
-
-    the capital of Scotland
 
 169.  [leap](https://www.vocabulary.com/dictionary/leap)
 
     move forward by bounds
 
-170.  [Carnegie](https://www.vocabulary.com/dictionary/Carnegie)
-
-    United States industrialist and philanthropist who endowed education and public libraries and research trusts (1835-1919)
-
 171.  [recruit](https://www.vocabulary.com/dictionary/recruit)
 
     cause to assemble or enlist in the military
-
-172.  [classic](https://www.vocabulary.com/dictionary/classic)
-
-    of recognized authority or excellence
 
 173.  [scratch](https://www.vocabulary.com/dictionary/scratch)
 
     cut, scrape, or wear away the surface of
 
-174.  [gap](https://www.vocabulary.com/dictionary/gap)
-
-    an open or empty space in or between things
-
 175.  [offence](https://www.vocabulary.com/dictionary/offence)
 
     a lack of politeness
-
-176.  [homeless](https://www.vocabulary.com/dictionary/homeless)
-
-    without nationality or citizenship
-
-177.  [Churchill](https://www.vocabulary.com/dictionary/Churchill)
-
-    English general considered one of the greatest generals in history (1650-1722)
 
 178.  [belonging](https://www.vocabulary.com/dictionary/belonging)
 
@@ -5720,45 +4988,13 @@
 
     the material that forms the hard outer covering of many animals
 
-181.  [architect](https://www.vocabulary.com/dictionary/architect)
-
-    someone who creates plans to be used in making something
-
-182.  [wheel](https://www.vocabulary.com/dictionary/wheel)
-
-    a simple machine consisting of a circular frame with spokes (or a solid disc) that can rotate on a shaft or axle (as in vehicles or other machines)
-
-183.  [translate](https://www.vocabulary.com/dictionary/translate)
-
-    restate from one language into another language
-
-184.  [actor](https://www.vocabulary.com/dictionary/actor)
-
-    a performer in theater, television, or film
-
-185.  [robot](https://www.vocabulary.com/dictionary/robot)
-
-    a mechanism that can move automatically
-
-186.  [unwilling](https://www.vocabulary.com/dictionary/unwilling)
-
-    not disposed or inclined toward
-
 187.  [raid](https://www.vocabulary.com/dictionary/raid)
 
     a sudden short attack
 
-188.  [traveller](https://www.vocabulary.com/dictionary/traveller)
-
-    a person who changes location
-
 189.  [turbine](https://www.vocabulary.com/dictionary/turbine)
 
     an engine that causes a bladed rotor to rotate
-
-190.  [offspring](https://www.vocabulary.com/dictionary/offspring)
-
-    the immediate descendants of a person
 
 191.  [misery](https://www.vocabulary.com/dictionary/misery)
 
