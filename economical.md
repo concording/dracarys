@@ -4998,10 +4998,6 @@
 
     secure and keep for possible future use or application
 
-60.  [nationality](https://www.vocabulary.com/dictionary/nationality)
-
-    the status of belonging to a particular country
-
 61.  [defy](https://www.vocabulary.com/dictionary/defy)
 
     resist or confront with resistance
@@ -5014,21 +5010,9 @@
 
     to stress, single out as important
 
-64.  [alert](https://www.vocabulary.com/dictionary/alert)
-
-    warn or arouse to a sense of danger
-
 65.  [fitness](https://www.vocabulary.com/dictionary/fitness)
 
     the quality of being suitable
-
-66.  [expectation](https://www.vocabulary.com/dictionary/expectation)
-
-    belief about the future
-
-67.  [sequence](https://www.vocabulary.com/dictionary/sequence)
-
-    a following of one thing after another in time
 
 68.  [parity](https://www.vocabulary.com/dictionary/parity)
 
@@ -5046,17 +5030,9 @@
 
     termination of operations
 
-72.  [firepower](https://www.vocabulary.com/dictionary/firepower)
-
-    the relative capacity for delivering fire on a target
-
 73.  [outpost](https://www.vocabulary.com/dictionary/outpost)
 
     a military post stationed at a distance from the main body of troops
-
-74.  [Ricardo](https://www.vocabulary.com/dictionary/Ricardo)
-
-    English economist who argued that the laws of supply and demand should operate in a free market (1772-1823)
 
 75.  [jazz](https://www.vocabulary.com/dictionary/jazz)
 
@@ -5066,21 +5042,9 @@
 
     the child of your aunt or uncle
 
-77.  [connect](https://www.vocabulary.com/dictionary/connect)
-
-    fasten or put together two or more pieces
-
 78.  [bar](https://www.vocabulary.com/dictionary/bar)
 
     a rigid piece of metal or wood
-
-79.  [loosening](https://www.vocabulary.com/dictionary/loosening)
-
-    the act of making something less tight
-
-80.  [reshape](https://www.vocabulary.com/dictionary/reshape)
-
-    shape anew or differently
 
 81.  [pin](https://www.vocabulary.com/dictionary/pin)
 
@@ -5094,61 +5058,13 @@
 
     emptying something by allowing liquid to run out of it
 
-84.  [propose](https://www.vocabulary.com/dictionary/propose)
-
-    present for consideration, examination, or criticism
-
-85.  [military](https://www.vocabulary.com/dictionary/military)
-
-    the armed forces of a nation
-
-86.  [broaden](https://www.vocabulary.com/dictionary/broaden)
-
-    make broader
-
-87.  [celebration](https://www.vocabulary.com/dictionary/celebration)
-
-    a joyful occasion for festivities to mark some happy event
-
-88.  [cracked](https://www.vocabulary.com/dictionary/cracked)
-
-    of paint or varnish; having the appearance of alligator hide
-
 89.  [tweet](https://www.vocabulary.com/dictionary/tweet)
 
     a weak chirping sound as of a small bird
 
-90.  [cast](https://www.vocabulary.com/dictionary/cast)
-
-    put or send forth
-
 91.  [tout](https://www.vocabulary.com/dictionary/tout)
 
     advertise in strongly positive terms
-
-92.  [high](https://www.vocabulary.com/dictionary/high)
-
-    being at or having a relatively great or specific elevation
-
-93.  [assist](https://www.vocabulary.com/dictionary/assist)
-
-    give help; be of service
-
-94.  [protectionist](https://www.vocabulary.com/dictionary/protectionist)
-
-    an advocate of protectionism
-
-95.  [Latvia](https://www.vocabulary.com/dictionary/Latvia)
-
-    a republic in northeastern Europe on the eastern coast of the Baltic Sea
-
-96.  [I](https://www.vocabulary.com/dictionary/I)
-
-    the 9th letter of the Roman alphabet
-
-97.  [Rand](https://www.vocabulary.com/dictionary/Rand)
-
-    a rocky region in the southern Transvaal in northeastern South Africa; contains rich gold deposits and coal and manganese
 
 98.  [concession](https://www.vocabulary.com/dictionary/concession)
 
@@ -5157,14 +5073,6 @@
 99.  [ruin](https://www.vocabulary.com/dictionary/ruin)
 
     an irrecoverable state of devastation and destruction
-
-100.  [endangered](https://www.vocabulary.com/dictionary/endangered)
-
-    in imminent threat of extinction
-
-101.  [Senegal](https://www.vocabulary.com/dictionary/Senegal)
-
-    a republic in northwestern Africa on the coast of the Atlantic; formerly a French colony but achieved independence in 1960
 
 102.  [flavour](https://www.vocabulary.com/dictionary/flavour)
 
@@ -5178,33 +5086,17 @@
 
     all the knowledge and values shared by a society
 
-105.  [inject](https://www.vocabulary.com/dictionary/inject)
-
-    force or drive (a fluid or gas) into by piercing
-
 106.  [contend](https://www.vocabulary.com/dictionary/contend)
 
     compete for something
-
-107.  [satisfied](https://www.vocabulary.com/dictionary/satisfied)
-
-    filled with contentment
 
 108.  [plight](https://www.vocabulary.com/dictionary/plight)
 
     a situation from which extrication is difficult
 
-109.  [environmentalist](https://www.vocabulary.com/dictionary/environmentalist)
-
-    someone who works to protect nature from destruction
-
 110.  [eruption](https://www.vocabulary.com/dictionary/eruption)
 
     the sudden occurrence of a violent discharge
-
-111.  [Yangon](https://www.vocabulary.com/dictionary/Yangon)
-
-    the capital and largest city of Myanmar
 
 112.  [outweigh](https://www.vocabulary.com/dictionary/outweigh)
 
@@ -5213,14 +5105,6 @@
 113.  [preliminary](https://www.vocabulary.com/dictionary/preliminary)
 
     preceding or in preparation for something more important
-
-114.  [essay](https://www.vocabulary.com/dictionary/essay)
-
-    an analytic or interpretive literary composition
-
-115.  [emphasised](https://www.vocabulary.com/dictionary/emphasised)
-
-    spoken with emphasis
 
 116.  [lag](https://www.vocabulary.com/dictionary/lag)
 
@@ -5234,10 +5118,6 @@
 
     inconsistent with reason or logic or common sense
 
-119.  [Hathaway](https://www.vocabulary.com/dictionary/Hathaway)
-
-    wife of William Shakespeare (1556-1623)
-
 120.  [sterling](https://www.vocabulary.com/dictionary/sterling)
 
     highest in quality
@@ -5245,10 +5125,6 @@
 121.  [stump](https://www.vocabulary.com/dictionary/stump)
 
     the base part that remains after a tree has been felled
-
-122.  [photograph](https://www.vocabulary.com/dictionary/photograph)
-
-    a representation of a person or scene in the form of a print
 
 123.  [buck](https://www.vocabulary.com/dictionary/buck)
 
@@ -5270,22 +5146,6 @@
 
     sun-dried brick used in hot dry climates
 
-128.  [Friend](https://www.vocabulary.com/dictionary/Friend)
-
-    a member of the Religious Society of Friends founded by George Fox (the Friends have never called themselves Quakers)
-
-129.  [horizon](https://www.vocabulary.com/dictionary/horizon)
-
-    the line at which the sky and Earth appear to meet
-
-130.  [resource](https://www.vocabulary.com/dictionary/resource)
-
-    aid or support that may be drawn upon when needed
-
-131.  [slowest](https://www.vocabulary.com/dictionary/slowest)
-
-    most slowly
-
 132.  [projection](https://www.vocabulary.com/dictionary/projection)
 
     the act of expelling or ejecting
@@ -5294,21 +5154,9 @@
 
     fall down, as if collapsing
 
-134.  [input](https://www.vocabulary.com/dictionary/input)
-
-    signal going into an electronic system
-
-135.  [split](https://www.vocabulary.com/dictionary/split)
-
-    separate into parts or portions
-
 136.  [cognitive](https://www.vocabulary.com/dictionary/cognitive)
 
     relating to or involving the mental process of knowing
-
-137.  [tinker](https://www.vocabulary.com/dictionary/tinker)
-
-    do random, unplanned work or activities or spend time idly
 
 138.  [psychology](https://www.vocabulary.com/dictionary/psychology)
 
@@ -5318,37 +5166,13 @@
 
     a process of becoming deeper and more profound
 
-140.  [packaged](https://www.vocabulary.com/dictionary/packaged)
-
-    enclosed in a package or protective covering
-
 141.  [notwithstanding](https://www.vocabulary.com/dictionary/notwithstanding)
 
     despite anything to the contrary
 
-142.  [proceed](https://www.vocabulary.com/dictionary/proceed)
-
-    move ahead; travel onward in time or space
-
-143.  [physical](https://www.vocabulary.com/dictionary/physical)
-
-    involving the body as distinguished from the mind or spirit
-
-144.  [consideration](https://www.vocabulary.com/dictionary/consideration)
-
-    the process of giving careful thought to something
-
 145.  [bully](https://www.vocabulary.com/dictionary/bully)
 
     discourage or frighten with threats or a domineering manner
-
-146.  [violate](https://www.vocabulary.com/dictionary/violate)
-
-    fail to agree with; go against
-
-147.  [protection](https://www.vocabulary.com/dictionary/protection)
-
-    the activity of shielding someone or something
 
 148.  [culprit](https://www.vocabulary.com/dictionary/culprit)
 
@@ -5358,14 +5182,6 @@
 
     become or cause to become soft or liquid
 
-150.  [Morris](https://www.vocabulary.com/dictionary/Morris)
-
-    United States statesman who led the committee that produced the final draft of the United States Constitution (1752-1816)
-
-151.  [absolutely](https://www.vocabulary.com/dictionary/absolutely)
-
-    totally and definitely; without question
-
 152.  [tribunal](https://www.vocabulary.com/dictionary/tribunal)
 
     an assembly to conduct judicial business
@@ -5374,17 +5190,9 @@
 
     the act of taking something apart (as a piece of machinery)
 
-154.  [cough](https://www.vocabulary.com/dictionary/cough)
-
-    a sudden noisy expulsion of air from the lungs that clears the air passages; a common symptom of upper respiratory infection or bronchitis or pneumonia or tuberculosis
-
 155.  [bonanza](https://www.vocabulary.com/dictionary/bonanza)
 
     a sudden happening that brings good fortune
-
-156.  [painfully](https://www.vocabulary.com/dictionary/painfully)
-
-    unpleasantly
 
 157.  [venue](https://www.vocabulary.com/dictionary/venue)
 
@@ -5398,26 +5206,6 @@
 
     the material that forms the hard outer covering of many animals
 
-160.  [terribly](https://www.vocabulary.com/dictionary/terribly)
-
-    in a terrible manner
-
-161.  [glasses](https://www.vocabulary.com/dictionary/glasses)
-
-    optical instrument consisting of a frame that holds a pair of lenses for correcting defective vision
-
-162.  [wise](https://www.vocabulary.com/dictionary/wise)
-
-    having intelligence and discernment
-
-163.  [philosopher](https://www.vocabulary.com/dictionary/philosopher)
-
-    a specialist in the investigation of existence and knowledge
-
-164.  [fisherman](https://www.vocabulary.com/dictionary/fisherman)
-
-    someone whose occupation is catching fish
-
 165.  [metro](https://www.vocabulary.com/dictionary/metro)
 
     an electric railway operating below the surface of the ground (usually in a city)
@@ -5430,17 +5218,9 @@
 
     people who have retreated
 
-168.  [daylight](https://www.vocabulary.com/dictionary/daylight)
-
-    the time after sunrise and before sunset while it is light outside
-
 169.  [rump](https://www.vocabulary.com/dictionary/rump)
 
     fleshy hindquarters; behind the loin and above the round
-
-170.  [insert](https://www.vocabulary.com/dictionary/insert)
-
-    introduce
 
 171.  [interpret](https://www.vocabulary.com/dictionary/interpret)
 
@@ -5462,26 +5242,6 @@
 
     reluctant to divulge information
 
-176.  [conservative](https://www.vocabulary.com/dictionary/conservative)
-
-    resistant to change
-
-177.  [lead](https://www.vocabulary.com/dictionary/lead)
-
-    take somebody somewhere
-
-178.  [discouraged](https://www.vocabulary.com/dictionary/discouraged)
-
-    lacking in resolution
-
-179.  [York](https://www.vocabulary.com/dictionary/York)
-
-    the English royal house that reigned from 1461 to 1485
-
-180.  [base](https://www.vocabulary.com/dictionary/base)
-
-    lowest support of a structure
-
 181.  [uneasy](https://www.vocabulary.com/dictionary/uneasy)
 
     causing or fraught with or showing anxiety
@@ -5490,21 +5250,9 @@
 
     a person who cares for persons or property
 
-183.  [public](https://www.vocabulary.com/dictionary/public)
-
-    not private
-
-184.  [relation](https://www.vocabulary.com/dictionary/relation)
-
-    the state or quality of having something in common
-
 185.  [recruiter](https://www.vocabulary.com/dictionary/recruiter)
 
     someone who supplies members or employees
-
-186.  [situation](https://www.vocabulary.com/dictionary/situation)
-
-    physical position in relation to the surroundings
 
 187.  [disguise](https://www.vocabulary.com/dictionary/disguise)
 
@@ -5513,10 +5261,6 @@
 188.  [supervision](https://www.vocabulary.com/dictionary/supervision)
 
     act or process of overseeing a person, group, or activity
-
-189.  [Light](https://www.vocabulary.com/dictionary/Light)
-
-    a divine presence believed by Quakers to enlighten and guide the soul
 
 190.  [electron](https://www.vocabulary.com/dictionary/electron)
 
@@ -5538,61 +5282,21 @@
 
     the act of finding something
 
-195.  [autobiography](https://www.vocabulary.com/dictionary/autobiography)
-
-    a book or account of your own life
-
 196.  [defect](https://www.vocabulary.com/dictionary/defect)
 
     a failing or deficiency
-
-197.  [adventure](https://www.vocabulary.com/dictionary/adventure)
-
-    a wild and exciting undertaking
-
-198.  [Alps](https://www.vocabulary.com/dictionary/Alps)
-
-    a large mountain system in south-central Europe
 
 199.  [motorist](https://www.vocabulary.com/dictionary/motorist)
 
     someone who drives (or travels in) an automobile
 
-200.  [Anderson](https://www.vocabulary.com/dictionary/Anderson)
-
-    United States author whose works were frequently autobiographical (1876-1941)
-
 201.  [franc](https://www.vocabulary.com/dictionary/franc)
 
     the basic monetary unit in many countries
 
-202.  [thinker](https://www.vocabulary.com/dictionary/thinker)
-
-    someone who exercises the mind
-
-203.  [discourage](https://www.vocabulary.com/dictionary/discourage)
-
-    try to prevent; show opposition to
-
-204.  [stubborn](https://www.vocabulary.com/dictionary/stubborn)
-
-    tenaciously unwilling to yield
-
-205.  [manufacture](https://www.vocabulary.com/dictionary/manufacture)
-
-    put together out of artificial or natural components
-
-206.  [budget](https://www.vocabulary.com/dictionary/budget)
-
-    a summary of intended expenditures
-
 207.  [subsidise](https://www.vocabulary.com/dictionary/subsidise)
 
     support through subsidies
-
-208.  [cling](https://www.vocabulary.com/dictionary/cling)
-
-    hold on tightly or tenaciously
 
 209.  [seasoned](https://www.vocabulary.com/dictionary/seasoned)
 
@@ -5606,25 +5310,9 @@
 
     a natural or artificial enclosed space
 
-212.  [primary](https://www.vocabulary.com/dictionary/primary)
-
-    of first rank or importance or value
-
-213.  [Kaiser](https://www.vocabulary.com/dictionary/Kaiser)
-
-    the title of the Holy Roman Emperors or the emperors of Austria or of Germany until 1918
-
-214.  [database](https://www.vocabulary.com/dictionary/database)
-
-    an organized body of related information
-
 215.  [woo](https://www.vocabulary.com/dictionary/woo)
 
     seek someone's favor
-
-216.  [Mississippi](https://www.vocabulary.com/dictionary/Mississippi)
-
-    a state in the Deep South on the gulf of Mexico
 
 217.  [strip](https://www.vocabulary.com/dictionary/strip)
 
@@ -5633,14 +5321,6 @@
 218.  [abuse](https://www.vocabulary.com/dictionary/abuse)
 
     cruel or inhumane treatment
-
-219.  [visitor](https://www.vocabulary.com/dictionary/visitor)
-
-    someone who visits
-
-220.  [witness](https://www.vocabulary.com/dictionary/witness)
-
-    someone who sees an event and reports what happened
 
 221.  [dragging](https://www.vocabulary.com/dictionary/dragging)
 
@@ -5654,10 +5334,6 @@
 
     spread negative information about
 
-224.  [hardened](https://www.vocabulary.com/dictionary/hardened)
-
-    converted to solid form (as concrete)
-
 225.  [xenophobic](https://www.vocabulary.com/dictionary/xenophobic)
 
     having abnormal fear or hatred of the strange or foreign
@@ -5666,45 +5342,17 @@
 
     make complaining remarks or noises under one's breath
 
-227.  [fold](https://www.vocabulary.com/dictionary/fold)
-
-    bend or lay so that one part covers the other
-
 228.  [burst](https://www.vocabulary.com/dictionary/burst)
 
     come open suddenly and violently
-
-229.  [statistics](https://www.vocabulary.com/dictionary/statistics)
-
-    a branch of mathematics concerned with quantitative data
-
-230.  [deadlock](https://www.vocabulary.com/dictionary/deadlock)
-
-    a situation in which no progress can be made
-
-231.  [probable](https://www.vocabulary.com/dictionary/probable)
-
-    likely but not certain to be or become true or real
-
-232.  [toilet](https://www.vocabulary.com/dictionary/toilet)
-
-    a plumbing fixture for defecation and urination
 
 233.  [franchise](https://www.vocabulary.com/dictionary/franchise)
 
     a statutory right or privilege granted by a government
 
-234.  [Franklin](https://www.vocabulary.com/dictionary/Franklin)
-
-    printer whose success as an author led him to take up politics; he helped draw up the Declaration of Independence and the Constitution; he played a major role in the American Revolution and negotiated French support for the colonists; as a scientist he is remembered particularly for his research in electricity (1706-1790)
-
 235.  [installing](https://www.vocabulary.com/dictionary/installing)
 
     the act of installing something (as equipment)
-
-236.  [untouched](https://www.vocabulary.com/dictionary/untouched)
-
-    emotionally unmoved
 
 237.  [fertiliser](https://www.vocabulary.com/dictionary/fertiliser)
 
@@ -5718,45 +5366,17 @@
 
     restrained in style or quality
 
-240.  [signal](https://www.vocabulary.com/dictionary/signal)
-
-    any action or gesture that encodes a message
-
 241.  [astronomer](https://www.vocabulary.com/dictionary/astronomer)
 
     a physicist who studies celestial bodies and the universe
-
-242.  [atomic](https://www.vocabulary.com/dictionary/atomic)
-
-    relating to the smallest component of an element
-
-243.  [enhanced](https://www.vocabulary.com/dictionary/enhanced)
-
-    increased or intensified in value or beauty or quality
 
 244.  [creditor](https://www.vocabulary.com/dictionary/creditor)
 
     a person to whom money is owed by a debtor
 
-245.  [performer](https://www.vocabulary.com/dictionary/performer)
-
-    an entertainer who performs a dramatic or musical work for an audience
-
 246.  [depict](https://www.vocabulary.com/dictionary/depict)
 
     give a description of
-
-247.  [official](https://www.vocabulary.com/dictionary/official)
-
-    of or relating to a place of business
-
-248.  [wide](https://www.vocabulary.com/dictionary/wide)
-
-    having great extent from one side to the other
-
-249.  [ranging](https://www.vocabulary.com/dictionary/ranging)
-
-    wandering freely
 
 250.  [stock](https://www.vocabulary.com/dictionary/stock)
 
@@ -5765,10 +5385,6 @@
 1.  [revile](https://www.vocabulary.com/dictionary/revile)
 
     spread negative information about
-
-2.  [hardened](https://www.vocabulary.com/dictionary/hardened)
-
-    converted to solid form (as concrete)
 
 3.  [xenophobic](https://www.vocabulary.com/dictionary/xenophobic)
 
