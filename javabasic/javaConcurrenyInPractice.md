@@ -41,6 +41,21 @@ public class Renderer {
 ```
 
 ***Placing Time Limits on Tasks***
+> Sometimes, if an activity does not complete within a certain amount of time, the result is no longer needed and the
+activity can be abandoned. For example, a web application may fetch its advertisements from an external ad server, but
+if the ad is not available within two seconds, it instead displays a default advertisement so that ad unavailability does
+not undermine the site's responsiveness requirements. Similarly, a portal site may fetch data in parallel from multiple
+data sources, but may be willing to wait only a certain amount of time for data to be available before rendering the page
+without it.
+The primary challenge in executing tasks within a time budget is making sure that you don't wait longer than the time
+budget to get an answer or find out that one is not forthcoming. The timed version of Future.get supports this
+requirement: it returns as soon as the result is ready, but throws TimeoutException if the result is not ready within the
+timeout period.
+A secondary problem when using timed tasks is to stop them when they run out of time, so they do not waste
+computing resources by continuing to compute a result that will not be used. This can be accomplished by having the
+task strictly manage its own time budget and abort if it runs out of time, or by cancelling the task if the timeout expires.
+Again, Future can help; if a timed get completes with a TimeoutException, you can cancel the task through the
+Future. 
 
 ```
 Page renderPageWithAd() throws InterruptedException {
