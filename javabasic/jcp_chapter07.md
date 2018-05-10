@@ -33,3 +33,4 @@ public Task getNextTask(BlockingQueue<Taskgt; queue) {
     }
 ```
 
+***Stopping a ThreadǦbased Service***
