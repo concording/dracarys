@@ -1,7 +1,7 @@
 
-* Task Execution *
+**Task Execution**
 
-**. Finding Exploitable Parallelism**
+***. Finding Exploitable Parallelism***
 > If you have a batch of computations to submit to an Executor and you want to retrieve their results as they become
 available, you could retain the Future associated with each task and repeatedly poll for completion by calling get with a
 timeout of zero. This is possible, but tedious. Fortunately there is a better way: a completion service.
@@ -40,7 +40,7 @@ public class Renderer {
     }
 ```
 
-**Placing Time Limits on Tasks**
+***Placing Time Limits on Tasks***
 
 ```
 Page renderPageWithAd() throws InterruptedException {
