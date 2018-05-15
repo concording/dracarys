@@ -1,7 +1,11 @@
 
-项目中遇到的难点
-concurrentHashmap 在项目使用的场景
-消息中间件
-缓存中间件
+1. the difficuties in real project
+(nomatter what you find, just lead it to concurrent)
+
+2. concurrentHashmap use in project
+(if you cannot find a scene，just use the one in <<java concurrency in practice>>)
+  
+3. message queue(different mqs )
+4. cache
 
 
