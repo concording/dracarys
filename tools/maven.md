@@ -1,3 +1,4 @@
+**maven生命周期**
 
 > Life cycle is a sequence of named **phases**.
 > Phases executes sequentially. Executing a phase means executes all previous phases.
