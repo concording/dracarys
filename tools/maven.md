@@ -83,4 +83,5 @@ Maven Architecture:
 
 
 [Reference 1](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#Build_Lifecycle_Basics)
+
 [Reference 2](https://en.wikipedia.org/wiki/Apache_Maven#Build_lifecycles)
