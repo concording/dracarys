@@ -73,6 +73,8 @@ Handle interruption request, which in most cases is done by handling Interrupted
 An implementation of the use case using the Executor
 
 The same use case can be implemented using Executor framework provided by Java and can be found under the java.util.concurrent package. Usage of the Executor framework is preferred over Threads as it provides separation of task execution from the thread management. In the implementation below the task is submitted to ExecutorService, a sub-interface of Executor, using the submit() method. The service runs the task on the thread it holds. The service’s shutdownNow() method interrupts the currently running task and awaitTermination() method waits for the service to shutdown.
+
+```
 public static void main(String[] args) throws InterruptedException {
     ExecutorService executor = Executors.newSingleThreadExecutor();
     executor.submit(taskThatFinishesEarlyOnInterruption());  // requirement 3
@@ -82,10 +84,15 @@ public static void main(String[] args) throws InterruptedException {
 }
 
 // implementation of taskThatFinishesEarlyOnInterruption() remains the same
+```
 When using the Executor framework, you can interrupt a specific task without shutting down the ExecutorService. On submitting a task to the service an instance of Future<?> is returned by the service. You may call the cancel() method on that instance to interrupt the task. In situations when you service a web request by running parallel tasks, this method of cancelling tasks and not shutting down the service helps in re-using the service across multiple requests. In such situations you may want to shutdown the service only on shutdown of your web application. Calling the cancel() with true causes the task to be interrupted.
+
+```
 Future<?> submittedTask = executor.submit(someTask());
 ...
 submittedTask.cancel(true) // if conditions to cancel the task have been met
+```
+
 The Executor framework is a complete asynchronous task execution framework. If you have not explored it yet, I request to you to read about it. It will be a great addition to your development toolbox.
 InterruptedException and interruption status
 
@@ -93,6 +100,8 @@ Before I finish, I wanted to emphasize on an important detail about what happens
   
 Before a blocking code throws an InterruptedException, it marks the interruption status as false. Thus, when handling of the InterruptedException is done, you should also preserve the interruption status by calling Thread.currentThread().interrupt().
 Let’s see how this information applies to the example below. In the task that is submitted to the ExecutorService, the printNumbers() method is called twice. When the task is interrupted by a call to shutdownNow(), the first call to the method finishes early and then the execution reaches the second call. The interruption is called by the main thread only once. The interruption is communicated to the second execution of the printNumber() method by the call to Thread.currentThread().interrupt() during the first execution. Hence the second execution also finishes early just after printing the first number. Not preserving the interruption status would have caused the second execution of the method to run fully for 9 seconds.
+
+```
 public static void main(String[] args) throws InterruptedException {
     ExecutorService executor = Executors.newSingleThreadExecutor();
     Future<?> future = executor.submit(() -> {
@@ -115,6 +124,8 @@ private static void printNumbers() {
         }
     }
 }
+```
+
 Summary
 
 The answers to the two questions that I had set out to answer are:
