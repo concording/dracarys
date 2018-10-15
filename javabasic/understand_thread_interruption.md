@@ -1,5 +1,5 @@
 
-Java theory and practice: Dealing with InterruptedException
+**Java theory and practice: Dealing with InterruptedException**
 
  
  This story is probably familiar: You're writing a test program and you                need to pause for some amount of time, so you call                Thread.sleep(). But then the compiler or IDE balks that you                haven't dealt with the checked InterruptedException. What is                InterruptedException, and why do you have to deal with it? 
