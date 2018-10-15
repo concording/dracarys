@@ -13,7 +13,8 @@ In this article I will try to answer the below questions:
   
 * How to make a task responsive to such a finish request?
 Let’s try to answer the two questions by implementing an use case.
-Example Use Case
+
+**Example Use Case**
 
 The following are the requirements of the use case:
   
@@ -33,7 +34,8 @@ The following are the requirements of the use case:
 As per the requirements mentioned in the use case the task will take minimum 9 seconds to complete. Therefore after 3 seconds the main application will have to request the task to finish and if implemented correctly the task will not be able to print all the ten numbers from 0 through 9.
   
 In this article, I will be focusing on the implementations of requirement 5 and requirement 7.
-An implementation of the use case using Thread
+
+**An implementation of the use case using Thread**
 
 The inline comment against a line of code mentions the use case requirement that has been met by the line.
 ```
@@ -70,7 +72,8 @@ Question arises that why did Thread.sleep() throw an InterruptedException? As so
 Note: Calls to sleep() and join() methods in main() method are blocking and may also throw InterruptedException upon interruption. Handling of the exception here has been omitted for brevity.
   
 Handle interruption request, which in most cases is done by handling InterruptedException, in the task to make it responsive to a finish request.
-An implementation of the use case using the Executor
+
+**An implementation of the use case using the Executor**
 
 The same use case can be implemented using Executor framework provided by Java and can be found under the java.util.concurrent package. Usage of the Executor framework is preferred over Threads as it provides separation of task execution from the thread management. In the implementation below the task is submitted to ExecutorService, a sub-interface of Executor, using the submit() method. The service runs the task on the thread it holds. The service’s shutdownNow() method interrupts the currently running task and awaitTermination() method waits for the service to shutdown.
 
@@ -94,7 +97,8 @@ submittedTask.cancel(true) // if conditions to cancel the task have been met
 ```
 
 The Executor framework is a complete asynchronous task execution framework. If you have not explored it yet, I request to you to read about it. It will be a great addition to your development toolbox.
-InterruptedException and interruption status
+
+**InterruptedException and interruption status**
 
 Before I finish, I wanted to emphasize on an important detail about what happens to a thread’s interruption status when a blocking code responds to interruption by throwing InterruptedException. I had left out the detail till now to avoid confusion.
   
