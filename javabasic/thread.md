@@ -10,16 +10,12 @@ Polling occurs via the Thread.interrupted() method which returns the current thr
 * Most java.util.concurrent structures
 * Java NIO (but not java.io) and it does NOT use InterruptedException, instead using ClosedByInterruptException.
 
-`EDIT (from @thomas-pornin's answer to exactly same question for completeness)`
+
 Thread interruption is a gentle way to nudge a thread. It is used to give threads a chance to exitcleanly, as opposed to Thread.stop() that is more like shooting the thread with an assault rifle.
 
 ***个人总结***
 
 告诉当前线程你该放手了，该结束了。调用Thread.interrupt()之后会立即设置目标线程的interrupted状态，之后代码进入到这个目标线程就能拿到这个状态并进行相应的处理。调用Object.wait()方法会立即消费掉这个状态，同时抛出一个InterruptedException异常(消费掉这个状态之后，状态会被清除)。
-
-[interrupt到底做了啥](http://stackoverflow.com/questions/3590000/what-does-java-lang-thread-interrupt-do)
-
-[lmu java Thread ](http://cs.lmu.edu/~ray/notes/javathreading/)
 
 
 **Understanding java.lang.Thread.State: WAITING (parking)**
@@ -40,3 +36,9 @@ parking意味着直到可以获得permit之前线程都将处于挂起的状态�
 A thread goes to wait state once it calls wait() on an Object. This is called Waiting State. Once a thread reaches waiting state, it will need to wait till some other thread notify() or notifyAll() on the object.
 Once this thread is notified, it will not be runnable. It might be that other threads are also notified(using notifyAll) or the first thread has not finished his work, so it is still blocked till it gets its chance. This is called Blocked State.
 Once other threads have left and its this thread chance, it moves to Runnable state after that it is eligible pick up work based on JVM threading mechanism and moves to run state.
+
+
+
+参考网址：
+> [interrupt到底做了啥](http://stackoverflow.com/questions/3590000/what-does-java-lang-thread-interrupt-do)
+> [lmu java Thread ](http://cs.lmu.edu/~ray/notes/javathreading/)
