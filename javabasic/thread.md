@@ -4,12 +4,13 @@ Interruption in Java is not pre-emptive. Put another way both threads have to co
 
 Polling occurs via the Thread.interrupted() method which returns the current thread's interrupted status AND clears that interrupt flag. Usually the thread might then do something such as throw InterruptedException.
 
-EDIT (from Thilo comments): Some API methods have built in interrupt handling. Of the top of my head this includes.
+`EDIT (from Thilo comments): Some API methods have built in interrupt handling. Of the top of my head this includes.`
 
 * Object.wait()/Thread.sleep()
 * Most java.util.concurrent structures
 * Java NIO (but not java.io) and it does NOT use InterruptedException, instead using ClosedByInterruptException.
-EDIT (from @thomas-pornin's answer to exactly same question for completeness)
+
+`EDIT (from @thomas-pornin's answer to exactly same question for completeness)`
 Thread interruption is a gentle way to nudge a thread. It is used to give threads a chance to exitcleanly, as opposed to Thread.stop() that is more like shooting the thread with an assault rifle.
 
 ***个人总结***
@@ -17,7 +18,8 @@ Thread interruption is a gentle way to nudge a thread. It is used to give thread
 告诉当前线程你该放手了，该结束了。调用Thread.interrupt()之后会立即设置目标线程的interrupted状态，之后代码进入到这个目标线程就能拿到这个状态并进行相应的处理。调用Object.wait()方法会立即消费掉这个状态，同时抛出一个InterruptedException异常(消费掉这个状态之后，状态会被清除)。
 
 [interrupt到底做了啥](http://stackoverflow.com/questions/3590000/what-does-java-lang-thread-interrupt-do)
-[lmu java Thread](http://cs.lmu.edu/~ray/notes/javathreading/)
+
+[lmu java Thread ](http://cs.lmu.edu/~ray/notes/javathreading/)
 
 
 **Understanding java.lang.Thread.State: WAITING (parking)**
