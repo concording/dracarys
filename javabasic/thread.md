@@ -40,5 +40,5 @@ Once other threads have left and its this thread chance, it moves to Runnable st
 
 
 参考网址：
-> [interrupt到底做了啥](http://stackoverflow.com/questions/3590000/what-does-java-lang-thread-interrupt-do)
-> [lmu java Thread ](http://cs.lmu.edu/~ray/notes/javathreading/)
+1. [interrupt到底做了啥](http://stackoverflow.com/questions/3590000/what-does-java-lang-thread-interrupt-do)
+2. [lmu java Thread ](http://cs.lmu.edu/~ray/notes/javathreading/)
