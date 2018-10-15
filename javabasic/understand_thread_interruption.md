@@ -19,7 +19,7 @@ Dealing with                InterruptedException
 
  If throwing InterruptedException means that a method is a                blocking method, then calling a blocking method means that your method is                a blocking method too, and you should have a strategy for dealing with                InterruptedException. Often the easiest strategy is to throw                InterruptedException yourself, as shown in the                putTask() and getTask() methods in Listing 1.                Doing so makes your method responsive to interruption as well and often                requires nothing more than adding InterruptedException to                your throws clause. 
 Listing 1. Propagating                    InterruptedException to callers by not catching                it
-
+```
 public class TaskQueue {
     private static final int MAX_TASKS = 1000;
 
@@ -34,9 +34,11 @@ public class TaskQueue {
         return queue.take();
     }
 }
+```
  Sometimes it is necessary to do some amount of cleanup before propagating                the exception. In this case, you can catch                InterruptedException, perform the cleanup, and then rethrow                the exception. Listing 2, a mechanism for matching players in an online                game service, illustrates this technique. The matchPlayers()                method waits for two players to arrive and then starts a new game. If it                is interrupted after one player has arrived but before the second player                arrives, it puts that player back on the queue before rethrowing the                InterruptedException, so that the player's request to play is                not lost. 
 Listing 2. Performing task-specific                    cleanup before rethrowing                InterruptedException
 
+```
 public class PlayerMatcher {
     private PlayerSource players;
 
@@ -64,11 +66,12 @@ public class PlayerMatcher {
          }
     }
 }
+```
 Don't swallow interrupts
 
  Sometimes throwing InterruptedException is not an option,                such as when a task defined by Runnable calls an                interruptible method. In this case, you can't rethrow                InterruptedException, but you also do not want to do nothing.                When a blocking method detects interruption and throws                InterruptedException, it clears the interrupted status. If                you catch InterruptedException but cannot rethrow it, you                should preserve evidence that the interruption occurred so that code                higher up on the call stack can learn of the interruption and respond to                it if it wants to. This task is accomplished by calling                interrupt() to "reinterrupt" the current thread, as shown in                Listing 3. At the very least, whenever you catch                InterruptedException and don't rethrow it, reinterrupt the                current thread before returning. 
 Listing 3. Restoring the interrupted                    status after catching                InterruptedException
-
+```
 public class TaskRunner implements Runnable {
     private BlockingQueue<Task> queue;
 
@@ -89,9 +92,11 @@ public class TaskRunner implements Runnable {
          }
     }
 }
+```
  The worst thing you can do with InterruptedException is                swallow it -- catch it and neither rethrow it nor reassert the thread's                interrupted status. The standard approach to dealing with an exception you                didn't plan for -- catch it and log it -- also counts as swallowing the                interruption because code higher up on the call stack won't be able to                find out about it. (Logging InterruptedException is also just                silly because by the time a human reads the log, it is too late to do                anything about it.) Listing 4 shows the all-too-common pattern of                swallowing an interrupt: 
 Listing 4. Swallowing an interrupt --                    don't do                this
 
+```
 // Don't do this 
 public class TaskRunner implements Runnable {
     private BlockingQueue<Task> queue;
@@ -112,6 +117,8 @@ public class TaskRunner implements Runnable {
          }
     }
 }
+```
+
  If you cannot rethrow InterruptedException, whether or not                you plan to act on the interrupt request, you still want to reinterrupt                the current thread because a single interruption request may have multiple                "recipients." The standard thread pool (ThreadPoolExecutor)                worker thread implementation is responsive to interruption, so                interrupting a task running in a thread pool may have the effect of both                canceling the task and notifying the execution thread that the thread pool                is shutting down. If the task were to swallow the interrupt request, the                worker thread might not learn that an interrupt was requested, which could                delay the application or service shutdown. 
 Back to top
 Implementing cancelable                tasks
@@ -121,6 +128,7 @@ Implementing cancelable                tasks
  The one time it is acceptable to swallow an interrupt is when you know the                thread is about to exit. This scenario only occurs when the class calling                the interruptible method is part of a Thread, not a                Runnable or general-purpose library code, as illustrated in                Listing 5. It creates a thread that enumerates prime numbers until it is                interrupted and allows the thread to exit upon interruption. The                prime-seeking loop checks for interruption in two places: once by polling                the isInterrupted() method in the header of the while loop                and once when it calls the blocking BlockingQueue.put()                method. 
 Listing 5. Interrupts can be swallowed                    if you know the thread is about to                exit
 
+```
 public class PrimeProducer extends Thread {
     private final BlockingQueue<BigInteger> queue;
 
@@ -140,6 +148,7 @@ public class PrimeProducer extends Thread {
 
     public void cancel() { interrupt(); }
 }
+```
 Noninterruptible blocking
 
  Not all blocking methods throw InterruptedException. The                input and output stream classes may block waiting for an I/O to complete,                but they do not throw InterruptedException, and they do not                return early if they are interrupted. However, in the case of socket I/O,                if a thread closes the socket, blocking I/O operations on that socket in                other threads will complete early with a SocketException. The                nonblocking I/O classes in java.nio also do not support                interruptible I/O, but blocking operations can similarly be canceled by                closing the channel or requesting a wakeup on the Selector.                Similarly, attempting to acquire an intrinsic lock (enter a                synchronized block) cannot be interrupted, but                ReentrantLock supports an interruptible acquisition mode. 
@@ -148,6 +157,7 @@ Noncancelable tasks
  Some tasks simply refuse to be interrupted, making them noncancelable.                However, even noncancelable tasks should attempt to preserve the                interrupted status in case code higher up on the call stack wants to act                on the interruption after the noncancelable task completes. Listing 6                shows a method that waits on a blocking queue until an item is available,                regardless of whether it is interrupted. To be a good citizen, it restores                the interrupted status in a finally block after it is finished, so as not                to deprive callers of the interruption request. (It can't restore the                interrupted status earlier, as it would cause an infinite loop --                BlockingQueue.take() could poll the interrupted status                immediately on entry and throws InterruptedException if it                finds the interrupted status set.) 
 Listing 6. Noncancelable task that                    restores interrupted status before                returning
 
+```
 public Task getNextTask(BlockingQueue<Task> queue) {
     boolean interrupted = false;
     try {
@@ -164,7 +174,8 @@ public Task getNextTask(BlockingQueue<Task> queue) {
             Thread.currentThread().interrupt();
     }
 }
-Back to top
-Summary
+```
+
+*Summary*
 
  You can use the cooperative interruption mechanism provided by the Java                platform to construct flexible cancellation policies. Activities can                decide if they are cancelable or not, how responsive they want to be to                interruption, and they can defer interruption to perform task-specific                cleanup if returning immediately would compromise application integrity.                Even if you want to completely ignore interruption in your code, make sure                to restore the interrupted status if you catch                InterruptedException and do not rethrow it so that the code                that calls it is not deprived of the knowledge that an interrupt occurred.            
