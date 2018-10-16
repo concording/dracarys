@@ -1,12 +1,12 @@
 
-**Java theory and practice: Dealing with InterruptedException**
+# Java theory and practice: Dealing with InterruptedException
 
  
  This story is probably familiar: You're writing a test program and you need to pause for some amount of time, so you call Thread.sleep(). But then the compiler or IDE balks that you haven't dealt with the checked InterruptedException. What is InterruptedException, and why do you have to deal with it?
  
  The most common response to InterruptedException is to swallow it -- catch it and do nothing (or perhaps log it, which isn't any better) -- as we'll see later in Listing 4. Unfortunately, this approach throws away important information about the fact that an interrupt occurred, which could _compromise_ the application's ability to cancel activities or shut down in a timely manner. 
  
-**Blocking methods**
+## Blocking methods
 
  When a method throws InterruptedException, it is telling you several things in addition to the fact that it can throw a particular checked exception. It is telling you that _it is a blocking method and that it will make an attempt to unblock and return early_ -- if you ask nicely. 
  
@@ -14,7 +14,7 @@ A blocking method is different from an ordinary method that just takes a long ti
 
  Because blocking methods can potentially take forever if the event they are waiting for never occurs, it is often useful for blocking operations to be cancelable. (It is often useful for long-running non-blocking methods to be cancelable as well.) A cancelable operation is one that can be externally moved to completion in advance of when it would ordinarily complete on its own. The interruption mechanism provided by Thread and supported by Thread.sleep() and Object.wait() is a cancellation mechanism; it allows one thread to request that another thread stop what it is doing early. When a method throws InterruptedException, it is telling you that if the thread executing the method is interrupted, it will make an attempt to stop what it is doing and return early and indicate its early return by throwing InterruptedException. Well-behaved blocking library methods should be responsive to interruption and throw InterruptedException so they can be used within cancelable activities without compromising responsiveness. 
 
-**Thread interruption**
+## Thread interruption
 
  Every thread has a Boolean property associated with it that represents its interrupted status. The interrupted status is initially false; when a thread is interrupted by some other thread through a call to Thread.interrupt(), one of two things happens. If that thread is executing a low-level interruptible blocking method like Thread.sleep(), Thread.join(), or Object.wait(), it unblocks and throws InterruptedException. Otherwise, interrupt() merely sets the thread's interruption status. Code running in the interrupted thread can later poll the interrupted status to see if it has been requested to stop what it is doing; the interrupted status can be read with Thread.isInterrupted() and can be read and cleared in a single operation with the poorly named Thread.interrupted().
  
@@ -22,7 +22,7 @@ A blocking method is different from an ordinary method that just takes a long ti
  
  One of the benefits of the cooperative nature of interruption is that it provides more flexibility for safely constructing cancelable activities. We rarely want an activity to stop immediately; program data structures could be left in an inconsistent state if the activity were canceled mid-update. Interruption allows a cancelable activity to clean up any work in progress, restore invariants, notify other activities of the cancellation, and then terminate. 
 
-**Dealing with InterruptedException**
+## Dealing with InterruptedException
 
  If throwing InterruptedException means that a method is a blocking method, then calling a blocking method means that your method is a blocking method too, and you should have a strategy for dealing with InterruptedException. Often the easiest strategy is to throw InterruptedException yourself, as shown in the putTask() and getTask() methods in Listing 1. Doing so makes your method responsive to interruption as well and often requires nothing more than adding InterruptedException to your throws clause. 
 
@@ -76,7 +76,7 @@ public class PlayerMatcher {
     }
 }
 ```
-Don't swallow interrupts
+***Don't swallow interrupts***
 
  Sometimes throwing InterruptedException is not an option, such as when a task defined by Runnable calls an interruptible method. In this case, you can't rethrow InterruptedException, but you also do not want to do nothing. When a blocking method detects interruption and throws InterruptedException, it clears the interrupted status. If you catch InterruptedException but cannot rethrow it, you should preserve evidence that the interruption occurred so that code higher up on the call stack can learn of the interruption and respond to it if it wants to. This task is accomplished by calling interrupt() to "reinterrupt" the current thread, as shown in Listing 3. At the very least, whenever you catch InterruptedException and don't rethrow it, reinterrupt the current thread before returning. 
 
@@ -130,11 +130,13 @@ public class TaskRunner implements Runnable {
 ```
 
  If you cannot rethrow InterruptedException, whether or not you plan to act on the interrupt request, you still want to reinterrupt the current thread because a single interruption request may have multiple "recipients." The standard thread pool (ThreadPoolExecutor) worker thread implementation is responsive to interruption, so interrupting a task running in a thread pool may have the effect of both canceling the task and notifying the execution thread that the thread pool is shutting down. If the task were to swallow the interrupt request, the worker thread might not learn that an interrupt was requested, which could delay the application or service shutdown. 
-Back to top
-Implementing cancelable tasks
+
+***Implementing cancelable tasks***
 
  Nothing in the language specification gives interruption any specific semantics, but in larger programs, it is difficult to maintain any semantics for interruption other than cancellation. Depending on the activity, a user could request cancellation through a GUI or through a network mechanism such as JMX or Web Services. It could also be requested by program logic. For example, a Web crawler might automatically shut itself down if it detects that the disk is full, or a parallel algorithm might start multiple threads to search different regions of the solution space and cancel them once one of them finds a solution. 
+ 
  Just because a task is cancelable does not mean it needs to respond to an interrupt request immediately. For tasks that execute code in a loop, it is common to check for interruption only once per loop iteration. Depending on how long the loop takes to execute, it could take some time before the task code notices the thread has been interrupted (either by polling the interrupted status with Thread.isInterrupted() or by calling a blocking method). If the task needs to be more responsive, it can poll the interrupted status more frequently. Blocking methods usually poll the interrupted status immediately on entry, throwing InterruptedException if it is set to improve responsiveness. 
+ 
  The one time it is acceptable to swallow an interrupt is when you know the thread is about to exit. This scenario only occurs when the class calling the interruptible method is part of a Thread, not a Runnable or general-purpose library code, as illustrated in Listing 5. It creates a thread that enumerates prime numbers until it is interrupted and allows the thread to exit upon interruption. The prime-seeking loop checks for interruption in two places: once by polling the isInterrupted() method in the header of the while loop and once when it calls the blocking BlockingQueue.put() method. 
 
 Listing 5. Interrupts can be swallowed     if you know the thread is about to exit
