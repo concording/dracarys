@@ -161,10 +161,11 @@ public class PrimeProducer extends Thread {
     public void cancel() { interrupt(); }
 }
 ```
-Noninterruptible blocking
+## Noninterruptible blocking
 
  Not all blocking methods throw InterruptedException. The input and output stream classes may block waiting for an I/O to complete, but they do not throw InterruptedException, and they do not return early if they are interrupted. However, in the case of socket I/O, if a thread closes the socket, blocking I/O operations on that socket in other threads will complete early with a SocketException. The nonblocking I/O classes in java.nio also do not support interruptible I/O, but blocking operations can similarly be canceled by closing the channel or requesting a wakeup on the Selector. Similarly, attempting to acquire an intrinsic lock (enter a synchronized block) cannot be interrupted, but ReentrantLock supports an interruptible acquisition mode. 
-Noncancelable tasks
+ 
+## Noncancelable tasks
 
  Some tasks simply refuse to be interrupted, making them noncancelable. However, even noncancelable tasks should attempt to preserve the interrupted status in case code higher up on the call stack wants to act on the interruption after the noncancelable task completes. Listing 6 shows a method that waits on a blocking queue until an item is available, regardless of whether it is interrupted. To be a good citizen, it restores the interrupted status in a finally block after it is finished, so as not to deprive callers of the interruption request. (It can't restore the interrupted status earlier, as it would cause an infinite loop -- BlockingQueue.take() could poll the interrupted status immediately on entry and throws InterruptedException if it finds the interrupted status set.) 
 
@@ -188,6 +189,6 @@ public Task getNextTask(BlockingQueue<Task> queue) {
 }
 ```
 
-*Summary*
+**Summary**
 
  You can use the cooperative interruption mechanism provided by the Java platform to construct flexible cancellation policies. Activities can decide if they are cancelable or not, how responsive they want to be to interruption, and they can defer interruption to perform task-specific cleanup if returning immediately would compromise application integrity. Even if you want to completely ignore interruption in your code, make sure to restore the interrupted status if you catch InterruptedException and do not rethrow it so that the code that calls it is not deprived of the knowledge that an interrupt occurred.            
