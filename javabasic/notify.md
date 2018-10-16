@@ -74,6 +74,6 @@ SOLUTION: Replace notify with notifyAll in the producer/consumer code (above).
 
 
 
-总结
+### 总结
 notify能够唤醒任何一个线程。加入生产者2唤醒的是生产者3而不是任何一个消费者的话，将会导致所有的线程处于挂起状态，并且没有任何一个线程将会调用notify方法。
 
