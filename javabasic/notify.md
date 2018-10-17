@@ -2,6 +2,7 @@
 # Notify and NotifyAll
 
 Clearly, notify wakes (any) one thread in the wait set, notifyAll wakes all threads in the waiting set. The following discussion should clear up any doubts. notifyAll should be used most of the time. If you are not sure which to use, then use notifyAll.Please see explanation that follows.
+
 Read very carefully and understand. Please send me an email if you have any questions.
 
 Look at producer/consumer (assumption is a ProducerConsumer class with two methods). IT IS BROKEN (because it uses notify) - yes it MAY work - even most of the time, but it may also cause deadlock - we will see why:
@@ -75,5 +76,5 @@ SOLUTION: Replace notify with notifyAll in the producer/consumer code (above).
 
 
 ### 总结
-notify能够唤醒任何一个线程。加入生产者2唤醒的是生产者3而不是任何一个消费者的话，将会导致所有的线程处于挂起状态，并且没有任何一个线程将会调用notify方法。
+notify能够唤醒任何一个线程。假如生产者2唤醒的是生产者3而不是任何一个消费者的话，将会导致所有的线程处于挂起状态，并且没有任何一个线程将会调用notify方法。
 
