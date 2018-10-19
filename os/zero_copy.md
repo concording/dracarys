@@ -1,6 +1,5 @@
 # Zero Copy I: User-Mode Perspective
 
-##  [SysAdmin](https://www.linuxjournal.com/tag/sysadmin) 
 
 
 By now almost everyone has heard of so-called zero-copy functionality under Linux, but I often run into people who don't have a full understanding of the subject. Because of this, I decided to write a few articles that dig into the matter a bit deeper, in the hope of unraveling this useful feature. In this article, we take a look at zero copy from a user-mode application point of view, so gory kernel-level details are omitted intentionally.
