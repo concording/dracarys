@@ -32,6 +32,7 @@ The sub classes will implement ‘try Release’ based on their requirement. Onc
 ## Unpark successor node’s thread
 
 Thread to unpark is held in successor, which is normally just the next node.
+
 Case 1: If head’s waiting status < 0, clear the waiting status. If the successor node (P1) is not in canceled state, unpark the successor node’s thread so that it can retry to acquire.
 
 [![AbstractQueuedSynchronizer (AQS)](http://2.bp.blogspot.com/-DpNONQNkK6M/UIKZ-pq0-6I/AAAAAAAAB9E/qhxTrd7n2Kw/s1600/unparkSuccessor.png "AbstractQueuedSynchronizer (AQS)")](http://2.bp.blogspot.com/-DpNONQNkK6M/UIKZ-pq0-6I/AAAAAAAAB9E/qhxTrd7n2Kw/s1600/unparkSuccessor.png)
