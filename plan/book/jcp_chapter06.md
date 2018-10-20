@@ -1,8 +1,9 @@
 
-**Task Execution**
+### Task Execution
 
 ***. Finding Exploitable Parallelism***
-> If you have a batch of computations to submit to an Executor and you want to retrieve their results as they become
+
+If you have a batch of computations to submit to an Executor and you want to retrieve their results as they become
 available, you could retain the Future associated with each task and repeatedly poll for completion by calling get with a
 timeout of zero. This is possible, but tedious. Fortunately there is a better way: a completion service.
 CompletionService combines the functionality of an Executor and a BlockingQueue. You can submit Callable tasks
@@ -41,7 +42,8 @@ public class Renderer {
 ```
 
 ***Placing Time Limits on Tasks***
-> Sometimes, if an activity does not complete within a certain amount of time, the result is no longer needed and the
+
+Sometimes, if an activity does not complete within a certain amount of time, the result is no longer needed and the
 activity can be abandoned. For example, a web application may fetch its advertisements from an external ad server, but
 if the ad is not available within two seconds, it instead displays a default advertisement so that ad unavailability does
 not undermine the site's responsiveness requirements. Similarly, a portal site may fetch data in parallel from multiple
