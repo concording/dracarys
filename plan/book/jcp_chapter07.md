@@ -1,5 +1,5 @@
 
-**cancellation and shutdown**
+## cancellation and shutdown
 
 ***. Responding to Interruption***
 
@@ -7,7 +7,7 @@
 blocking method, too; or
 2. Restore the interruption status so that code higher up on the call stack can deal with it.
 
-> Activities that do not support cancellation but still call interruptible blocking methods will have to call them in a loop,
+Activities that do not support cancellation but still call interruptible blocking methods will have to call them in a loop,
 retrying when interruption is detected. In this case, they should save the interruption status locally and restore it just
 before returning, as shown in Listing 7.7, rather than immediately upon catching InterruptedException. Setting the
 interrupted status too early could result in an infinite loop, because most interruptible blocking methods check the
@@ -33,4 +33,4 @@ public Task getNextTask(BlockingQueue<Taskgt; queue) {
     }
 ```
 
-***Stopping a ThreadǦbased Service***
+***Stopping a Thread based Service***
