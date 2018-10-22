@@ -36,7 +36,7 @@ i1.equals(i2) ?
 
 11. 分布式事务（难，后面研究）
 
-[分布式事务](https://www.cnblogs.com/savorboard/p/distributed-system-transaction-consistency.html)
+[https://www.cnblogs.com/savorboard/p/distributed-system-transaction-consistency.html](https://www.cnblogs.com/savorboard/p/distributed-system-transaction-consistency.html)
 
 比如很多人都知道数据库事务的几个特性：原子性(Atomicity )、一致性( Consistency )、隔离性或独立性( Isolation)和持久性(Durabilily)，简称就是ACID。
 
