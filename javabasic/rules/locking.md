@@ -5,6 +5,31 @@
 
 #### [Do not synchronize on objects that may be reused](https://wiki.sei.cmu.edu/confluence/display/java/LCK01-J.+Do+not+synchronize+on+objects+that+may+be+reused)
 
+***错误的使用方式***
+`private final Boolean initialized = Boolean.FALSE;`  `Boolean` 类型只有2个值: true and false.如果其他代码不小心锁在的`Boolean`字面量上，有可能会死锁。
+
+`private final Integer Lock = count;`
+
+`private final String lock = new String("LOCK").intern();`
+
+`private final String lock = "LOCK";`
+
+ 
+***正确的使用方式***
+```
+private int count = 0;
+private final Integer Lock = new Integer(count);
+ 
+public void doSomething() {
+  synchronized (Lock) {
+    count++;
+    // ...
+  }
+}
+```
+`private final String lock = new String("LOCK");`
+
+`private final Object lock = new Object();`
 
 #### [ Do not synchronize on the class object returned by getClass()](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=88487849)
 
