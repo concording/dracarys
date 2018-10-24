@@ -2,6 +2,17 @@
 
 #### [Use private final lock objects to synchronize classes that may interact with untrusted code](https://wiki.sei.cmu.edu/confluence/display/java/LCK00-J.+Use+private+final+lock+objects+to+synchronize+classes+that+may+interact+with+untrusted+code)
 
+```
+public class SomeObject {
+  private final Object lock = new Object(); // private final lock object
+ 
+  public void changeValue() {
+    synchronized (lock) { // Locks on the private Object
+      // ...
+    }
+  }
+}
+```
 
 #### [Do not synchronize on objects that may be reused](https://wiki.sei.cmu.edu/confluence/display/java/LCK01-J.+Do+not+synchronize+on+objects+that+may+be+reused)
 
@@ -33,6 +44,94 @@ public void doSomething() {
 
 #### [ Do not synchronize on the class object returned by getClass()](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=88487849)
 
+父类和子类有可能锁的不是一个对象。
+
+***错误的使用方式***
+```
+class Base {
+  static DateFormat format =
+      DateFormat.getDateInstance(DateFormat.MEDIUM);
+ 
+  public Date parse(String str) throws ParseException {
+    synchronized (getClass()) {
+      return format.parse(str);
+    }
+  }
+}
+ 
+class Derived extends Base {
+  public Date doSomethingAndParse(String str) throws ParseException {
+    synchronized (Base.class) {
+      // ...
+      return format.parse(str);
+    }
+  }
+}
+```
+```
+class Base {
+  static DateFormat format =
+      DateFormat.getDateInstance(DateFormat.MEDIUM);
+ 
+  public Date parse(String str) throws ParseException {
+    synchronized (getClass()) { // Intend to synchronizes on Base.class
+      return format.parse(str);
+    }
+  }
+ 
+  public Date doSomething(String str) throws ParseException {
+    return new Helper().doSomethingAndParse(str);
+  }
+ 
+  private class Helper {
+    public Date doSomethingAndParse(String str) throws ParseException {
+      synchronized (getClass()) { // Synchronizes on Helper.class
+        // ...
+        return format.parse(str);
+      }
+    }
+  }
+}
+```
+
+***正确的使用方式***
+```
+class Base {
+  static DateFormat format =
+      DateFormat.getDateInstance(DateFormat.MEDIUM);
+ 
+  public Date parse(String str) throws ParseException {
+    try {
+      synchronized (Class.forName("Base")) {
+        return format.parse(str);
+      }
+    } catch (ClassNotFoundException x) {
+      // "Base" not found; handle error
+    }
+    return null;
+  }
+}
+```
+```
+class Base {
+  // ...
+ 
+  public Date parse(String str) throws ParseException {
+    synchronized (Base.class) {
+      return format.parse(str);
+    }
+  }
+ 
+  private class Helper {
+    public Date doSomethingAndParse(String str) throws ParseException {
+      synchronized (Base.class) { // Synchronizes on Base class literal
+        // ...
+        return format.parse(str);
+      }
+    }
+  }
+}
+```
 
 #### [Do not synchronize on the intrinsic locks of high-level concurrency objects](https://wiki.sei.cmu.edu/confluence/display/java/LCK03-J.+Do+not+synchronize+on+the+intrinsic+locks+of+high-level+concurrency+objects)
 
