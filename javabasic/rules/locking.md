@@ -209,6 +209,41 @@ public void doSomething() {
 
 #### [Synchronize access to static fields that can be modified by untrusted code](https://wiki.sei.cmu.edu/confluence/display/java/LCK05-J.+Synchronize+access+to+static+fields+that+can+be+modified+by+untrusted+code)
 
+Methods that can both modify a static field and be invoked from [untrusted code](https://wiki.sei.cmu.edu/confluence/display/java/Rule+BB.+Glossary#RuleBB.Glossary-untruste) must [synchronize](https://wiki.sei.cmu.edu/confluence/display/java/Rule+BB.+Glossary#RuleBB.Glossary-synchroniz) access to the static field. Even when client-side locking is a specified requirement of the method, untrusted clients can fail to synchronize (whether inadvertently or maliciously). Because the static field is shared by all clients, untrusted clients may violate the contract by failing to provide suitable locking.
+
+According to Joshua Bloch [[Bloch 2008](https://wiki.sei.cmu.edu/confluence/display/java/Rule+AA.+References#RuleAA.References-Bloch08)]:
+
+> If a method modifies a static field, you must synchronize access to this field, even if the method is typically used only by a single thread. It is not possible for clients to perform external synchronization on such a method because there can be no guarantee that unrelated clients will do likewise.
+
+Documented design intent is irrelevant when dealing with untrusted code because an attacker can always choose to ignore the documentation.
+
+***错误的代码***
+```
+/* This class is not thread-safe */
+public final class CountHits {
+  private static int counter;
+ 
+  public void incrementCounter() {
+    counter++;
+  }
+}
+```
+***正确的代码***
+```
+/* This class is thread-safe */
+public final class CountHits {
+  private static int counter;
+  private static final Object lock = new Object();
+ 
+  public void incrementCounter() {
+    synchronized (lock) {
+      counter++;
+    }
+  }
+}
+
+```
+
 #### [Do not use an instance lock to protect shared static data](https://wiki.sei.cmu.edu/confluence/display/java/LCK06-J.+Do+not+use+an+instance+lock+to+protect+shared+static+data)
 
 #### [Avoid deadlock by requesting and releasing locks in the same order](https://wiki.sei.cmu.edu/confluence/display/java/LCK07-J.+Avoid+deadlock+by+requesting+and+releasing+locks+in+the+same+order)
