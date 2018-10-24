@@ -17,7 +17,6 @@ public class SomeObject {
 #### [Do not synchronize on objects that may be reused](https://wiki.sei.cmu.edu/confluence/display/java/LCK01-J.+Do+not+synchronize+on+objects+that+may+be+reused)
 
 ***错误的使用方式***
-
 `private final Boolean initialized = Boolean.FALSE;`  `Boolean` 类型只有2个值: true and false.如果其他代码不小心锁在的`Boolean`字面量上，有可能会死锁。
 
 `private final Integer Lock = count;`
@@ -136,7 +135,77 @@ class Base {
 
 #### [Do not synchronize on the intrinsic locks of high-level concurrency objects](https://wiki.sei.cmu.edu/confluence/display/java/LCK03-J.+Do+not+synchronize+on+the+intrinsic+locks+of+high-level+concurrency+objects)
 
+Code that uses the intrinsic lock of a `Lock` object is likely to interact with code that uses the `Lock` interface.These two components will believe they are protecting data with the same lock, while they are, in fact, using two distinct locks. As such, the `Lock` will fail to protect any data.
+
+***错误使用方式***
+```
+private final Lock lock = new ReentrantLock();
+ 
+public void doSomething() {
+  synchronized(lock) {
+    // ...
+  }
+}
+```
+
+***正确使用方式***
+```
+private final Lock lock = new ReentrantLock();
+ 
+public void doSomething() {
+  lock.lock();
+  try {
+    // ...
+  } finally {
+    lock.unlock();
+  }
+}
+```
+
 #### [Do not synchronize on a collection view if the backing collection is accessible](https://wiki.sei.cmu.edu/confluence/display/java/LCK04-J.+Do+not+synchronize+on+a+collection+view+if+the+backing+collection+is+accessible)
+
+In this example, `HashMap` provides the backing collection for the synchronized map represented by `mapView`, which provides the backing collection for `setView`, as shown in the following figure.
+
+![](https://wiki.sei.cmu.edu/confluence/download/attachments/88487846/con06-j-backing-collection.JPG?version=1&modificationDate=1270734183000&api=v2)
+
+The `HashMap` object is inaccessible, but `mapView` is accessible via the public `getMap()` method. Because the `synchronized`statement uses the intrinsic lock of `setView` rather than of `mapView`, another thread can modify the synchronized map and invalidate the `k` iterator.
+
+***错误的使用方式***
+```
+private final Map<Integer, String> mapView =
+    Collections.synchronizedMap(new HashMap<Integer, String>());
+private final Set<Integer> setView = mapView.keySet();
+ 
+public Map<Integer, String> getMap() {
+  return mapView;
+}
+ 
+public void doSomething() {
+  synchronized (setView) {  // Incorrectly synchronizes on setView
+    for (Integer k : setView) {
+      // ...
+    }
+  }
+}
+```
+***正确的使用方式***
+```
+private final Map<Integer, String> mapView =
+    Collections.synchronizedMap(new HashMap<Integer, String>());
+private final Set<Integer> setView = mapView.keySet();
+ 
+public Map<Integer, String> getMap() {
+  return mapView;
+}
+ 
+public void doSomething() {
+  synchronized (mapView) {  // Synchronize on map, rather than set
+    for (Integer k : setView) {
+      // ...
+    }
+  }
+}
+```
 
 #### [Synchronize access to static fields that can be modified by untrusted code](https://wiki.sei.cmu.edu/confluence/display/java/LCK05-J.+Synchronize+access+to+static+fields+that+can+be+modified+by+untrusted+code)
 
