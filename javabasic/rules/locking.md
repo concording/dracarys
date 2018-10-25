@@ -164,6 +164,8 @@ public void doSomething() {
 
 #### [Do not synchronize on a collection view if the backing collection is accessible](https://wiki.sei.cmu.edu/confluence/display/java/LCK04-J.+Do+not+synchronize+on+a+collection+view+if+the+backing+collection+is+accessible)
 
+It is imperative that the user manually synchronize on the returned `Map` when iterating over any of its `Collection` views rather than synchronizing on the `Collection` view itself.
+
 In this example, `HashMap` provides the backing collection for the synchronized map represented by `mapView`, which provides the backing collection for `setView`, as shown in the following figure.
 
 ![](https://wiki.sei.cmu.edu/confluence/download/attachments/88487846/con06-j-backing-collection.JPG?version=1&modificationDate=1270734183000&api=v2)
@@ -243,15 +245,3 @@ public final class CountHits {
 }
 
 ```
-
-#### [Do not use an instance lock to protect shared static data](https://wiki.sei.cmu.edu/confluence/display/java/LCK06-J.+Do+not+use+an+instance+lock+to+protect+shared+static+data)
-
-#### [Avoid deadlock by requesting and releasing locks in the same order](https://wiki.sei.cmu.edu/confluence/display/java/LCK07-J.+Avoid+deadlock+by+requesting+and+releasing+locks+in+the+same+order)
-
-#### [Ensure actively held locks are released on exceptional conditions](https://wiki.sei.cmu.edu/confluence/display/java/LCK08-J.+Ensure+actively+held+locks+are+released+on+exceptional+conditions)
-
-#### [Do not perform operations that can block while holding a lock](https://wiki.sei.cmu.edu/confluence/display/java/LCK09-J.+Do+not+perform+operations+that+can+block+while+holding+a+lock)
-
-#### [Use a correct form of the double-checked locking idiom](https://wiki.sei.cmu.edu/confluence/display/java/LCK10-J.+Use+a+correct+form+of+the+double-checked+locking+idiom)
-
-#### [Avoid client-side locking when using classes that do not commit to their locking strategy](https://wiki.sei.cmu.edu/confluence/display/java/LCK11-J.+Avoid+client-side+locking+when+using+classes+that+do+not+commit+to+their+locking+strategy)
