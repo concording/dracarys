@@ -201,11 +201,13 @@ The double-checked locking idiom is frequently used to implement a [singleton fa
 
 Lazy initialization uses either a class or an instance method, depending on whether the member object is static. The method checks whether the instance has already been created and, if not, creates it. When the instance already exists, the method simply returns the instance:
 
+
+***错误的使用方式***
+
 > Writes that initialize the `Helper` object and the write to the `helper` field can be done or perceived out of order. As a result, a thread which invokes `getHelper()` could see a non-null reference to a `helper` object, but see the default values for fields of the `helper` object, rather than the values set in the constructor.
 
 > Even if the compiler does not reorder those writes, on a multiprocessor, the processor or the memory system may reorder those writes, as perceived by a thread running on another processor.
 
-***错误的使用方式***
 ```
 // Double-checked locking idiom
 final class Foo {
