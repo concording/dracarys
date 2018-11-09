@@ -32,8 +32,3 @@ Note that there can be more than one trigger pointing to the same job but a sing
 
 [![Quartz Scheduler Model](http://www.javarticles.com/wp-content/uploads/2016/03/QuartzSchedulerModel-768x438.png)](http://www.javarticles.com/wp-content/uploads/2016/03/QuartzSchedulerModel.png)
 
-Comments are closed.
-
-Measure
-
-Measure
