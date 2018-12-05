@@ -132,9 +132,9 @@ It can be defined in [logback.xml](https://github.com/mahanhz/clean-architecture
 
 The custom TurboFilter ([ExpiringDuplicateMessageFilter](https://github.com/mahanhz/clean-architecture-example/blob/master/application/configuration/src/main/java/com/example/clean/app/configuration/log/ExpiringDuplicateMessageFilter.java)) will override the following methods:
 
-*   _start _– for initializing the cache
-*   _stop _– for invalidating the cache
-*   _decide _– contains the logic
+*   _start_ – for initializing the cache
+*   _stop_ – for invalidating the cache
+*   _decide_ – contains the logic
 
 I will use [Caffeine](https://github.com/ben-manes/caffeine) to implement the in-memory cache containing the messages and their respective repetition count.
 
