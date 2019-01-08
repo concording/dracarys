@@ -1,7 +1,7 @@
 ## Business: Chinese internet firms Clubbing together
 
 
-The merger of Meituan and Dianping could herald a bigger consolidation.
+The merger of Meituan and Dianping could *herald* a bigger consolidation.
 
 GROUP buyingin which discounts are offered on goods and services once a certain number of consumers have signed up-may be falling out of fashion in many countries, with even America's pioneer, Groupon, slashing over 1,000 jobs last month, but it is still doing well in China. According to Analysys International, a research firm, bargain hunters there rang up 77 billion yuan ($12.1 billion) in sales through group-buying websites in the first half of this year. That is a rise of 168% on a year earlier.
 
