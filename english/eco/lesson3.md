@@ -3,7 +3,7 @@
 
 The merger of Meituan and Dianping could *herald* a bigger consolidation.
 
-GROUP buyingin which discounts are offered on goods and services once a certain number of consumers have signed up-may be falling out of fashion in many countries, with even America's pioneer, Groupon, slashing over 1,000 jobs last month, but it is still doing well in China. According to Analysys International, a research firm, bargain hunters there rang up 77 billion yuan ($12.1 billion) in sales through group-buying websites in the first half of this year. That is a rise of 168% on a year earlier.
+GROUP buying in which discounts are offered on goods and services once a certain number of consumers have signed up-may be falling out of fashion in many countries, with even America's pioneer, Groupon, slashing over 1,000 jobs last month, but it is still doing well in China. According to Analysys International, a research firm, bargain *hunters* there *rang up* 77 billion yuan ($12.1 billion) in sales through group-buying websites in the first half of this year. That is a rise of 168% on a year earlier.
 
 Even more striking is news this week of a merger between the two biggest Chinese firms in the business, which may herald a broader consolidation in China's internet sector. Groupon has flopped in China; just as many other Western internet firms have done.This has left the field clear for local businesses. On October 8th two Chinese companies which between them have about four-fifths of the local group-buying market said that they would combine.
 
