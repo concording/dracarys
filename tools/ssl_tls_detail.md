@@ -30,7 +30,7 @@ The handshake protocol is a series of sequenced messages that negotiate the secu
 
 The following is an example of a Client Hello message:
 
-[Copy](javascript:CodeSnippet_CopyCode('CodeSnippetContainerCode0'); "Copy to clipboard.")
+```
 
 ClientVersion 3,1
 ClientRandom[32]
@@ -39,6 +39,7 @@ Suggested Cipher Suites:
    TLS_RSA_WITH_3DES_EDE_CBC_SHA
    TLS_RSA_WITH_DES_CBC_SHA
 Suggested Compression Algorithm: NONE
+```
 
 ### Server Response to Client
 
@@ -62,7 +63,7 @@ Suggested Compression Algorithm: NONE
 
 The following is an example of a Server Hello Message:
 
-[Copy](javascript:CodeSnippet_CopyCode('CodeSnippetContainerCode1'); "Copy to clipboard.")
+```
 
 Version 3,1
 ServerRandom[32]
@@ -70,7 +71,7 @@ SessionID: bd608869f0c629767ea7e3ebf7a63bdcffb0ef58b1b941e6b0c044acb6820a77
 Use Cipher Suite:
 TLS_RSA_WITH_3DES_EDE_CBC_SHA
 Compression Algorithm: NONE
-
+```
 **Server Certificate.** The server sends its certificate to the client. The server certificate contains the server’s public key. The client will use this key to authenticate the server and to encrypt the premaster secret.
 
 The client also checks the name of the server in the certificate to verify that it matches the name the client used to connect. If the user typed www.contoso.com as the URL in the browser, the certificate should contain a subject name of www.contoso.com or *.contoso.com. Internet Explorer will warn the user if these names do not match.
