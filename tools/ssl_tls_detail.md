@@ -122,3 +122,6 @@ The record protocol receives the data from the application layer and:
 *   Applies an HMAC (or a MAC for SSL 3.0) to outgoing data. Computes the HMAC and verifies that it is identical to the value transmitted in order to check data integrity when a message is received.
 
 Once the record protocol has completed its operations on the data, it sends the data to the TCP/IP transport layer for transmission. If the data is incoming, it is sent to the appropriate process for reception.
+
+
+[!reference doc](https://tools.ietf.org/html/rfc5246)
