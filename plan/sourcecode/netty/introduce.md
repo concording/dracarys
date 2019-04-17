@@ -250,17 +250,12 @@ As I mentioned, the [messageReceived](http://netty.io/docs/stable/api/org/jboss/
 Once we issue the critical business event of logging the received date, the handler is technically done, so what's the score with that code on line 30 ? Since there _might_ be additional handlers further up the pipeline, it's a good idea to always send the payload on its way once it has been handled. If there are no additional handlers, the pipeline will discard the message.
 The source code for [DateSender](https://github.com/nickman/netty-ajax-server/blob/master/src/main/java/org/helios/netty/examples/DateSender.java) is in the GitHub repository if you want to view the whole thing, and here's what the output looks like:
 
-**[Server]:Listening on 8080
-
-[Client]:DateSender Example
-
-[Client]:Issuing Channel Connect...
-
-[Client]:Waiting for Channel Connect...
-
-[Client]:Connected. Sending Date
-
-[Server]:Hey Guys !  I got a date ! [Sat May 19 14:00:58 EDT 2012]**
+**[Server]:Listening on 8080**
+**[Client]:DateSender Example**
+**[Client]:Issuing Channel Connect...**
+**[Client]:Waiting for Channel Connect...**
+**[Client]:Connected. Sending Date**
+**[Server]:Hey Guys !  I got a date ! [Sat May 19 14:00:58 EDT 2012]**
 
 Note that this example is purely one way. We only send a Date up to the server and nothing is sent back. If it were to, the pipelines on both sides would need their counterparts,which I will discuss next.
 
