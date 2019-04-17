@@ -251,10 +251,15 @@ Once we issue the critical business event of logging the received date, the hand
 The source code for [DateSender](https://github.com/nickman/netty-ajax-server/blob/master/src/main/java/org/helios/netty/examples/DateSender.java) is in the GitHub repository if you want to view the whole thing, and here's what the output looks like:
 
 **[Server]:Listening on 8080
+
 [Client]:DateSender Example
+
 [Client]:Issuing Channel Connect...
+
 [Client]:Waiting for Channel Connect...
+
 [Client]:Connected. Sending Date
+
 [Server]:Hey Guys !  I got a date ! [Sat May 19 14:00:58 EDT 2012]**
 
 Note that this example is purely one way. We only send a Date up to the server and nothing is sent back. If it were to, the pipelines on both sides would need their counterparts,which I will discuss next.
@@ -412,46 +417,46 @@ The ConditionalCompressionHandler must examine the size of the ChannelBuffer it 
 
 ```
 public class ConditionalCompressionHandler extends SimpleChannelDownstreamHandler {
- /** The minimum size of a payload to be compressed */
- protected final int sizeThreshold;
- /** The name of the handler to remove if the payload is smaller than specified sizeThreshold */
- protected final String nameOfCompressionHandler;
- /** The compression handler */
- protected volatile ChannelHandler compressionHandler = null;
-  
- /**
-  * Creates a new ConditionalCompressionHandler
-  * @param sizeThreshold The minimum size of a payload to be compressed 
-  * @param nameOfCompressionHandler The name of the handler to remove if the payload is smaller than specified sizeThreshold
-  */
- public ConditionalCompressionHandler(int sizeThreshold, String nameOfCompressionHandler) {
-  this.sizeThreshold = sizeThreshold;
-  this.nameOfCompressionHandler = nameOfCompressionHandler;
- }
-  
- /**
-  * see org.jboss.netty.channel.SimpleChannelDownstreamHandler
-  */
- public void writeRequested(ChannelHandlerContext ctx, MessageEvent e) {
-  // If the message is not a ChannelBuffer, hello ClassCastException !
-  ChannelBuffer cb = (ChannelBuffer)e.getMessage();
-  // Check to see if we already removed the handler
-  boolean pipelineContainsCompressor = ctx.getPipeline().getContext(nameOfCompressionHandler)!=null;
-  if(cb.readableBytes() < sizeThreshold) {  
-   if(pipelineContainsCompressor) {
-    // The payload is too small to be compressed but the pipeline contains the compression handler
-    // so we need to remove it.
-    compressionHandler = ctx.getPipeline().remove(nameOfCompressionHandler);
-   }
-  } else {
-   // We want to compress the payload, let's make sure the compressor is there
-   if(!pipelineContainsCompressor) {
-    // Oops, it's not there, so lets put it in
-    ctx.getPipeline().addAfter(ctx.getName(), nameOfCompressionHandler , compressionHandler);
-   }
-  }
- }
-  
+ /** The minimum size of a payload to be compressed */
+ protected final int sizeThreshold;
+ /** The name of the handler to remove if the payload is smaller than specified sizeThreshold */
+ protected final String nameOfCompressionHandler;
+ /** The compression handler */
+ protected volatile ChannelHandler compressionHandler = null;
+  
+ /**
+  * Creates a new ConditionalCompressionHandler
+  * @param sizeThreshold The minimum size of a payload to be compressed 
+  * @param nameOfCompressionHandler The name of the handler to remove if the payload is smaller than specified sizeThreshold
+  */
+ public ConditionalCompressionHandler(int sizeThreshold, String nameOfCompressionHandler) {
+  this.sizeThreshold = sizeThreshold;
+  this.nameOfCompressionHandler = nameOfCompressionHandler;
+ }
+  
+ /**
+  * see org.jboss.netty.channel.SimpleChannelDownstreamHandler
+  */
+ public void writeRequested(ChannelHandlerContext ctx, MessageEvent e) {
+  // If the message is not a ChannelBuffer, hello ClassCastException !
+  ChannelBuffer cb = (ChannelBuffer)e.getMessage();
+  // Check to see if we already removed the handler
+  boolean pipelineContainsCompressor = ctx.getPipeline().getContext(nameOfCompressionHandler)!=null;
+  if(cb.readableBytes() < sizeThreshold) {  
+   if(pipelineContainsCompressor) {
+    // The payload is too small to be compressed but the pipeline contains the compression handler
+    // so we need to remove it.
+    compressionHandler = ctx.getPipeline().remove(nameOfCompressionHandler);
+   }
+  } else {
+   // We want to compress the payload, let's make sure the compressor is there
+   if(!pipelineContainsCompressor) {
+    // Oops, it's not there, so lets put it in
+    ctx.getPipeline().addAfter(ctx.getName(), nameOfCompressionHandler , compressionHandler);
+   }
+  }
+ }
+  
 }
 ```
 
