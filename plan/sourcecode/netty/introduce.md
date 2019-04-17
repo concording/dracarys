@@ -12,51 +12,19 @@ You build a Netty stack and start it. Issuing requests is easy and much the same
 
 #### A Standard API
 
-[?](http://seeallhearall.blogspot.com/2012/05/netty-tutorial-part-1-introduction-to.html#)
-
-| 
-
-1
-
- | 
-
-`public` `int` `getWidgetCount();`
-
- |
+`public int getWidgetCount();`
 
 When a thread calls **getWidgetCount()**, some period of time will elapse and an **int** will be returned.
 
 #### Asynchronous API
-
-[?](http://seeallhearall.blogspot.com/2012/05/netty-tutorial-part-1-introduction-to.html#)
-
-| 
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
- | 
-
-`public` `WidgetCountListener myListener =` `new` `WidgetCountListener() {`
-
-`public` `void` `onWidgetCount(``int` `widgetCount) {`
-
-`......` `do` `your thing with the widget count`
-
-`}`
-
-`};`
-
- |
+```
+public WidgetCountListener myListener = new WidgetCountListener() {
+     public void onWidgetCount(int widgetCount) {
+          ...... do your thing with the widget count
+ 
+     }
+};
+```
 
 In my fabricated asynchronous version of the same API, the **getWidgetCount** call does not return anything and could conceivably execute instantly. However, it accepts a response handler as an argument and that listener will be called back when the widget count has been acquired and the listener can then do whatever is usefully defined with that result.
 It might seem the additional layer[s] of complexity are unwarranted, but this is a crucial aspect of high performance applications and services written with Netty and the like. Your client need not waste resources having threads stuck in waiting or timed waiting mode, waiting for the server to respond. They can be notified when the result is available. For one thread, issuing one call, this may seem overkill, but consider hundreds of threads executing this method millions of times. Moreover, a fundamental benefit of NIO is that **[Selectors](http://docs.oracle.com/javase/6/docs/api/java/nio/channels/Selector.html) **can be used to delegate the notification of events we are interested in to the underlying operating system and at the root of it all, to the hardware we're running on. Being informed through callbacks from the OS that 16 bytes have been successfully written out across the network to a server, or that 14 bytes were just read in from the same is obviously a very low level and granular way to work, but through a chain of abstractions, a developer can implement the Java NIO and Netty APIs to enable handling things at much less granular and abstracted level.
@@ -125,17 +93,7 @@ In a nutshell, to send something to a listening server:
 
  Passing **Object** to the channel seems fairly flexible, no ?  So what happens if I do this ?
 
-[?](http://seeallhearall.blogspot.com/2012/05/netty-tutorial-part-1-introduction-to.html#)
-
-| 
-
-1
-
- | 
-
-`channel.write(``new` `Date());`
-
- |
+`channel.write(new Date());`
 
 Netty will issue this exception:
 
@@ -170,69 +128,22 @@ So how do I get these ChannelHandlers to help me with my java.util.Date problem 
 
 Alright, checkpoint:  We need a Channel, which we get from a ChannelFactory, but we also need to define a ChannelPipeline. There's a few ways you can do this, but Netty provides a construct called a **[Bootstrap](http://netty.io/docs/stable/api/org/jboss/netty/bootstrap/Bootstrap.html) **that wraps all these things together quite nicely, so here's how all this stuff fits together in order to create a Netty client that can send a **Date**. This example will implement the [**NioClientSocketChannelFactory**](http://netty.io/docs/stable/api/org/jboss/netty/channel/socket/nio/NioClientSocketChannelFactory.html) which will create an instance of an [**NioClientSocketChannel**](file:///home/nwhitehead/libs/java/netty/netty-3.4.5.Final/doc/xref/org/jboss/netty/channel/socket/nio/NioClientSocketChannel.html). It bears mentioning, though, that for the most part, the Netty public API simply returns a [**SocketChannel**](http://netty.io/docs/stable/api/org/jboss/netty/channel/socket/SocketChannel.html), an abstract parent class, and you can just consider this to be a plain **Channel** as the implementations themselves exhibit identical behavior and exposed functionality. This code sample is a little more simplified that what you might see in other examples, but I doeth it for clarity.
 
-[?](http://seeallhearall.blogspot.com/2012/05/netty-tutorial-part-1-introduction-to.html#)
-
-| 
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
-11
-
-12
-
-13
-
-14
-
- | 
-
-`Executor bossPool = Executors.newCachedThreadPool();`
-
-`Executor workerPool = Executors.newCachedThreadPool();`
-
-`ChannelFactory channelFactory =` `new` `NioClientSocketChannelFactory(bossPool, workerPool);`
-
-`ChannelPipelineFactory pipelineFactory =` `new` `ChannelPipelineFactory() {`
-
-`public` `ChannelPipeline getPipeline()` `throws` `Exception {`
-
-`return` `Channels.pipeline(`
-
-`new` `ObjectEncoder()`
-
-`}`
-
-`};`
-
-`Bootstrap boostrap =` `new` `ClientBootstrap(channelFactory);`
-
-`boostrap.setPipelineFactory(pipelineFactory);`
-
-`// Phew. Ok. We built all that. Now what ?`
-
-`InetSocketAddress addressToConnectTo =` `new` `InetSocketAddress(remoteHost, remotePort);`
-
-`ChannelFuture cf = bootstrap.connect(addressToConnectTo);`
-
- |
+```
+Executor bossPool = Executors.newCachedThreadPool();
+Executor workerPool = Executors.newCachedThreadPool();
+ChannelFactory channelFactory = new NioClientSocketChannelFactory(bossPool, workerPool);
+ChannelPipelineFactory pipelineFactory = new ChannelPipelineFactory() {
+  public ChannelPipeline getPipeline() throws Exception {
+    return Channels.pipeline(
+      new ObjectEncoder()
+    }
+};
+Bootstrap boostrap = new ClientBootstrap(channelFactory);
+boostrap.setPipelineFactory(pipelineFactory);
+// Phew. Ok. We built all that. Now what ?
+InetSocketAddress addressToConnectTo = new InetSocketAddress(remoteHost, remotePort);
+ChannelFuture cf = bootstrap.connect(addressToConnectTo);
+```
 
 That's how you get a Channel.....  wait up !  That's not a Channel. It's a [ChannelFuture](http://netty.io/docs/stable/api/org/jboss/netty/channel/ChannelFuture.html). What's that ? Remember that [almost] everything is asynchronous in Netty, so when you request a connection, the actual process of connecting is asynchronous. For that reason, the bootstrap returns a ChannelFuture which is a "handle" to a forthcoming completion event. The ChannelFuture provides the state of the requested operation, and assuming the connect completes successfully, will also provide the Channel. There are (as always....) several options for exactly how the calling thread can wait for the connection to complete, and the following outline of these options applies equally to _all_ asynchronous invocations against channels (disconnects, writes etc.) since all these operations return ChannelFutures.
 
@@ -254,113 +165,33 @@ Having said that, here's how you can wait for completion:
 
 In summary, this code outlines examples of the completion waiting options, using a _connect_ operation as the asynchronous event we're waiting for, but applicable for most operations:
 
-[?](http://seeallhearall.blogspot.com/2012/05/netty-tutorial-part-1-introduction-to.html#)
-
-| 
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
-11
-
-12
-
-13
-
-14
-
-15
-
-16
-
-17
-
-18
-
-19
-
-20
-
-21
-
-22
-
-23
-
-24
-
-25
-
- | 
-
-`// Waiting on a connect. (Pick one)`
-
-`ChannelFuture cf = bootstrap.connect(addressToConnectTo);`
-
-`// A. wait interruptibly`
-
-`cf.await();`
-
-`// B. wait interruptibly with a timeout of 2000 ms.`
-
-`cf.await(``2000``, TimeUnit.MILLISECONDS);`
-
-`// C. wait uninterruptibly`
-
-`cf.awaitUninterruptibly();`
-
-`// D. wait uninterruptibly with a timeout of 2000 ms.`
-
-`cf.awaitUninterruptibly(``2000``, TimeUnit.MILLISECONDS);`
-
-`// E. add a ChannelFutureListener that writes the Date when the connect is complete`
-
-`cf.addListener(``new` `ChannelFutureListener(){`
-
-`public` `void` `operationComplete(ChannelFuture future)` `throws` `Exception {`
-
-`// chek to see if we succeeded`
-
-`if``(future.isSuccess()) {`
-
-`Channel channel = future.getChannel();`
-
-`channel.write(``new` `Date());`
-
-`// remember, the write is asynchronous too !`
-
-`}`
-
-`}`
-
-`});`
-
-`// if a wait option was selected and the connect did not fail,`
-
-`// the Date can now be sent.`
-
-`Channel channel = cf.getChannel();`
-
-`channel.write(``new` `Date());`
-
- |
+```
+// Waiting on a connect. (Pick one)
+ChannelFuture cf = bootstrap.connect(addressToConnectTo);
+// A. wait interruptibly
+cf.await();
+// B. wait interruptibly with a timeout of 2000 ms.
+cf.await(2000, TimeUnit.MILLISECONDS);
+// C. wait uninterruptibly
+cf.awaitUninterruptibly();
+// D. wait uninterruptibly with a timeout of 2000 ms.
+cf.awaitUninterruptibly(2000, TimeUnit.MILLISECONDS);
+// E. add a ChannelFutureListener that writes the Date when the connect is complete
+cf.addListener(new ChannelFutureListener(){
+ public void operationComplete(ChannelFuture future) throws Exception {
+  // chek to see if we succeeded
+  if(future.isSuccess()) {
+   Channel channel = future.getChannel();
+   channel.write(new Date());
+   // remember, the write is asynchronous too !
+  }
+ }
+});
+// if a wait option was selected and the connect did not fail,
+// the Date can now be sent.
+Channel channel = cf.getChannel();
+channel.write(new Date());
+```
 
 Typically, in a client side application, the **awaitXXX** would be appropriate, since your client thread may not have much to do while it waits anyways. In a server code stack (perhaps some sort of proxy server), the connect event callback might be a better choice since there is more likely to be a backlog of work to be done and threads should not be sitting around waiting on I/O events to complete.
 The Netty documentation makes this fairly clear, but it is worth emphasising here, you want your Worker threads working, not waiting, so avoid calling any awaits in a worker thread.
@@ -376,131 +207,39 @@ The server socket sends ChannelEvents loaded with the byte stream it is receivin
 Think of server channel pipelines as being your actual business service invokers. Our actual business service is the **DateReceiver** and the pipeline feeds it properly unmarshalled data. Of course, you could create a pipeline that contains just one handler that does everything, but chaining together simple components provides much more flexibility. For example, if I was sending not just a Date, but perhaps an array of 300 Dates, I might want to add [Compression](http://netty.io/docs/stable/api/org/jboss/netty/handler/codec/compression/ZlibEncoder.html)/[Decompression](http://netty.io/docs/stable/api/org/jboss/netty/handler/codec/compression/ZlibDecoder.html) handlers into the client and server pipelines to shrink the size of the transmitted payload, and I can do this by simply modifying the pipeline configurations, rather than have to add additional code to my rhetorical single-do-everything handler. Or I might want to add some authentication so not just any old client can send Dates to my server..... Or what if I needed to shift the Date in transit to account for Time Zone changes..... Or......  it makes more sense to componentize.
 The Server side of the DateSender is fairly simple. We create a channel factory, a pipeline factory and put the ObjectDecoder and our custom DateHandler into the pipeline. We'll use a [ServerBootstrap](http://netty.io/docs/stable/api/org/jboss/netty/bootstrap/ServerBootstrap.html) instead of a [ClientBootstrap](http://netty.io/docs/stable/api/org/jboss/netty/bootstrap/ClientBootstrap.html) and rather than connecting, as we did in the client, we're going to bind to a server socket so we can listen for requests from clients.
 
-[?](http://seeallhearall.blogspot.com/2012/05/netty-tutorial-part-1-introduction-to.html#)
-
-| 
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
-11
-
-12
-
-13
-
-14
-
-15
-
-16
-
-17
-
-18
-
-19
-
-20
-
-21
-
-22
-
-23
-
-24
-
-25
-
-26
-
-27
-
-28
-
-29
-
-30
-
-31
-
- | 
-
-`public` `static` `void` `bootServer() {`
-
-`// More terse code to setup the server`
-
-`ServerBootstrap bootstrap =` `new` `ServerBootstrap(`
-
-`new` `NioServerSocketChannelFactory(`
-
-`Executors.newCachedThreadPool(),`
-
-`Executors.newCachedThreadPool()));`
-
-`// Set up the pipeline factory.`
-
-`bootstrap.setPipelineFactory(``new` `ChannelPipelineFactory() {`
-
-`public` `ChannelPipeline getPipeline()` `throws` `Exception {`
-
-`return` `Channels.pipeline(`
-
-`new` `ObjectDecoder(ClassResolvers.cacheDisabled(getClass().getClassLoader())),`
-
-`new` `DateHandler()`
-
-`);`
-
-`};`
-
-`});`
-
-`// Bind and start to accept incoming connections.`
-
-`bootstrap.bind(``new` `InetSocketAddress(``"0.0.0.0"``,` `8080``));`
-
-`slog(``"Listening on 8080"``);`
-
-`}`
-
-`static` `class` `DateHandler` `extends` `SimpleChannelHandler {`
-
-`public` `void` `messageReceived(ChannelHandlerContext ctx,MessageEvent e)` `throws` `Exception {`
-
-`Date date = (Date)e.getMessage();`
-
-`// Here's the REALLY important business service at the end of the pipeline`
-
-`slog(``"Hey Guys !  I got a date ! ["` `+ date +` `"]"``);`
-
-`// Huh ?`
-
-`super``.messageReceived(ctx, e);`
-
-`} `
-
-`}`
-
- |
+```
+public static void bootServer() {
+ // More terse code to setup the server
+ ServerBootstrap bootstrap = new ServerBootstrap(
+   new NioServerSocketChannelFactory(
+     Executors.newCachedThreadPool(),
+     Executors.newCachedThreadPool()));
+ 
+ // Set up the pipeline factory.
+ bootstrap.setPipelineFactory(new ChannelPipelineFactory() {
+  public ChannelPipeline getPipeline() throws Exception {
+   return Channels.pipeline(
+    new ObjectDecoder(ClassResolvers.cacheDisabled(getClass().getClassLoader())),
+    new DateHandler()
+   );
+  };
+ });
+ 
+ // Bind and start to accept incoming connections.
+ bootstrap.bind(new InetSocketAddress("0.0.0.0", 8080));
+ slog("Listening on 8080");
+}
+ 
+static class DateHandler extends SimpleChannelHandler {
+ public void messageReceived(ChannelHandlerContext ctx,MessageEvent e) throws Exception {
+  Date date = (Date)e.getMessage();
+  // Here's the REALLY important business service at the end of the pipeline
+  slog("Hey Guys !  I got a date ! [" + date + "]");
+  // Huh ?
+  super.messageReceived(ctx, e);
+ }  
+}
+```
 
 Starting at the bottom, the DateHandler extends [SimpleChannelHandler](http://netty.io/docs/stable/api/org/jboss/netty/channel/SimpleChannelHandler.html) which tends to be a good way to go when you're not doing anything out of the ordinary because it's callbacks are strongly typed. In other words, you do not have to listen on all ChannelEvents and test the type of the event for the ones you want. In this case, the only callback that is overridden is [messageReceived](http://netty.io/docs/stable/api/org/jboss/netty/channel/SimpleChannelHandler.html#messageReceived%28org.jboss.netty.channel.ChannelHandlerContext,%20org.jboss.netty.channel.MessageEvent%29) which means the handler has received some actual payload.
 **slog** and **clog** are simple wrappers for _System.out.println_ but the former prefixes with **[Server]** and the latter with **[Client]** so's we can differentiate the output.
@@ -530,216 +269,64 @@ Both clients and servers will read and write in a bidirectional scenario. Consid
 
  Here's the code that creates the new Client pipeline:
 
-[?](http://seeallhearall.blogspot.com/2012/05/netty-tutorial-part-1-introduction-to.html#)
-
-| 
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
- | 
-
-`ChannelPipelineFactory pipelineFactory =` `new` `ChannelPipelineFactory() {`
-
-`public` `ChannelPipeline getPipeline()` `throws` `Exception {`
-
-`return` `Channels.pipeline(`
-
-`new` `ObjectEncoder(),`
-
-`// Next 2 Lines are new`
-
-`new` `ObjectDecoder(ClassResolvers.cacheDisabled(getClass().getClassLoader())),`
-
-`new` `ClientDateHandler()`
-
-`);`
-
-`}`
-
-`};`
-
- |
+```
+ChannelPipelineFactory pipelineFactory = new ChannelPipelineFactory() {
+  public ChannelPipeline getPipeline() throws Exception {
+    return Channels.pipeline(
+      new ObjectEncoder(),
+      // Next 2 Lines are new
+      new ObjectDecoder(ClassResolvers.cacheDisabled(getClass().getClassLoader())),
+      new ClientDateHandler()
+    );
+  }
+};
+```
 
 The code for the client DateHandler is very simple and it is invoked when the client receives a Date back from the server and it has been decoded:
 
-[?](http://seeallhearall.blogspot.com/2012/05/netty-tutorial-part-1-introduction-to.html#)
-
-| 
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
- | 
-
-`static` `class` `ClientDateHandler` `extends` `SimpleChannelHandler {`
-
-`public` `void` `messageReceived(ChannelHandlerContext ctx,MessageEvent e)` `throws` `Exception {`
-
-`Date date = (Date)e.getMessage();`
-
-`clog(``"Hey Guys !  I got back a modified date ! ["` `+ date +` `"]"``);`
-
-`}`
-
-`}`
-
- |
-
+```
+static class ClientDateHandler extends SimpleChannelHandler {
+ public void messageReceived(ChannelHandlerContext ctx,MessageEvent e) throws Exception {
+  Date date = (Date)e.getMessage();
+  clog("Hey Guys !  I got back a modified date ! [" + date + "]");
+ }
+}
+```
 The server pipeline is almost the mirror of the client now:
 
-[?](http://seeallhearall.blogspot.com/2012/05/netty-tutorial-part-1-introduction-to.html#)
-
-| 
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
- | 
-
-`bootstrap.setPipelineFactory(``new` `ChannelPipelineFactory() {`
-
-`public` `ChannelPipeline getPipeline()` `throws` `Exception {`
-
-`return` `Channels.pipeline(`
-
-`new` `ObjectDecoder(ClassResolvers.cacheDisabled(getClass().getClassLoader())),`
-
-`// Next 2 Lines are new`
-
-`new` `ObjectEncoder(),`
-
-`new` `ServerDateHandler()`
-
-`);`
-
-`};`
-
-`});`
-
- |
-
+```
+bootstrap.setPipelineFactory(new ChannelPipelineFactory() {
+ public ChannelPipeline getPipeline() throws Exception {
+  return Channels.pipeline(
+   new ObjectDecoder(ClassResolvers.cacheDisabled(getClass().getClassLoader())),
+   // Next 2 Lines are new
+   new ObjectEncoder(),
+   new ServerDateHandler()
+  );
+ };
+});
+```
 This is the code for the new Server DateHandler which has a few new concepts.
 
-[?](http://seeallhearall.blogspot.com/2012/05/netty-tutorial-part-1-introduction-to.html#)
-
-| 
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
-11
-
-12
-
-13
-
-14
-
-15
-
-16
-
-17
-
- | 
-
-`static` `class` `ServerDateHandler` `extends` `SimpleChannelHandler {`
-
-`Random random =` `new` `Random(System.nanoTime());`
-
-`public` `void` `messageReceived(ChannelHandlerContext ctx,MessageEvent e)` `throws` `Exception {`
-
-`Date date = (Date)e.getMessage();`
-
-`// Here's the REALLY important business service at the end of the pipeline`
-
-`long` `newTime = (date.getTime() + random.nextInt());`
-
-`Date newDate =` `new` `Date(newTime);`
-
-`slog(``"Hey Guys !  I got a date ! ["` `+ date +` `"] and I modified it to ["` `+ newDate +` `"]"``);`
-
-`// Send back the reponse`
-
-`Channel channel = e.getChannel();`
-
-`ChannelFuture channelFuture = Channels.future(e.getChannel());`
-
-`ChannelEvent responseEvent =` `new` `DownstreamMessageEvent(channel, channelFuture, newDate, channel.getRemoteAddress());`
-
-`ctx.sendDownstream(responseEvent);`
-
-`// But still send it upstream because there might be another handler`
-
-`super``.messageReceived(ctx, e);`
-
-`} `
-
-`}`
-
- |
-
+```
+static class ServerDateHandler extends SimpleChannelHandler {
+ Random random = new Random(System.nanoTime());
+ public void messageReceived(ChannelHandlerContext ctx,MessageEvent e) throws Exception {
+  Date date = (Date)e.getMessage();
+  // Here's the REALLY important business service at the end of the pipeline
+  long newTime = (date.getTime() + random.nextInt());
+  Date newDate = new Date(newTime);
+  slog("Hey Guys !  I got a date ! [" + date + "] and I modified it to [" + newDate + "]");
+  // Send back the reponse
+  Channel channel = e.getChannel();
+  ChannelFuture channelFuture = Channels.future(e.getChannel());
+  ChannelEvent responseEvent = new DownstreamMessageEvent(channel, channelFuture, newDate, channel.getRemoteAddress());
+  ctx.sendDownstream(responseEvent);
+  // But still send it upstream because there might be another handler
+  super.messageReceived(ctx, e);
+ }  
+}
+```
 There's some new stuff on lines 10-13 dedicated specifically to returning the modified Date to the calling client and a subtle concept.
 
 *   On line 10, we get a reference to the Channel from the [MessageEvent](http://netty.io/docs/stable/api/org/jboss/netty/channel/MessageEvent.html).
@@ -808,225 +395,65 @@ At this point, you might be thinking there are several alternatives here, but I 
 
 First, we will create the pipeline _with_ the compression handler enabled, then we'll look at the **ConditionalCompressionHandler**. Here's what the pipeline might look like:
 
-[?](http://seeallhearall.blogspot.com/2012/05/netty-tutorial-part-1-introduction-to.html#)
-
-| 
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
- | 
-
-`public` `ChannelPipeline getPipeline()` `throws` `Exception {`
-
-`ChannelPipeline pipeline = Channels.pipeline();`
-
-`/// Add all the pre-amble handlers`
-
-`//pipeline.addLast("Foo", new SomeHandler());`
-
-`//pipeline.addLast("Bar", new SomeOtherHandler());`
-
-`// etc.`
-
-`pipeline.addLast(``"IAmTheDecider"``,` `new` `ConditionalCompressionHandler(``1024``,` `"MyCompressionHandler"``));`
-
-`pipeline.addLast(``"MyCompressionHandler"``,` `new` `ZlibEncoder());`
-
-`return` `pipeline;`
-
-`}`
-
- |
+```
+public ChannelPipeline getPipeline() throws Exception {
+ ChannelPipeline pipeline = Channels.pipeline();
+ /// Add all the pre-amble handlers 
+ //pipeline.addLast("Foo", new SomeHandler());
+ //pipeline.addLast("Bar", new SomeOtherHandler());
+ // etc.
+ pipeline.addLast("IAmTheDecider", new ConditionalCompressionHandler(1024, "MyCompressionHandler"));
+ pipeline.addLast("MyCompressionHandler", new ZlibEncoder());
+ return pipeline;
+}
+```
 
 The ConditionalCompressionHandler must examine the size of the ChannelBuffer it is passed and decide if the compression handler should be called or not. However, once removed, if the next payload that comes along requires compression, we need to add it back in again.
 
-[?](http://seeallhearall.blogspot.com/2012/05/netty-tutorial-part-1-introduction-to.html#)
-
-| 
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
-11
-
-12
-
-13
-
-14
-
-15
-
-16
-
-17
-
-18
-
-19
-
-20
-
-21
-
-22
-
-23
-
-24
-
-25
-
-26
-
-27
-
-28
-
-29
-
-30
-
-31
-
-32
-
-33
-
-34
-
-35
-
-36
-
-37
-
-38
-
-39
-
-40
-
-41
-
-42
-
- | 
-
-`public` `class` `ConditionalCompressionHandler` `extends` `SimpleChannelDownstreamHandler {`
-
-`/** The minimum size of a payload to be compressed */`
-
-`protected` `final` `int` `sizeThreshold;`
-
-`/** The name of the handler to remove if the payload is smaller than specified sizeThreshold */`
-
-`protected` `final` `String nameOfCompressionHandler;`
-
-`/** The compression handler */`
-
-`protected` `volatile` `ChannelHandler compressionHandler =` `null``;`
-
-`/**`
-
-`* Creates a new ConditionalCompressionHandler`
-
-`* @param sizeThreshold The minimum size of a payload to be compressed`
-
-`* @param nameOfCompressionHandler The name of the handler to remove if the payload is smaller than specified sizeThreshold`
-
-`*/`
-
-`public` `ConditionalCompressionHandler(``int` `sizeThreshold, String nameOfCompressionHandler) {`
-
-`this``.sizeThreshold = sizeThreshold;`
-
-`this``.nameOfCompressionHandler = nameOfCompressionHandler;`
-
-`}`
-
-`/**`
-
-`* see org.jboss.netty.channel.SimpleChannelDownstreamHandler`
-
-`*/`
-
-`public` `void` `writeRequested(ChannelHandlerContext ctx, MessageEvent e) {`
-
-`// If the message is not a ChannelBuffer, hello ClassCastException !`
-
-`ChannelBuffer cb = (ChannelBuffer)e.getMessage();`
-
-`// Check to see if we already removed the handler`
-
-`boolean` `pipelineContainsCompressor = ctx.getPipeline().getContext(nameOfCompressionHandler)!=``null``;`
-
-`if``(cb.readableBytes() < sizeThreshold) { `
-
-`if``(pipelineContainsCompressor) {`
-
-`// The payload is too small to be compressed but the pipeline contains the compression handler`
-
-`// so we need to remove it.`
-
-`compressionHandler = ctx.getPipeline().remove(nameOfCompressionHandler);`
-
-`}`
-
-`}` `else` `{`
-
-`// We want to compress the payload, let's make sure the compressor is there`
-
-`if``(!pipelineContainsCompressor) {`
-
-`// Oops, it's not there, so lets put it in`
-
-`ctx.getPipeline().addAfter(ctx.getName(), nameOfCompressionHandler , compressionHandler);`
-
-`}`
-
-`}`
-
-`}`
-
-`}`
-
- |
+```
+public class ConditionalCompressionHandler extends SimpleChannelDownstreamHandler {
+ /** The minimum size of a payload to be compressed */
+ protected final int sizeThreshold;
+ /** The name of the handler to remove if the payload is smaller than specified sizeThreshold */
+ protected final String nameOfCompressionHandler;
+ /** The compression handler */
+ protected volatile ChannelHandler compressionHandler = null;
+  
+ /**
+  * Creates a new ConditionalCompressionHandler
+  * @param sizeThreshold The minimum size of a payload to be compressed 
+  * @param nameOfCompressionHandler The name of the handler to remove if the payload is smaller than specified sizeThreshold
+  */
+ public ConditionalCompressionHandler(int sizeThreshold, String nameOfCompressionHandler) {
+  this.sizeThreshold = sizeThreshold;
+  this.nameOfCompressionHandler = nameOfCompressionHandler;
+ }
+  
+ /**
+  * see org.jboss.netty.channel.SimpleChannelDownstreamHandler
+  */
+ public void writeRequested(ChannelHandlerContext ctx, MessageEvent e) {
+  // If the message is not a ChannelBuffer, hello ClassCastException !
+  ChannelBuffer cb = (ChannelBuffer)e.getMessage();
+  // Check to see if we already removed the handler
+  boolean pipelineContainsCompressor = ctx.getPipeline().getContext(nameOfCompressionHandler)!=null;
+  if(cb.readableBytes() < sizeThreshold) {  
+   if(pipelineContainsCompressor) {
+    // The payload is too small to be compressed but the pipeline contains the compression handler
+    // so we need to remove it.
+    compressionHandler = ctx.getPipeline().remove(nameOfCompressionHandler);
+   }
+  } else {
+   // We want to compress the payload, let's make sure the compressor is there
+   if(!pipelineContainsCompressor) {
+    // Oops, it's not there, so lets put it in
+    ctx.getPipeline().addAfter(ctx.getName(), nameOfCompressionHandler , compressionHandler);
+   }
+  }
+ }
+  
+}
+```
 
 ####  ChannelHandlerContext
 
