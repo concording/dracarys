@@ -29,3 +29,20 @@
 3. A reset is an operation that takes a specified commit and resets the "three trees" to match the state of the repository at that specified commit. A reset can be invoked in three different modes which correspond to the three trees.
 
 Checkout and reset are generally used for making local or private 'undos'. They modify the history of a repository that can cause conflicts when pushing to remote shared repositories. Revert is considered a safe operation for 'public undos' as it creates new history which can be shared remotely and doesn't overwrite history remote team members may be dependent on.
+
+
+
+| Command | Scope | Common use cases |
+| --- | --- | --- |
+| `git reset` | Commit-level | Discard commits in a private branch or throw away uncommited changes |
+| --- | --- | --- |
+| `git reset` | File-level | Unstage a file |
+| --- | --- | --- |
+| `git checkout` | Commit-level | Switch between branches or inspect old snapshots |
+| --- | --- | --- |
+| `git checkout` | File-level | Discard changes in the working directory |
+| --- | --- | --- |
+| `git revert` | Commit-level | Undo commits in a public branch |
+| --- | --- | --- |
+| `git revert` | File-level | (N/A) |
+| --- | --- | --- |
