@@ -14,7 +14,13 @@
 ```
 
 ```
- /opt/app/jdk1.8.0_91/bin/java -Djava.util.logging.config.file=/home/apple/insurance-admin-tomcat-1/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -server -Xmx2048m -Xms2048m -Xmn2048m -XX:SurvivorRatio=6 -XX:PermSize=256m -XX:MaxPermSize=256m -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+PrintGCTimeStamps -XX:+PrintGCDateStamps -XX:+PrintGCDetails -Xloggc:/data/logs/insurance/admin/gc.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/data/logs/insurance/admin/ -Dtomcatlogdir=/data/logs/insurance/admin -Djava.endorsed.dirs=/home/apple/insurance-admin-tomcat-1/endorsed -classpath /home/apple/insurance-admin-tomcat-1/bin/bootstrap.jar:/home/apple/insurance-admin-tomcat-1/bin/tomcat-juli.jar -Dcatalina.base=/home/apple/insurance-admin-tomcat-1 -Dcatalina.home=/home/apple/insurance-admin-tomcat-1 -Djava.io.tmpdir=/home/apple/insurance-admin-tomcat-1/temp org.apache.catalina.startup.Bootstrap start
+ /opt/app/jdk1.8.0_91/bin/java -Djava.util.logging.config.file=/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager 
+ -server -Xmx2048m -Xms2048m -Xmn2048m -XX:SurvivorRatio=6 -XX:PermSize=256m -XX:MaxPermSize=256m 
+ -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+PrintGCTimeStamps -XX:+PrintGCDateStamps 
+ -XX:+PrintGCDetails -Xloggc:/gc.log 
+ -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/data/logs/
+ -Dtomcatlogdir=/admin -Djava.endorsed.dirs=/endorsed -classpath /bootstrap.jar: 
+ org.apache.catalina.startup.Bootstrap start
 ```
 
 ```
@@ -28,3 +34,12 @@ then it will be swap has an "old generation" : they are "survivor".
 ```
 
 
+```
+-Xmn
+
+Sets the initial and maximum size of the new (nursery) heap to the specified value when using -Xgcpolicy:gencon. 
+Equivalent to setting both -Xmns and -Xmnx. If you set either -Xmns or -Xmnx, you cannot set -Xmn. 
+If you attempt to set -Xmn with either -Xmns or -Xmnx, the VM will not start, returning an error.
+By default, -Xmn is selected internally according to your system's capability. 
+You can use the -verbose:sizes option to find out the values that the VM is currently using.
+```
