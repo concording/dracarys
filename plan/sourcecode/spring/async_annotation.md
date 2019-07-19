@@ -18,9 +18,9 @@ public class SpringAsyncConfig { ... }
 
 The enable annotation is enough, but as you’d expect, there are also a few simple options for configuration as well:
 
-*   _**annotation** – b_y default, _@EnableAsync_ detects Spring’s _@Async_ annotation and the EJB 3.1 _javax.ejb.Asynchronous_; this option can be used to detect other, user-defined annotation types as well
-*   _**mode** _– indicates the type of _advice_ that should be used – JDK proxy-based or AspectJ weaving
-*   _**proxyTargetClass **_– indicates the type of _proxy _that should be used – CGLIB or JDK; this attribute has effect only if the **_mode_** is set to _AdviceMode.PROXY_
+*   _**annotation**_ - by default, _@EnableAsync_ detects Spring’s _@Async_ annotation and the EJB 3.1 _javax.ejb.Asynchronous_; this option can be used to detect other, user-defined annotation types as well
+*   _**mode**_ – indicates the type of _advice_ that should be used – JDK proxy-based or AspectJ weaving
+*   _**proxyTargetClass**_  – indicates the type of _proxy_ that should be used – CGLIB or JDK; this attribute has effect only if the **_mode_** is set to _AdviceMode.PROXY_
 *   _**order**_ – sets the order in which _AsyncAnnotationBeanPostProcessor_ should be applied; by default, it runs last, just so that it can take into account all existing proxies
 
 Asynchronous processing can also be enabled using **XML configuration** – by using the _task_ namespace:
@@ -176,3 +176,4 @@ public AsyncUncaughtExceptionHandler getAsyncUncaughtExceptionHandler() {
 ## **6\. Conclusion**
 
 In this tutorial, we looked at **running asynchronous code with Spring**. We started with the very basic configuration and annotation to make it work but also looked at more advanced configs such as providing our own executor, or exception handling strategies.
+
