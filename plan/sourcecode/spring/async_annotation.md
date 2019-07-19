@@ -178,5 +178,6 @@ public AsyncUncaughtExceptionHandler getAsyncUncaughtExceptionHandler() {
 In this tutorial, we looked at **running asynchronous code with Spring**. We started with the very basic configuration and annotation to make it work but also looked at more advanced configs such as providing our own executor, or exception handling strategies.
 
 **SimpleAsyncTaskExecutor**
+
 **_This implementation does not reuse any threads, rather it starts up a new thread for each invocation. However, it does support a concurrency limit which will block any invocations that are over the limit until a slot has been freed up. If you're looking for true pooling, keep scrolling further down the page._**
 
