@@ -36,7 +36,7 @@ First – let’s go over the rules – _@Async_ has two limitations:
 *   it must be applied to _public_ methods only
 *   self-invocation – calling the async method from within the same class – won’t work
 
-The reasons are simple – **the method needs to be _public_ **so that it can be proxied. And **self-invocation doesn’t work** because it bypasses the proxy and calls the underlying method directly.
+The reasons are simple – **the method needs to be _public_** so that it can be proxied. And **self-invocation doesn’t work** because it bypasses the proxy and calls the underlying method directly.
 
 ### **3.1\. Methods with void Return Type**
 
