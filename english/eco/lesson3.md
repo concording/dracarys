@@ -15,3 +15,4 @@ At first each had backed a different startup in this area, but when Baidu gave f
 
 All of the big three firms have invested heavily over the past two years in everything from online-video services to travel portals. On one estimate, there have been nearly $60 billion in internet deals involving Chinese firms so far this year.Some consolidation is needed: in many corners of the industry there are too many competitors, most of which are unprofitable. But China's antitrust authorities, which have been soft on local internet firms, ought nonetheless to be vigilant.Otherwise there will surely be more mergers like this one, as the industry's giants seek to create monopolies.
 
+[trop](https://byjus.com/biology/tropic-movements-in-plants/)
