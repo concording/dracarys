@@ -47,3 +47,21 @@ Rebasing is the process of moving or combining a sequence of commits to a new ba
 ![Git tutorial: Git rebase](https://www.atlassian.com/dam/jcr:e4a40899-636b-4988-9774-eaa8a440575b/02.svg)
 
 From a content perspective, rebasing is changing the base of your branch from one commit to another making it appear as if you'd created your branch from a different commit. Internally, Git accomplishes this by creating new commits and applying them to the specified base. It's very important to understand that even though the branch looks the same, it's composed of entirely new commits.
+
+git checkout HEAD~4
+git branch -f master HEAD~3
+
+git reset 通过把分支记录回退几个提交记录来实现撤销改动。你可以将这想象成“改写历史”。git reset 向上移动分支，原来指向的提交记录就跟从来没有提交过一样。git reset HEAD~1
+虽然在你的本地分支中使用 git reset 很方便，但是这种“改写历史”的方法对大家一起使用的远程分支是无效的哦！
+为了撤销更改并分享给别人，我们需要使用 git revert。来看演示：
+
+
+git describe 的​​语法是：
+git describe <ref>
+<ref> 可以是任何能被 Git 识别成提交记录的引用，如果你没有指定的话，Git 会以你目前所检出的位置（HEAD）。
+它输出的结果是这样的：
+<tag>_<numCommits>_g<hash>
+tag 表示的是离 ref 最近的标签， numCommits 是表示这个 ref 与 tag 相差有多少个提交记录， hash 表示的是你所给定的 ref 所表示的提交记录哈希值的前几位。
+当 ref 提交记录上有某个标签时，则只输出标签名称
+
+
