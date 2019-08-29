@@ -245,3 +245,30 @@ public final class CountHits {
 }
 
 ```
+```
+public static void main(String[] args) {
+        ExecutorService service = Executors.newSingleThreadExecutor();
+        Future<JSONObject> orderInfoFuture = service.submit(new Callable<JSONObject>() {
+            @Override
+            public JSONObject call() {
+                throw new SystemException(ExceptionEnum.B40045);
+            }
+        });
+        try {
+            orderInfoFuture.get();
+        }catch (ExecutionException e){
+            Throwable throwable = Throwables.getRootCause(e.getCause());
+            if (throwable instanceof SystemException) {
+                SystemException exception = (SystemException) throwable;
+                System.out.println(exception);
+            }
+            System.out.println(e);
+        }catch (Exception ex){
+            System.out.println(ex);
+            if (ex instanceof SystemException) {
+                SystemException exception = (SystemException) ex;
+                System.out.println(exception);
+            }
+        }
+    }
+```
