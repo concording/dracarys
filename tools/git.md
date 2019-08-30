@@ -11,6 +11,18 @@
 
 `git push origin HEAD --force`
 
+## undo a revert
+`git cherry-pick <original commit sha>`
+Will make a copy of the original commit, essentially re-applying the commit
+
+Reverting the revert will do the same thing, with a messier commit message:
+`git revert <commit sha of the revert>`
+
+Either of these ways will allow you to git push without overwriting history, because it creates a new commit after the revert.
+When typing the commit sha, you typically only need the first 5 or 6 characters:
+`git cherry-pick 6bfabc`
+
+
 ### 回滚commit
 假如要删除备注为add c.txt commit为0fb295fe0e0276f0c81df61c4fd853b7a000bb5c的这次提交
 
@@ -48,8 +60,9 @@ Rebasing is the process of moving or combining a sequence of commits to a new ba
 
 From a content perspective, rebasing is changing the base of your branch from one commit to another making it appear as if you'd created your branch from a different commit. Internally, Git accomplishes this by creating new commits and applying them to the specified base. It's very important to understand that even though the branch looks the same, it's composed of entirely new commits.
 
-git checkout HEAD~4
-git branch -f master HEAD~3
+`git checkout HEAD~4`
+
+`git branch -f master HEAD~3`
 
 git reset 通过把分支记录回退几个提交记录来实现撤销改动。你可以将这想象成“改写历史”。git reset 向上移动分支，原来指向的提交记录就跟从来没有提交过一样。git reset HEAD~1
 虽然在你的本地分支中使用 git reset 很方便，但是这种“改写历史”的方法对大家一起使用的远程分支是无效的哦！
