@@ -11,6 +11,10 @@
 
 `git push origin HEAD --force`
 
+`git branch -D f_feature/f_repayNoticeQuery_191107`
+
+`git push origin --delete f_feature/f_repayNoticeQuery_191107`
+
 ## undo a revert
 `git cherry-pick <original commit sha>`
 Will make a copy of the original commit, essentially re-applying the commit
