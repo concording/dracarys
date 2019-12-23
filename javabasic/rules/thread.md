@@ -113,6 +113,8 @@ public class MyClass {
 }
 ```
 
+Starting a thread in a constructor passing in this escapes this. That means that you are actually giving out a reference to your object before it is fully constructed. The thread will start before your constructor finishes. This can result in all kinds of weird behaviors.
+
 ## See
 
 *   [CERT, TSM02-J.](https://www.securecoding.cert.org/confluence/x/ZQIRAg) - Do not use background threads during class initialization
