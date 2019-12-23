@@ -118,3 +118,70 @@ Starting a thread in a constructor passing in this escapes this. That means that
 ## See
 
 *   [CERT, TSM02-J.](https://www.securecoding.cert.org/confluence/x/ZQIRAg) - Do not use background threads during class initialization
+
+# "InterruptedException" should not be ignored
+
+`InterruptedExceptions` should never be ignored in the code, and simply logging the exception counts in this case as "ignoring". The throwing of the `InterruptedException` clears the interrupted state of the Thread, so if the exception is not handled properly the fact that the thread was interrupted will be lost. Instead, `InterruptedExceptions` should either be rethrown - immediately or after cleaning up the method's state - or the thread should be re-interrupted by calling `Thread.interrupt()` even if this is supposed to be a single-threaded application. Any other course of action risks delaying thread shutdown and loses the information that the thread was interrupted - probably without finishing its task.
+
+Similarly, the `ThreadDeath` exception should also be propagated. According to its JavaDoc:
+
+> If `ThreadDeath` is caught by a method, it is important that it be rethrown so that the thread actually dies.
+
+## Noncompliant Code Example
+```
+public void run () {
+  try {
+    while (true) {
+      // do stuff
+    }
+  }catch (InterruptedException e) { // Noncompliant; logging is not enough
+    LOGGER.log(Level.WARN, "Interrupted!", e);
+  }
+}
+```
+
+## Compliant Solution
+
+```
+public void run () {
+  try {
+    while (true) {
+      // do stuff
+    }
+  }catch (InterruptedException e) {
+    LOGGER.log(Level.WARN, "Interrupted!", e);
+    // Restore interrupted state...
+    Thread.currentThread().interrupt();
+  }
+}
+```
+
+## See
+
+*   [MITRE, CWE-391](http://cwe.mitre.org/data/definitions/391.html) - Unchecked Error Condition
+*   [Dealing with InterruptedException](https://www.ibm.com/developerworks/java/library/j-jtp05236/index.html?ca=drs-#2.1)
+
+
+# Non-primitive fields should not be "volatile"
+
+Marking an array `volatile` means that the array itself will always be read fresh and never thread cached, but the items _in_ the array will not be. Similarly, marking a mutable object field `volatile` means the object _reference_ is `volatile` but the object itself is not, and other threads may not see updates to the object state.
+
+This can be salvaged with arrays by using the relevant AtomicArray class, such as `AtomicIntegerArray`, instead. For mutable objects, the `volatile` should be removed, and some other method should be used to ensure thread-safety, such as synchronization, or ThreadLocal storage.
+
+## Noncompliant Code Example
+
+```
+private volatile int [] vInts;  // Noncompliant
+private volatile MyObj myObj;  // Noncompliant
+```
+
+## Compliant Solution
+
+```
+private AtomicIntegerArray vInts;
+private MyObj myObj;
+```
+
+## See
+
+*   [CERT, CON50-J.](https://www.securecoding.cert.org/confluence/x/twD1AQ) - Do not assume that declaring a reference volatile guarantees safe publication of the members of the referenced object
