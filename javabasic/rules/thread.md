@@ -185,3 +185,117 @@ private MyObj myObj;
 ## See
 
 *   [CERT, CON50-J.](https://www.securecoding.cert.org/confluence/x/twD1AQ) - Do not assume that declaring a reference volatile guarantees safe publication of the members of the referenced object
+
+# "ThreadLocal" variables should be cleaned up when no longer used
+
+`ThreadLocal` variables are supposed to be garbage collected once the holding thread is no longer alive. Memory leaks can occur when holding threads are re-used which is the case on application servers using pool of threads.
+
+To avoid such problems, it is recommended to always clean up `ThreadLocal` variables using the `remove()` method to remove the current thread’s value for the `ThreadLocal` variable.
+
+In addition, calling `set(null)` to remove the value might keep the reference to `this` pointer in the map, which can cause memory leak in some scenarios. Using `remove` is safer to avoid this issue.
+
+## Noncompliant Code Example
+
+```
+public class ThreadLocalUserSession implements UserSession {
+
+  private static final ThreadLocal<UserSession> DELEGATE = new ThreadLocal<>();
+
+  public UserSession get() {
+    UserSession session = DELEGATE.get();
+    if (session != null) {
+      return session;
+    }
+    throw new UnauthorizedException("User is not authenticated");
+  }
+
+  public void set(UserSession session) {
+    DELEGATE.set(session);
+  }
+
+   public void incorrectCleanup() {
+     DELEGATE.set(null); // Noncompliant
+   }
+
+  // some other methods without a call to DELEGATE.remove()
+}
+```
+## Compliant Solution
+
+```
+public class ThreadLocalUserSession implements UserSession {
+
+  private static final ThreadLocal<UserSession> DELEGATE = new ThreadLocal<>();
+
+  public UserSession get() {
+    UserSession session = DELEGATE.get();
+    if (session != null) {
+      return session;
+    }
+    throw new UnauthorizedException("User is not authenticated");
+  }
+
+  public void set(UserSession session) {
+    DELEGATE.set(session);
+  }
+
+  public void unload() {
+    DELEGATE.remove(); // Compliant
+  }
+
+  // ...
+}
+```
+
+## Exceptions
+
+Rule will not detect non-private `ThreadLocal` variables, because `remove()` can be called from another class.
+
+## See
+
+*   [Understanding Memory Leaks in Java](https://www.baeldung.com/java-memory-leaks)
+
+# Overrides should match their parent class methods in synchronization
+
+When `@Overrides` of `synchronized` methods are not themselves `synchronized`, the result can be improper synchronization as callers rely on the thread-safety promised by the parent class.
+
+## Noncompliant Code Example
+
+```
+public class Parent {
+
+  synchronized void foo() {
+    //...
+  }
+}
+
+public class Child extends Parent {
+
+ @Override
+  public foo () {  // Noncompliant
+    // ...
+    super.foo();
+  }
+}
+```
+## Compliant Solution
+```
+public class Parent {
+
+  synchronized void foo() {
+    //...
+  }
+}
+
+public class Child extends Parent {
+
+  @Override
+  synchronized foo () {
+    // ...
+    super.foo();
+  }
+}
+```
+## See
+
+*   [CERT, TSM00-J](https://www.securecoding.cert.org/confluence/x/XgAZAg) - Do not override thread-safe methods with methods that are not thread-safe
