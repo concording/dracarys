@@ -159,4 +159,4 @@ Armed with a more nuanced understanding of consistency models, I’d like to tal
 
 For a more formal definition of these models, try Dziuma, Fatourou, and Kanellou’s [Survey on consistency conditions](http://www.ics.forth.gr/tech-reports/2013/2013.TR439_Survey_on_Consistency_Conditions.pdf)
 
-## [译文]([https://zhuanlan.zhihu.com/p/48782892](https://zhuanlan.zhihu.com/p/48782892))
+## [译文](https://zhuanlan.zhihu.com/p/48782892)
