@@ -412,8 +412,7 @@ Dubbo 目前支付如下 7 种序列化方式：
 
 可能有胖友对动态代理不是很了解。因为，Consumer 仅仅引用服务 `***-api.jar` 包，那么可以获得到需要服务的 XXXService 接口。那么，通过动态创建对应调用 Dubbo 服务的实现类。简化代码如下：
 
-| 
-
+```
 // ProxyFactory.java
 
 /**
@@ -427,7 +426,7 @@ Dubbo 目前支付如下 7 种序列化方式：
 @Adaptive({Constants.PROXY_KEY})
 <T> T getProxy(Invoker<T> invoker) throws RpcException;
 
- |
+ ```
 
 *   方法参数 `invoker` ，实现了调用 Dubbo 服务的逻辑。
 *   返回的 `<T>` 结果，就是 XXXService 的实现类，而这个实现类，就是通过动态代理的**工具类**进行生成。
@@ -500,43 +499,42 @@ Dubbo 目前支付如下 7 种序列化方式：
 *   Spring AOP ，[《面试问烂的 Spring AOP 原理》](http://www.iocoder.cn/Fight/Interview-poorly-asked-Spring-AOP-principles/) 。
 *   Dubbo SPI AOP ，详细见 [《精尽 Dubbo 源码分析 —— 拓展机制 SPI》](http://svip.iocoder.cn/Dubbo/spi) 文章。核心源码是：
 
-    | 
+    
+```
+private static final ConcurrentMap<Class<?>, Object> EXTENSION_INSTANCES = new ConcurrentHashMap<Class<?>, Object>();
 
-    private static final ConcurrentMap<Class<?>, Object> EXTENSION_INSTANCES = new ConcurrentHashMap<Class<?>, Object>();
-
-     1: 
-     7: @SuppressWarnings("unchecked")
-     8: private T createExtension(String name) {
-     9:     // 获得拓展名对应的拓展实现类
-     10:     Class<?> clazz = getExtensionClasses().get(name);
-     11:     if (clazz == null) {
-     12:         throw findException(name); // 抛出异常
-     13:     }
-     14:     try {
-     15:         // 从缓存中，获得拓展对象。
-     16:         T instance = (T) EXTENSION_INSTANCES.get(clazz);
-     17:         if (instance == null) {
-     18:             // 当缓存不存在时，创建拓展对象，并添加到缓存中。
-     19:             EXTENSION_INSTANCES.putIfAbsent(clazz, clazz.newInstance());
-     20:             instance = (T) EXTENSION_INSTANCES.get(clazz);
-     21:         }
-     22:         // 注入依赖的属性
-     23:         injectExtension(instance);
-     24:         // 创建 Wrapper 拓展对象
-     25:         Set<Class<?>> wrapperClasses = cachedWrapperClasses;
-     26:         if (wrapperClasses != null && !wrapperClasses.isEmpty()) {
-     27:             for (Class<?> wrapperClass : wrapperClasses) {
-     28:                 instance = injectExtension((T) wrapperClass.getConstructor(type).newInstance(instance));
-     29:             }
-     30:         }
-     31:         return instance;
-     32:     } catch (Throwable t) {
-     33:         throw new IllegalStateException("Extension instance(name: " + name + ", class: " +
-     34:                 type + ")  could not be instantiated: " + t.getMessage(), t);
-     35:     }
-     36: }
-
-     |
+  
+  @SuppressWarnings("unchecked")
+  private T createExtension(String name) {
+      // 获得拓展名对应的拓展实现类
+     Class<?> clazz = getExtensionClasses().get(name);
+     if (clazz == null) {
+         throw findException(name); // 抛出异常
+     }
+     try {
+         // 从缓存中，获得拓展对象。
+         T instance = (T) EXTENSION_INSTANCES.get(clazz);
+         if (instance == null) {
+             // 当缓存不存在时，创建拓展对象，并添加到缓存中。
+             EXTENSION_INSTANCES.putIfAbsent(clazz, clazz.newInstance());
+             instance = (T) EXTENSION_INSTANCES.get(clazz);
+         }
+         // 注入依赖的属性
+         injectExtension(instance);
+         // 创建 Wrapper 拓展对象
+         Set<Class<?>> wrapperClasses = cachedWrapperClasses;
+         if (wrapperClasses != null && !wrapperClasses.isEmpty()) {
+             for (Class<?> wrapperClass : wrapperClasses) {
+                 instance = injectExtension((T) wrapperClass.getConstructor(type).newInstance(instance));
+             }
+         }
+         return instance;
+     } catch (Throwable t) {
+         throw new IllegalStateException("Extension instance(name: " + name + ", class: " +
+                 type + ")  could not be instantiated: " + t.getMessage(), t);
+     }
+ }
+```
 
     *   第 24 至 30 行：创建 Wrapper 拓展对象，将 `instance` **包装在其中**。在 [《Dubbo 开发指南 —— 扩展点加载》](https://dubbo.gitbooks.io/dubbo-dev-book/SPI.html) 文章中，如此介绍 Wrapper 类：
 
@@ -637,11 +635,7 @@ Dubbo 目前支付如下 7 种序列化方式：
 
 所以，我们一般使用 failfast 集群容错策略，而不是 failover 策略。配置如下：
 
-| 
-
-<dubbo:service cluster="failfast" timeout="2000" />
-
- |
+`<dubbo:service cluster="failfast" timeout="2000" />`
 
 另外，一定一定一定要配置适合自己业务的**超时时间**。
 
