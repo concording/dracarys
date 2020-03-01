@@ -82,3 +82,6 @@ tag 表示的是离 ref 最近的标签， numCommits 是表示这个 ref 与 ta
 当 ref 提交记录上有某个标签时，则只输出标签名称
 
 
+shift+esc 关闭IDEA控制台
+
+tab键输入替换原方法
