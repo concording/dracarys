@@ -85,3 +85,22 @@ tag 表示的是离 ref 最近的标签， numCommits 是表示这个 ref 与 ta
 shift+esc 关闭IDEA控制台
 
 tab键输入替换原方法
+
+## 复制git项目
+1. Open Terminal.
+
+2. Create a bare clone of the repository.
+
+`$ git clone --bare https://github.com/exampleuser/old-repository.git`
+
+3. Mirror-push to the new repository.
+```
+$ cd old-repository.git
+$ git push --mirror https://github.com/exampleuser/new-repository.git
+```
+4. Remove the temporary local repository you created earlier.
+```
+$ cd ..
+$ rm -rf old-repository.git
+```
+
