@@ -1,6 +1,8 @@
 
 [相关源码解析blog](https://segmentfault.com/a/1190000007308934)
 
+[eventloopgroup analysis](https://programmer.help/blogs/eventloopgroup-and-eventloop-source-analysis.html)
+
 
 1.1, boss NioEventLoop loop task
 Polling for Accept events.
