@@ -48,12 +48,22 @@ One ultimate rule is, if a Java object is GCed, it's totally gone. So below is w
 
 
 ## Answer
-Direct buffers are indirectly freed by the Garbage Collector. I will let you read through the answer to this question to understand how that happens: [Are Java DirectByteBuffer wrappers garbage collected?](https://stackoverflow.com/questions/6697709/are-java-directbytebuffer-wrappers-garbage-collected)
+Direct buffers are indirectly freed by the Garbage Collector. I will let you read through the answer to this question to understand how that happens: [Are Java DirectByteBuffer wrappers garbage collected?](https://stackoverflow.com/questions/6697709/are-java-directbytebuffer-wrappers-garbage-collected)
 
 Heap buffers need to be copied to the direct memory before being handled by the kernel, when you're performing I/O operations. When you use direct buffers you save that copy operation and that's the main advantage of using direct buffers. A drawback is that direct memory allocation is reasonably more expensive then allocations from the java heap, so Netty introduced the pooling concept.
 
-Pooling objects in Java is a [polemic topic](http://en.wikipedia.org/wiki/Object_pool_pattern#Criticism), but the Netty choice for doing so seems to have paid off and the [Twitter article](https://blog.twitter.com/2013/netty-4-at-twitter-reduced-gc-overhead) you cited shows some evidence of that. For the particular case of allocating buffers, when the size of the buffer is large, you can see that it really brings a benefit both in the direct and heap buffer cases.
+Pooling objects in Java is a [polemic topic](http://en.wikipedia.org/wiki/Object_pool_pattern#Criticism), but the Netty choice for doing so seems to have paid off and the [Twitter article](https://blog.twitter.com/2013/netty-4-at-twitter-reduced-gc-overhead) you cited shows some evidence of that. For the particular case of allocating buffers, when the size of the buffer is large, you can see that it really brings a benefit both in the direct and heap buffer cases.
 
 Now for pooling, the GC doesn't reclaim the buffer when they are pooled, because either your application has one or several references to it, while you're using the buffer; or Netty's pool has a reference to it, when it has just been allocated and has not yet been given to your application or after your application used it and gave it back to the pool.
 
-Leaks will happen when your application, after having used a buffer and not keeping any further reference to it, doesn't call `release()`, what actually means _put it back into the pool_, if you don't have any further reference to it. In such case, the buffer will eventually be garbage collected, but Netty's pool won't know about it. The pool will then grow believing that you're using more and more buffers that are never returned to the pool. That will probably generate a memory leak because, even if the buffers themselves are garbage collected, the internal data structures used to store the pool will not.
+Leaks will happen when your application, after having used a buffer and not keeping any further reference to it, doesn't call `release()`, what actually means _put it back into the pool_, if you don't have any further reference to it. In such case, the buffer will eventually be garbage collected, but Netty's pool won't know about it. The pool will then grow believing that you're using more and more buffers that are never returned to the pool. That will probably generate a memory leak because, even if the buffers themselves are garbage collected, the internal data structures used to store the pool will not.
+
+
+## DirectByteBuffer
+In the Sun JDK, a `java.nio.DirectByteBuffer`—created by [`ByteBuffer#allocateDirect(int)`](http://download.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html#allocateDirect%28int%29)—has a field of type `sun.misc.Cleaner`, which extends [`java.lang.ref.PhantomReference`](http://download.oracle.com/javase/6/docs/api/java/lang/ref/PhantomReference.html).
+
+When this `Cleaner` (remember, a subtype of `PhantomReference`) gets collected and is about to move into the associated `ReferenceQueue`, the collection-related thread running through the nested type `ReferenceHandler` has a special case treatment of `Cleaner` instances: it downcasts and calls on `Cleaner#clean()`, which eventually makes its way back to calling on `DirectByteBuffer$Deallocator#run()`, which in turn calls on `Unsafe#freeMemory(long)`. Wow.
+
+It's rather circuitous, and I was surprised to not see any use of `Object#finalize()` in play. The Sun developers must have had their reasons for tying this in even closer to the collection and reference management subsystem.
+
+In short, you won't run out of memory by virtue of abandoning references to `DirectByteBuffer` instances, so long as the garbage collector has a chance to notice the abandonment and its reference handling thread makes progress through the calls described above.
