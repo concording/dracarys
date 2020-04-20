@@ -67,3 +67,5 @@ When this `Cleaner` (remember, a subtype of `PhantomReference`) gets collected a
 It's rather circuitous, and I was surprised to not see any use of `Object#finalize()` in play. The Sun developers must have had their reasons for tying this in even closer to the collection and reference management subsystem.
 
 In short, you won't run out of memory by virtue of abandoning references to `DirectByteBuffer` instances, so long as the garbage collector has a chance to notice the abandonment and its reference handling thread makes progress through the calls described above.
+
+[reference-counted-objects]([https://netty.io/wiki/reference-counted-objects.html](https://netty.io/wiki/reference-counted-objects.html))
