@@ -7,4 +7,4 @@ proxy
 
 eventbus
 
-chain
+chain - apache.common.chain
