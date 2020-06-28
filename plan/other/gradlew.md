@@ -4,6 +4,7 @@
 ## steps
 
 1. export certfile from chrome  
+
 1.1 First click on the certificate's icon in the trust hierarchy.
 
 1.2 The certificate will be shown in the main part of the modal.
