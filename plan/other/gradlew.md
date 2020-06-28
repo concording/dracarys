@@ -8,8 +8,8 @@
    * The certificate will be shown in the main part of the modal.
    * Click on the certificate's large icon in the main part of the modal. **Drag** the icon to your desktop. Chrome will then copy the certificate to your desktop.
 2. import cert to jvm
-`sudo keytool -list -v -keystore cacerts > java_cacerts.txt`
-`sudo keytool -import -alias checkstyle -keystore  cacerts -file /Users/wangyinbin/Downloads/checkstyle.org.cer`
+   - `sudo keytool -list -v -keystore cacerts > java_cacerts.txt`
+   - `sudo keytool -import -alias checkstyle -keystore  cacerts -file /Users/wangyinbin/Downloads/checkstyle.org.cer`
 3. restart jvm
 `ps -ef|grep java`
 
