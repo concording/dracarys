@@ -1,4 +1,5 @@
 
+### docker install failed 
 `sudo systemctl start docker`
 
 ```
@@ -58,4 +59,12 @@ Sep 30 10:08:20 VM-0-17-centos systemd[1]: Failed to start containerd container 
 
 
 `yum update`
+
+### docker start failed
+
+`docker run --name some-zookeeper --restart always -d zookeeper`
+
+`failed to start daemon: pid file found, ensure docker is not running or delete /var/run/docker.pid`
+
+`sudo usermod -aG docker $USER`
 
