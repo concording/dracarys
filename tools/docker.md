@@ -68,3 +68,6 @@ Sep 30 10:08:20 VM-0-17-centos systemd[1]: Failed to start containerd container 
 
 `sudo usermod -aG docker $USER`
 
+### docker command
+
+`docker exec -it some-zookeeper /bin/bash`
