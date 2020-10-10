@@ -71,3 +71,12 @@ Sep 30 10:08:20 VM-0-17-centos systemd[1]: Failed to start containerd container 
 ### docker command
 
 `docker exec -it some-zookeeper /bin/bash`
+
+
+### docker mysql 
+`docker stop mysql`
+`docker rm mysql`
+`docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=123456 mysql:5.7`
+`docker exec -it  mysql mysql -uroot -p`
+
+ [mysql 8.0 客户端无法连接](https://pythonspeed.com/articles/docker-connection-refused/)
