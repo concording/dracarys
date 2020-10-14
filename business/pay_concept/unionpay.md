@@ -2,13 +2,13 @@
 
 为了支持在线直播，以及保留交流记录和文档，这一轮分享转移到企业级IM工具上进行。对比了企业微信、钉钉、飞书等软件后，确定使用飞书来做分享。 这些软件在用户数超过500之后都要求做企业认证，需要办理营业执照，预计费用在3000元左右。 为此从本期开始，**文章打赏费用将积累用于营业执照的申办。也期待大家多打赏，多支持， 感谢先。** 
 
-![Back-end Roadmap](././img/unionpay/ia_100000626.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000627.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000627.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000626.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000628.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000628.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000629.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000629.jpg)
 
 问：这里哪些算传统无卡，哪些是新型无卡？打卡支付就是有卡支付吗？
 
@@ -18,25 +18,25 @@
 
 答： 简而言之 银联老无卡的业务基本是全球各大卡组织都会做的业务； 银联新无卡业务是中国特色，里面的业务只有网联和银联做
 
-![Back-end Roadmap](././img/unionpay/ia_100000630.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000630.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000631.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000631.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000632.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000632.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000633.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000633.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000634.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000634.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000635.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000635.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000636.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000636.jpg)
 
 问：一张银行卡可以绑定多个手机，生成多个虚拟卡号Token吧？
 
 答：是的。关联同一个主账号（PAN）,每个设备token不通，还有，每次解绑再绑定token都会变化，即使是同一设备。
 
-![Back-end Roadmap](././img/unionpay/ia_100000637.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000637.jpg)
 
 问： 图中的PAN是什么？
 
@@ -46,11 +46,11 @@
 
 答：就是扣款成功的应答信息。
 
-![Back-end Roadmap](././img/unionpay/ia_100000638.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000638.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000639.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000639.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000640.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000640.jpg)
 
 问： 那么支付宝、微信 都是跟哪家银行合作的啊
 
@@ -60,17 +60,16 @@
 
 答： @李XX 以前网联是这种模式，后来在央行统筹下，第三方支付机构都需要在人行开立备付金账户。余额的钱实际就是存在这里的。我们是不是跑题了。
 
-![Back-end Roadmap](././img/unionpay/ia_100000641.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000642.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000642.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000641.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000643.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000643.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000644.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000644.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000645.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000645.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000646.jpg)
 
 问：这里提到的各场景的支付限额是多少？
 
@@ -84,32 +83,36 @@
 
 答： 是的
 
-![Back-end Roadmap](././img/unionpay/ia_100000647.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000646.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000648.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000647.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000649.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000648.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000650.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000649.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000651.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000650.jpg)
+
+
 
 
 问：  这个等式是指等式右侧的这些费用都由商户承担？
 
 答： 我认为是的，银联提供网络，银行提供卡服务，收单提供入口，商户售卖盈利，客户是消费群体。整体分析，只有商户是那个羔羊，因为商户需要收单+银行+银联组成的这个资金结算渠道，他缴费很合理。
 
-![Back-end Roadmap](././img/unionpay/ia_100000652.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000651.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000653.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000652.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000654.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000653.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000655.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000654.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000656.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000655.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000657.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000656.jpg)
 
-![Back-end Roadmap](././img/unionpay/ia_100000658.jpg)
+![Back-end Roadmap](../../img/unionpay/ia_100000657.jpg)
+
+
 文章已于2020-10-12修改
