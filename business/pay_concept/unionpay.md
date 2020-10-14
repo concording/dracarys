@@ -89,11 +89,9 @@
 
 ![Back-end Roadmap](../../img/unionpay/ia_100000648.jpg)
 
-![Back-end Roadmap](../../img/unionpay/ia_100000649.jpg)
-
 ![Back-end Roadmap](../../img/unionpay/ia_100000650.jpg)
 
-
+![Back-end Roadmap](../../img/unionpay/ia_100000649.jpg)
 
 
 问：  这个等式是指等式右侧的这些费用都由商户承担？
