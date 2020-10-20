@@ -22,7 +22,7 @@ Java在JDK1.5中引入了`java.util.concurrency`并发包，在这个并发包�
 
 在开始分析源码之前先来讲下Abstract Queued Synchronizer（下面简称AQS）的结构。AQS的名字中间有个Queue，那这个组件应该和队列有关。确实，Doug Lea设计的AQS组件实际上就是一个队列，这个队列是由一个无锁双向链表实现的。
 
-![双向链表](https://tech101.cn/assets/images/aqs_00.png)
+![双向链表](../../../img/java/aqs_00.png)
 
 链表有一个头结点`head`和一个尾节点`tail`。每个节点有一个`prev`指针指向前序节点，以及一个`next`指针指向后续节点。如果当前节点是最后一个节点，那么节点的`next`域的值为空。头结点`head`的初始值为空，当链表中插入第一个节点的时候才会延迟创建头结点。双向链表在AQS中的作用主要是线程排队和唤醒，当线程获取不到资源的时候，会进入双向链表实现的队列然后进入阻塞状态，直到资源可用被重新唤醒。
 
@@ -60,7 +60,7 @@ private final boolean compareAndSetTail(Node expect, Node update) {
 
 有了头节点以后，插入链表的时候就需要正确设置节点的`prev`域的值。这里做了一次`compareAndSetTail()`判断，如果设置尾节点指针`tail`成功，则表示当前插入的位置确实是队尾。设置完节点的前序节点的`next`域之后直接返回插入节点的前序节点。如果设置尾节点失败，则表示在入队的过程中有别的线程抢先一步入队了，当前在插入的位置不是末尾。这个时候需要重新进入`for`循环进入下一轮入队操作的判断，直到节点被插入到末尾未知。这整个过程中，都是伴随着循环和CAS判断进行的，这个过程其实就是一个自旋（Spin）的过程。
 
-![入队](https://tech101.cn/assets/images/aqs_01.png)
+![入队](../../../img/java/aqs_01.png)
 
 ### 出队
 
@@ -74,7 +74,7 @@ private void setHead(Node node) {
 }
 ```
 
-![出队](https://tech101.cn/assets/images/aqs_03.png)
+![出队](../../../img/java/aqs_03.png)
 
 到这里差不多介绍完了AQS中的队列操作，下面开始介绍如何把这个队列运用在同步器中的，以及队列在同步器中的作用。
 
@@ -171,7 +171,7 @@ if (pred != null) {
 
 下面是`addWaiter()`逻辑的示意图。T1和T2两个线程同时进行入队操作，T1执行快速插入成功，导致T2在执行`compareAndSetTail()`的时候失败，然后T2进行了一次`enq()`入队操作。
 
-![入队](https://tech101.cn/assets/images/aqs_04.png)
+![入队](../../../img/java/aqs_04.png)
 
 分析完`addWaiter()`方法，下面来分析下`acquireQueued()`方法的逻辑。
 
@@ -201,7 +201,7 @@ final boolean acquireQueued(final Node node, int arg) {
 
 在`acquireQueued()`方法中，首先通过`Node p = node.predecessor()`获取刚才入队的那个节点的前序节点p，然后判断前序节点p是否是头结点。如果`p == head`则节点p是头结点，表示当前没有线程持有这个资源，这个时候再次执行`tryAcquire()`判断是否满足持有资源的条件。如果`tryAcquire()`返回`true`则表示当前线程可以持有这个资源。这个时候将头结点设置为当前节点，并且返回中断标记。
 
-![addWaiter](https://tech101.cn/assets/images/aqs_06.png)
+![addWaiter](../../../img/java/aqs_06.png)
 
 如果节点p不是头结点或者`tryAcquire()`方法返回`false`，则表示当前线程没有满足持有资源的条件，需要阻塞线程。在阻塞线程前需要做一些检查和一些必要的设置工作，接下来分析下阻塞逻辑的代码。
 
@@ -454,7 +454,7 @@ private void unparkSuccessor(Node node) {
 
 首先将节点的`waitStatus`重置为默认状态，然后通过节点的`next`指针尝试获取后续节点。因为取消的原因，`next`指针指向的节点不一定就是下一个需要被唤醒的节点，如果`next`指向的节点不是下一个要唤醒的节点，需要从尾节点开始往前遍历直到找到一个满足被唤醒条件的节点。如果可以找到，则通过`LockSupport.unpark()`唤醒该节点对应的线程，否则什么也不做直接返回。
 
-![release](https://tech101.cn/assets/images/aqs_05.png)
+![release](../../../img/java/aqs_05.png)
 
 ### 共享模式
 
@@ -650,7 +650,7 @@ private static boolean shouldParkAfterFailedAcquire(Node pred, Node node) {
 
 需要注意的是，有且只有头结点才可以设置`PROPAGATE`状态。如果在释放过程中头结点变更了，需要一直循环检查头结点的值直到头结点的值不变化。这么做的目的是为了保证释放过程中如果有新节点进队，释放的信号可以持续往后扩散。头结点的状态从`SIGNAL`变成0是在`unparkSuccessor()`中进行的。
 
-![取消](https://tech101.cn/assets/images/aqs_08.png)
+![取消](../../../img/java/aqs_08.png)
 
 #### acquireSharedInterruptibly()
 
@@ -714,7 +714,7 @@ private void cancelAcquire(Node node) {
 
 在将被取消节点的后续节点的`prev`指针指向被取消节点的前序节点的时候，需要检查被取消节点的状态。如果被取消节点已经将它的前序节点的状态设置为了`SIGNAL`状态，那么还需要判断被取消节点的后续节点是否也是需要被通知。如果是的话就需要正确设置被取消节点的前序节点的`next`指针的值；否则需要唤醒被取消节点的后续节点，让它自己设置正确的状态。需要注意的是，节点虽然被取消了，但是还会留在队列中，在后续出队的时候被一起释放。
 
-![取消](https://tech101.cn/assets/images/aqs_07.png)
+![取消](../../../img/java/aqs_07.png)
 
 ## 总结
 
