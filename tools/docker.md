@@ -86,4 +86,9 @@ Sep 30 10:08:20 VM-0-17-centos systemd[1]: Failed to start containerd container 
 
 ### [docker storage](https://docs.docker.com/storage/)
 
+### docker xxl-job
+
+`docker run --name xxl-job-admin -v /root/source/application.properties:/application.properties --net host -v /data/applogs:/data/applogs -e PARAMS='--spring.config.location=/application.properties' -d 6a35dd59e569`
+
+
  
