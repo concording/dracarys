@@ -88,7 +88,9 @@ Sep 30 10:08:20 VM-0-17-centos systemd[1]: Failed to start containerd container 
 
 ### docker xxl-job
 
-`docker run --name xxl-job-admin -v /root/source/application.properties:/application.properties --net host -v /data/applogs:/data/applogs -e PARAMS='--spring.config.location=/application.properties' -d 6a35dd59e569`
+* `docker run --name xxl-job-admin -v /root/source/application.properties:/application.properties --net host -v /data/applogs:/data/applogs -e PARAMS='--spring.config.location=/application.properties' -d 6a35dd59e569`
+* `grant all privileges on *.* to 'root'@'172.17.0.1' identified by '密码' with grant option; `
+* `https://raw.githubusercontent.com/xuxueli/xxl-job/master/xxl-job-admin/src/main/resources/application.properties`
 
 
  
