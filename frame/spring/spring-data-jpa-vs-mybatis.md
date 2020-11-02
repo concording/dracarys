@@ -71,3 +71,8 @@ More details: [http://mybatis.org/spring/index.html](http://mybatis.org/spring/
 
 *   [https://docs.spring.io/spring/docs/current/spring-framework-reference/data-access.html](https://docs.spring.io/spring/docs/current/spring-framework-reference/data-access.html)
 *   [http://mybatis.org/spring/index.html](http://mybatis.org/spring/index.html)
+
+
+
+# github project
+* https://github.com/lkqm/spring-data-jpa-mybatis
