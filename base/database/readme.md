@@ -12,3 +12,10 @@ SET
 where `a`.`code` = `b`.`code` and     `a`.`name` = `b`.`name`;
 
 ```
+
+
+```
+UPDATE tableA a
+INNER JOIN tableB b ON a.name_a = b.name_b
+SET validation_check = if(start_dts > end_dts, 'VALID', '')
+```
