@@ -2,3 +2,6 @@
 [es6 ](https://www.taniarascia.com/es6-syntax-and-feature-overview/)
 
 [react ](https://www.taniarascia.com/getting-started-with-react/)
+
+
+[react crash course](https://www.youtube.com/watch?v=sBws8MSXN7A&ab_channel=TraversyMedia)
