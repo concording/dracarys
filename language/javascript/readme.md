@@ -14,4 +14,4 @@
 [hook ](https://www.digitalocean.com/community/tutorials/how-to-build-a-react-to-do-app-with-react-hooks)
 
 
-[react useState useEffect - youtube] (https://www.youtube.com/watch?v=-MlNBTSg_Ww&ab_channel=Academind)
+[react useState useEffect - youtube](https://www.youtube.com/watch?v=-MlNBTSg_Ww&ab_channel=Academind)
