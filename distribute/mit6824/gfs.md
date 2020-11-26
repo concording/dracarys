@@ -1,1 +1,1 @@
-![gfs](../../img/gfs.svg)
+![gfs](../../img/gfsbrain.svg)
