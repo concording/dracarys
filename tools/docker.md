@@ -92,5 +92,7 @@ Sep 30 10:08:20 VM-0-17-centos systemd[1]: Failed to start containerd container 
 * `grant all privileges on *.* to 'root'@'172.17.0.1' identified by '密码' with grant option; `
 * `https://raw.githubusercontent.com/xuxueli/xxl-job/master/xxl-job-admin/src/main/resources/application.properties`
 
+### docker log
+`docker logs -f  zookeeper|tail -111f`
 
  
