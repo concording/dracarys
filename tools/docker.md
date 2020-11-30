@@ -95,4 +95,6 @@ Sep 30 10:08:20 VM-0-17-centos systemd[1]: Failed to start containerd container 
 ### docker log
 `docker logs -f  zookeeper|tail -111f`
 
- 
+
+### docker tutorial for beginers video
+[youtube video](https://www.youtube.com/watch?v=fqMOX6JJhGo&ab_channel=freeCodeCamp.org)
