@@ -19,3 +19,15 @@ UPDATE tableA a
 INNER JOIN tableB b ON a.name_a = b.name_b
 SET validation_check = if(start_dts > end_dts, 'VALID', '')
 ```
+
+
+```
+UPDATE
+    `test` AS `a`,
+    (
+        select invoice,amount from test3
+    ) AS `b`
+SET
+    a.amount2=b.amount
+where `a`.`invoice` = `b`.`invoice`;
+```
