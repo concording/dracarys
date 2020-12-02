@@ -31,3 +31,11 @@ SET
     a.amount2=b.amount
 where `a`.`invoice` = `b`.`invoice`;
 ```
+
+```
+update test set flag =
+case when amount2=0 then '数据不存在'
+     when `amount3`=0 then '数据金额一致'
+     else '数据金额不匹配' end;
+
+```
