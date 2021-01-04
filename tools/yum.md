@@ -1,4 +1,13 @@
 
+```
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+
+vi /etc/yum/pluginconf.d/subscription-manager.conf
+enable=0
+
+yum install zbar
+```
+
 
 ```
 updates                                                                                                                                                                                                                | 2.9 kB  00:00:00
