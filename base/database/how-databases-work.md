@@ -1,7 +1,5 @@
 # How does a relational database work
 
-##  tag 本周待阅读
-
 When it comes to relational databases, I can’t help thinking that something is missing. They’re used everywhere. There are many different databases: from the small and useful SQLite to the powerful Teradata. But, there are only a few articles that explain how a database works. You can google by yourself “how does a relational database work” to see how few results there are. Moreover, those articles are short.  Now, if you look for the last trendy technologies (Big Data, NoSQL or JavaScript), you’ll find more in-depth articles explaining how they work.
 
 Are relational databases too old and too boring to be explained outside of university courses, research papers and books?
