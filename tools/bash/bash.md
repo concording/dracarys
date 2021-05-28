@@ -13,4 +13,4 @@
 ### 文件夹按大小排序
 `du -sh *|sort -rh |head -5`
 
-`/Users/wangyinbin/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/cfc7a45527bf5f11b14e8b0b2b46489d/Message/MessageTemp`
+`~/Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/cfc7a45527bf5f11b14e8b0b2b46489d/Message/MessageTemp`
