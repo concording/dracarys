@@ -104,3 +104,23 @@ $ cd ..
 $ rm -rf old-repository.git
 ```
 
+### git pull 配置
+
+In its default mode, git pull is shorthand for git fetch followed by git merge FETCH_HEAD.
+
+When you do a git pull origin master,
+git pull performs a merge, which often creates a merge commit. Therefore, by default, pulling from the remote is NOT a harmless operation: it can create a new commit sha that didn’t exist before. This behavior can confuse a user, because what feels like it should be a harmless download operation actually changes the commit history in unpredictable ways.
+
+To avoid this, you need
+
+git pull --ff-only
+(or not? read on to see which one fits your requirements)
+
+With git pull --ff-only, Git will update your branch only if it can be “fast-forwarded” without creating new commits. If this can’t be done, git pull --ff-only simply aborts with an error message.
+
+You can configure your Git client to always use --ff-only by default, so you get this behavior even if you forget the command-line flag:
+
+git config --global pull.ff only
+Note: The --global flag applies the change for all repositories on your machine. If you want this behaviour only for the repository you're in, omit the flag.
+
+Taken from here
