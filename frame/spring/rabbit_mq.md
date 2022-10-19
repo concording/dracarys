@@ -1,4 +1,5 @@
-Delivery Identifiers: Delivery Tags
+**Delivery Identifiers: Delivery Tags**
+
 Before we proceed to discuss other topics it is important to explain how deliveries are identified (and acknowledgements indicate their respective deliveries). 
 When a consumer (subscription) is registered, messages will be delivered (pushed) by RabbitMQ using the basic.deliver method. The method carries a delivery tag, 
 which uniquely identifies the delivery on a channel. Delivery tags are therefore scoped per channel.
